@@ -1,0 +1,2 @@
+# GitHub Actions(Linux)とWindowsローカルの間で改行差分が出ないようLFに統一
+* text=auto eol=lf

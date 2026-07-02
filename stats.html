@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月別発信回数 | 名取市議会議員 Web発信 見える化</title>
+  <meta name="description" content="宮城県名取市の市議会議員の月別Web発信回数(RSS自動集計)の一覧とグラフです。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <h1 class="site-title"><a href="index.html">名取市議会議員 Web発信 見える化</a></h1>
+      <p class="site-subtitle">宮城県名取市 / 議員のWebでの情報公開レベルを有権者目線で可視化(非公式)</p>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">議員一覧</a>
+      <a href="stats.html" class="active">月別発信回数</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>月別発信回数グラフ(直近12か月)</h2>
+      <div class="chart-controls">
+        <label for="chart-target">表示対象: </label>
+        <select id="chart-target"></select>
+      </div>
+      <div class="chart-box">
+        <canvas id="month-chart"></canvas>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>議員×月 発信回数テーブル</h2>
+      <p class="lead">RSSフィードから自動取得できた投稿数の集計です(対象: フィード登録のある議員のみ)。SNSのみで発信している議員は含まれません。</p>
+      <div id="matrix-wrap">読み込み中…</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p id="generated-at"></p>
+      <p>出典: 名取市議会 議員名簿・会派別名簿(名取市公式ホームページ)ほか各議員の公開媒体</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/stats.js"></script>
+</body>
+</html>

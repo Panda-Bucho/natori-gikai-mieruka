@@ -1,0 +1,94 @@
+# 名取市議会議員 Web発信 見える化サイト
+
+宮城県名取市の市議会議員(21名)のWeb発信状況(公式サイト・ブログ・SNSの有無、最終発信日、月別発信回数)を可視化する、有権者向けの非公式静的サイトです。
+
+- **議員一覧** (`index.html`): 媒体リンク(アイコン)、最終発信日、先月発信回数
+- **月別発信回数** (`stats.html`): 議員×月のテーブル + 棒グラフ(直近12か月)
+- データは GitHub Actions が **1日1回(JST 6:00)** RSSフィードを巡回して自動更新
+
+ビルド不要の HTML/CSS/JS 構成(グラフのみ Chart.js を CDN から読込)。
+
+## 仕組み
+
+```
+data/members.json   … 議員マスタ(手動管理): 氏名・会派・媒体URL・RSSフィード・手動確認欄
+data/posts.json     … 発信履歴(自動生成): scripts/update_posts.py が毎日更新
+scripts/update_posts.py       … RSS巡回スクリプト(Python)
+.github/workflows/update.yml  … 日次実行ワークフロー
+```
+
+- RSSフィードから取得した投稿を記事URLで重複排除しながら `posts.json` に蓄積します(RSSは直近分しか配信されないため、履歴は運用開始後に積み上がります)。
+- フィード取得に失敗しても処理は継続し、`posts.json` の `errors` に記録されます。
+
+## セットアップ(GitHub Pages 公開手順)
+
+1. GitHub にリポジトリを作成し、このディレクトリ一式を push する
+2. リポジトリの **Settings → Pages** で
+   - Source: **Deploy from a branch**
+   - Branch: **main** / **(root)** を選択
+3. **Settings → Actions → General → Workflow permissions** で **Read and write permissions** を有効化(ワークフローが `posts.json` をコミットするため)
+4. **Actions** タブから `Update posts data` を **Run workflow** で手動実行し、`data/posts.json` が更新されることを確認
+5. 以後は毎日 JST 6:00 に自動実行され、変更があれば自動コミット → Pages が再デプロイされます
+
+## ローカルでの確認
+
+```sh
+# データ更新スクリプトの実行
+pip install -r requirements.txt
+python scripts/update_posts.py
+
+# サイトの表示確認(fetch を使うため file:// では動きません)
+python -m http.server 8000
+# → http://localhost:8000 を開く
+```
+
+## データの更新方法
+
+### 議員・媒体情報の更新(members.json)
+
+各議員は次の構造です:
+
+```json
+{
+  "id": "yoshida-ryo",
+  "name": "吉田 良",
+  "kana": "よしだ りょう",
+  "faction": "名和会",
+  "links": {
+    "website": "https://ryo-yoshida.com/",
+    "blog": null, "x": "https://x.com/ryoyoshida1771",
+    "youtube": null, "facebook": null, "instagram": null
+  },
+  "feeds": [
+    { "platform": "website", "url": "https://ryo-yoshida.com/feed/" }
+  ],
+  "manual": [
+    { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" }
+  ]
+}
+```
+
+- **links**: 媒体があればURL、なければ `null`。一覧のアイコン表示に使われます(`tiktok` など追加キーも可)
+- **feeds**: RSS/Atomで自動取得する対象。ブログ等を見つけたらここに追加
+  - RSS URLの例 — Ameba: `https://ameblo.jp/xxx/rss.html` / WordPress: `https://example.com/feed/` / はてな: `https://xxx.hatenablog.com/rss` / YouTube: `https://www.youtube.com/feeds/videos.xml?channel_id=UCxxxx`
+  - 追加前にブラウザ等でURLが開けること(XMLが返ること)を確認してください
+- **manual**: RSS非対応媒体(X・Instagram・Facebook等)の**手動確認欄**。媒体を実際に見て、
+  - `lastPostDate`: 最後の発信日(`"2026-06-20"` 形式)
+  - `checkedDate`: 確認した日
+  を記入すると、一覧の「最終発信日」に **※手動** マーク付きで反映されます(RSS由来の日付より新しい場合に優先表示)
+
+### 発信履歴(posts.json)
+
+自動生成ファイルのため直接編集しないでください。手動実行したい場合は Actions の `Update posts data` → Run workflow を使うか、ローカルで `python scripts/update_posts.py` を実行してコミットします。
+
+## 掲載基準・免責
+
+- 掲載する媒体は、プロフィール等に「名取市議会議員」等の記載があり本人のものと確認できたもののみです。同姓同名の別人アカウントを誤って掲載しないよう、不確かなものは掲載していません
+- 「先月発信回数」「月別発信回数」はRSSで取得できた投稿のみの集計で、SNSのみの発信は含まれません
+- 本サイトは特定の議員・会派を支持または批判するものではありません。掲載内容の誤り・媒体の追加依頼は Issue でお知らせください
+
+## 出典
+
+- [名取市議会議員名簿(名取市公式)](https://www.city.natori.miyagi.jp/site/gikai/3533.html)
+- [会派別名簿(名取市公式)](https://www.city.natori.miyagi.jp/page/3555.html)
+- 各議員の公開媒体(公式サイト・ブログ・SNS)
