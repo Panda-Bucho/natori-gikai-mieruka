@@ -21,19 +21,27 @@
 
   <main>
     <section class="card">
-      <h2>月別発信回数グラフ(直近12か月)</h2>
+      <h2>月別発信回数グラフ</h2>
       <div class="chart-controls">
+        <label for="period-select">期間: </label>
+        <select id="period-select">
+          <option value="m12" selected>直近12か月</option>
+          <option value="term">今期(2024年2月〜)</option>
+          <option value="y4">直近4年(48か月)</option>
+        </select>
         <label for="chart-target">表示対象: </label>
         <select id="chart-target"></select>
       </div>
       <div class="chart-box">
         <canvas id="month-chart"></canvas>
       </div>
+      <p class="lead chart-note">市議会議員選挙は4年周期(前回: 2024年1月投票、今期任期: 2024年2月〜2028年1月)。グラフ中の赤い破線は選挙月を示します。</p>
     </section>
 
     <section class="card">
       <h2>議員×月 発信回数テーブル</h2>
-      <p class="lead">RSSフィードから自動取得できた投稿数の集計です(対象: フィード登録のある議員のみ)。SNSのみで発信している議員は含まれません。</p>
+      <p class="lead">RSSフィードから自動取得できた投稿数の集計です(対象: フィード登録のある議員のみ)。SNSのみで発信している議員は含まれません。<br>
+      過去分はフィードから遡って取得できた範囲のみのため、<strong>数字がない期間は「発信ゼロ」とは限りません</strong>(例: 吉田議員の2024年12月以前は旧サイトのため取得できません)。</p>
       <div id="matrix-wrap">読み込み中…</div>
     </section>
   </main>

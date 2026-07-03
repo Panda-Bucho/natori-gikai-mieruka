@@ -83,9 +83,24 @@ function freshnessClass(dateStr) {
   return "fresh-old";
 }
 
+/* 市議会議員の任期(選挙は4年周期。前回投票: 2024-01-21) */
+const TERM_START = "2024-02";
+const ELECTION_MONTHS = { "2020-01": "市議選", "2024-01": "市議選", "2028-01": "市議選" };
+
 /* "YYYY-MM" 形式の月キー */
 function monthKey(year, month) {
   return `${year}-${String(month).padStart(2, "0")}`;
+}
+
+/* startKey〜endKey("YYYY-MM")の月キー配列(両端含む、古い順) */
+function monthKeysBetween(startKey, endKey) {
+  const [sy, sm] = startKey.split("-").map(Number);
+  const [ey, em] = endKey.split("-").map(Number);
+  const keys = [];
+  for (let y = sy, m = sm; y < ey || (y === ey && m <= em); m === 12 ? (y++, m = 1) : m++) {
+    keys.push(monthKey(y, m));
+  }
+  return keys;
 }
 
 /* 先月の月キー */

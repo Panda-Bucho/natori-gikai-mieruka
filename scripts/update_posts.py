@@ -90,6 +90,19 @@ def collect_member_posts(member, existing_posts, errors):
     return posts
 
 
+def write_posts(members_dict, errors):
+    """posts.json を決定的な形式で書き出す(backfill_posts.py と共用)。"""
+    out = {
+        "generatedAt": datetime.now(JST).isoformat(timespec="seconds"),
+        "members": members_dict,
+        "errors": errors,
+    }
+    POSTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(POSTS_PATH, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
 def main():
     members_data = load_json(MEMBERS_PATH, None)
     if members_data is None:
@@ -111,15 +124,7 @@ def main():
             "posts": posts,
         }
 
-    out = {
-        "generatedAt": datetime.now(JST).isoformat(timespec="seconds"),
-        "members": new_members,
-        "errors": errors,
-    }
-    POSTS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(POSTS_PATH, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+    write_posts(new_members, errors)
 
     total = sum(len(m["posts"]) for m in new_members.values())
     print(f"done: {total} posts, {len(errors)} errors -> {POSTS_PATH}")

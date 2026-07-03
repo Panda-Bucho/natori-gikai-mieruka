@@ -204,10 +204,22 @@ table.matrix {
 .matrix .total { font-weight: 700; background: #f4f7f5; }
 .matrix .total-row th, .matrix .total-row td { border-top: 2px solid var(--primary); }
 
+.matrix thead th.election-col {
+  background: #fbe9e5;
+  color: var(--stale);
+  border-bottom: 2px solid var(--stale);
+}
+
 .chart-controls {
   margin-bottom: 0.7rem;
   font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.5rem;
+  align-items: center;
 }
+.chart-controls label + select { margin-right: 0.8rem; }
+.chart-note { margin: 0.7rem 0 0; }
 .chart-controls select {
   font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
