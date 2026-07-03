@@ -138,46 +138,7 @@ table.member-table {
 .media-icon svg { width: 16px; height: 16px; }
 .no-media { color: var(--none); }
 
-.date-chip { font-weight: 700; white-space: nowrap; }
-.fresh-7 { color: var(--fresh7); }
-.fresh-30 { color: var(--fresh30); }
-.fresh-90 { color: var(--fresh90); }
-.fresh-old { color: var(--stale); }
-.fresh-none { color: var(--none); font-size: 0.85rem; }
-
-.manual-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  color: #8a5a00;
-  background: #fdf3dc;
-  border: 1px solid #ecd9a8;
-  border-radius: 4px;
-  padding: 0 0.35rem;
-  white-space: nowrap;
-}
-
-.cell-count { text-align: right; }
-.cell-count .count { font-weight: 700; font-size: 1.02rem; }
-.cell-count .count-unit { font-size: 0.72rem; color: var(--muted); font-weight: 400; }
-
-/* ---------- 凡例・注記 ---------- */
-.legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1.1rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-top: 0.9rem;
-}
-.legend .dot::before {
-  content: "●";
-  margin-right: 0.25rem;
-}
-.legend .d7::before { color: var(--fresh7); }
-.legend .d30::before { color: var(--fresh30); }
-.legend .d90::before { color: var(--fresh90); }
-.legend .dold::before { color: var(--stale); }
-
+/* ---------- 注記 ---------- */
 .notes {
   font-size: 0.8rem;
   color: var(--muted);
