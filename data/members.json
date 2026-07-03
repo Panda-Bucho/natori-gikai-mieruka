@@ -7,6 +7,7 @@
       "name": "阿部 正義",
       "kana": "あべ まさよし",
       "faction": "公明名取",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3539.html",
       "links": {
         "website": "https://www.komei.or.jp/km/natori-abe-masayoshi/",
         "blog": null,
@@ -16,10 +17,18 @@
         "instagram": null
       },
       "feeds": [
-        { "platform": "website", "url": "https://www.komei.or.jp/km/natori-abe-masayoshi/feed/" }
+        {
+          "platform": "website",
+          "url": "https://www.komei.or.jp/km/natori-abe-masayoshi/feed/"
+        }
       ],
       "manual": [
-        { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" }
+        {
+          "platform": "x",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
       ]
     },
     {
@@ -27,6 +36,7 @@
       "name": "今野 慎介",
       "kana": "こんの しんすけ",
       "faction": "名取維新",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3542.html",
       "links": {
         "website": "https://shinsukeyuriage.com/",
         "blog": null,
@@ -37,10 +47,30 @@
       },
       "feeds": [],
       "manual": [
-        { "platform": "website", "lastPostDate": null, "checkedDate": null, "note": "サイトにRSSなし" },
-        { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" },
-        { "platform": "facebook", "lastPostDate": null, "checkedDate": null, "note": "" },
-        { "platform": "instagram", "lastPostDate": null, "checkedDate": null, "note": "" }
+        {
+          "platform": "website",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": "サイトにRSSなし"
+        },
+        {
+          "platform": "x",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        },
+        {
+          "platform": "facebook",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        },
+        {
+          "platform": "instagram",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
       ]
     },
     {
@@ -48,6 +78,7 @@
       "name": "佐藤 さやか",
       "kana": "さとう さやか",
       "faction": "名取医療福祉会",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3546.html",
       "links": {
         "website": null,
         "blog": null,
@@ -59,10 +90,30 @@
       },
       "feeds": [],
       "manual": [
-        { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" },
-        { "platform": "youtube", "lastPostDate": null, "checkedDate": null, "note": "公開動画なしのためフィード取得不可(2026-07-02時点)" },
-        { "platform": "instagram", "lastPostDate": null, "checkedDate": null, "note": "" },
-        { "platform": "tiktok", "lastPostDate": null, "checkedDate": null, "note": "" }
+        {
+          "platform": "x",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        },
+        {
+          "platform": "youtube",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": "公開動画なしのためフィード取得不可(2026-07-02時点)"
+        },
+        {
+          "platform": "instagram",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        },
+        {
+          "platform": "tiktok",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
       ]
     },
     {
@@ -70,6 +121,7 @@
       "name": "佐藤 繁樹",
       "kana": "さとう しげき",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3547.html",
       "links": {
         "website": null,
         "blog": null,
@@ -86,31 +138,45 @@
       "name": "鈴木 英信",
       "kana": "すずき ひでのぶ",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3551.html",
       "links": {
         "website": null,
         "blog": null,
         "x": null,
         "youtube": null,
-        "facebook": null,
+        "facebook": "https://www.facebook.com/profile.php?id=100092476530124",
         "instagram": null
       },
       "feeds": [],
-      "manual": []
+      "manual": [
+        {
+          "platform": "facebook",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "terashima-masako",
       "name": "寺嶋 雅子",
       "kana": "てらしま まさこ",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3549.html",
       "links": {
-        "website": null,
+        "website": "https://terashimamasakosp.wixsite.com/mysite",
         "blog": null,
         "x": null,
         "youtube": null,
         "facebook": null,
         "instagram": null
       },
-      "feeds": [],
+      "feeds": [
+        {
+          "platform": "website",
+          "url": "https://terashimamasakosp.wixsite.com/mysite/blog-feed.xml"
+        }
+      ],
       "manual": []
     },
     {
@@ -118,6 +184,7 @@
       "name": "二階堂 充",
       "kana": "にかいどう みつる",
       "faction": "名和会",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/16926.html",
       "links": {
         "website": null,
         "blog": null,
@@ -134,6 +201,7 @@
       "name": "笹森 波",
       "kana": "ささもり なみ",
       "faction": "日本共産党議員団",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3548.html",
       "links": {
         "website": null,
         "blog": null,
@@ -150,15 +218,21 @@
       "name": "千葉 栄幸",
       "kana": "ちば えいこう",
       "faction": "市民クラブ",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3535.html",
       "links": {
-        "website": null,
+        "website": "https://hideyuki.info/",
         "blog": null,
         "x": null,
         "youtube": null,
         "facebook": null,
         "instagram": null
       },
-      "feeds": [],
+      "feeds": [
+        {
+          "platform": "website",
+          "url": "https://hideyuki.info/feed/"
+        }
+      ],
       "manual": []
     },
     {
@@ -166,6 +240,7 @@
       "name": "板橋 美保",
       "kana": "いたばし みほ",
       "faction": "名和会",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3538.html",
       "links": {
         "website": null,
         "blog": null,
@@ -182,6 +257,7 @@
       "name": "大泉 徳子",
       "kana": "おおいずみ のりこ",
       "faction": "名和会",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3544.html",
       "links": {
         "website": null,
         "blog": null,
@@ -198,6 +274,7 @@
       "name": "菅原 和子",
       "kana": "すがわら かずこ",
       "faction": "公明名取",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3550.html",
       "links": {
         "website": "https://www.komei.or.jp/km/natori-sugawara-kazuko/",
         "blog": null,
@@ -207,7 +284,10 @@
         "instagram": null
       },
       "feeds": [
-        { "platform": "website", "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/feed/" }
+        {
+          "platform": "website",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/feed/"
+        }
       ],
       "manual": []
     },
@@ -216,6 +296,7 @@
       "name": "吉田 良",
       "kana": "よしだ りょう",
       "faction": "名和会",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3553.html",
       "links": {
         "website": "https://ryo-yoshida.com/",
         "blog": null,
@@ -225,10 +306,18 @@
         "instagram": null
       },
       "feeds": [
-        { "platform": "website", "url": "https://ryo-yoshida.com/feed/" }
+        {
+          "platform": "website",
+          "url": "https://ryo-yoshida.com/feed/"
+        }
       ],
       "manual": [
-        { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" }
+        {
+          "platform": "x",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
       ]
     },
     {
@@ -236,6 +325,7 @@
       "name": "大友 康信",
       "kana": "おおとも やすのぶ",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/16937.html",
       "links": {
         "website": null,
         "blog": null,
@@ -252,6 +342,7 @@
       "name": "長南 良彦",
       "kana": "ちょうなん よしひこ",
       "faction": "市民クラブ",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3536.html",
       "links": {
         "website": null,
         "blog": null,
@@ -268,6 +359,7 @@
       "name": "菊地 忍",
       "kana": "きくち しのぶ",
       "faction": "公明名取",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3540.html",
       "links": {
         "website": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/",
         "blog": null,
@@ -277,10 +369,18 @@
         "instagram": null
       },
       "feeds": [
-        { "platform": "website", "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/feed/" }
+        {
+          "platform": "website",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/feed/"
+        }
       ],
       "manual": [
-        { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" }
+        {
+          "platform": "x",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
       ]
     },
     {
@@ -288,6 +388,7 @@
       "name": "小野寺 美穂",
       "kana": "おのでら みほ",
       "faction": "日本共産党議員団",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3543.html",
       "links": {
         "website": null,
         "blog": null,
@@ -298,7 +399,12 @@
       },
       "feeds": [],
       "manual": [
-        { "platform": "x", "lastPostDate": null, "checkedDate": null, "note": "" }
+        {
+          "platform": "x",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": ""
+        }
       ]
     },
     {
@@ -306,6 +412,7 @@
       "name": "郷内 良治",
       "kana": "ごうない りょうじ",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3537.html",
       "links": {
         "website": null,
         "blog": null,
@@ -322,6 +429,7 @@
       "name": "山田 龍太郎",
       "kana": "やまだ りゅうたろう",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3552.html",
       "links": {
         "website": null,
         "blog": null,
@@ -338,6 +446,7 @@
       "name": "熊谷 克彦",
       "kana": "くまがい かつひこ",
       "faction": "青雲倶楽部",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3541.html",
       "links": {
         "website": null,
         "blog": null,
@@ -354,6 +463,7 @@
       "name": "大久保 主計",
       "kana": "おおくぼ ちから",
       "faction": "市民クラブ",
+      "officialPage": "https://www.city.natori.miyagi.jp/page/3545.html",
       "links": {
         "website": null,
         "blog": null,
@@ -363,7 +473,14 @@
         "instagram": null
       },
       "feeds": [],
-      "manual": []
+      "manual": [
+        {
+          "platform": "website",
+          "lastPostDate": null,
+          "checkedDate": null,
+          "note": "議会公式ページ記載の ochika.jimdo.com はリダイレクトループで閲覧不能(2026-07確認)のため未掲載"
+        }
+      ]
     }
   ]
 }

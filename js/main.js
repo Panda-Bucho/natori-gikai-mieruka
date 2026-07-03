@@ -89,8 +89,11 @@ function renderTable() {
   tbody.innerHTML = tableRows
     .map((row) => {
       const m = row.member;
+      const nameHtml = m.officialPage
+        ? `<a class="name-link" href="${escapeHtml(m.officialPage)}" target="_blank" rel="noopener noreferrer" title="名取市議会 公式プロフィールを開く">${escapeHtml(m.name)}</a>`
+        : escapeHtml(m.name);
       return `<tr>
-        <td class="cell-name"><span class="name">${escapeHtml(m.name)}</span><span class="kana">${escapeHtml(m.kana || "")}</span></td>
+        <td class="cell-name"><span class="name">${nameHtml}</span><span class="kana">${escapeHtml(m.kana || "")}</span></td>
         <td class="cell-faction">${escapeHtml(m.faction)}</td>
         <td class="cell-media">${mediaIconsHtml(m)}</td>
         <td class="cell-last">${lastDateHtml(row)}</td>
