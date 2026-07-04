@@ -10,6 +10,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3539.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1983-09-30",
       "committees": [
         "総務消防常任委員会",
@@ -48,6 +49,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3542.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1973-01-15",
       "committees": [
         "建設経済常任委員会",
@@ -100,6 +102,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3546.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1988-06-18",
       "committees": [
         "民生教育常任委員会",
@@ -153,6 +156,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3547.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1973-02-10",
       "committees": [
         "総務消防常任委員会",
@@ -179,6 +183,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3551.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1963-12-23",
       "committees": [
         "総務消防常任委員会",
@@ -211,6 +216,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3549.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1980-08-16",
       "committees": [
         "民生教育常任委員会",
@@ -243,6 +249,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/16926.html",
       "terms": 1,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1975-03-26",
       "committees": [
         "建設経済常任委員会",
@@ -269,6 +276,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3548.html",
       "terms": 2,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1972-06-13",
       "committees": [
         "民生教育常任委員会",
@@ -297,6 +305,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3535.html",
       "terms": 2,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1964-09-18",
       "committees": [
         "民生教育常任委員会",
@@ -330,6 +339,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3538.html",
       "terms": 3,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1963-04-29",
       "committees": [
         "総務消防常任委員会",
@@ -357,6 +367,13 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3544.html",
       "terms": 3,
       "role": null,
+      "roleHistory": [
+        {
+          "role": "副議長",
+          "from": "2024-02-01",
+          "to": "2026-02-02"
+        }
+      ],
       "birthDate": "1965-05-14",
       "committees": [
         "建設経済常任委員会",
@@ -383,6 +400,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3550.html",
       "terms": 3,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1960-10-31",
       "committees": [
         "建設経済常任委員会",
@@ -413,6 +431,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3553.html",
       "terms": 3,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1976-08-21",
       "committees": [
         "民生教育常任委員会",
@@ -450,6 +469,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/16937.html",
       "terms": 4,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1961-12-07",
       "committees": [
         "建設経済常任委員会",
@@ -476,6 +496,13 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3536.html",
       "terms": 5,
       "role": null,
+      "roleHistory": [
+        {
+          "role": "議長",
+          "from": "2024-02-01",
+          "to": "2026-02-02"
+        }
+      ],
       "birthDate": "1953-12-09",
       "committees": [
         "総務消防常任委員会",
@@ -501,6 +528,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3540.html",
       "terms": 6,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1964-10-15",
       "committees": [
         "民生教育常任委員会",
@@ -540,6 +568,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3543.html",
       "terms": 7,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1960-09-27",
       "committees": [
         "総務消防常任委員会",
@@ -572,6 +601,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3537.html",
       "terms": 7,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1951-05-23",
       "committees": [
         "建設経済常任委員会",
@@ -597,6 +627,7 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3552.html",
       "terms": 7,
       "role": null,
+      "roleHistory": [],
       "birthDate": "1952-02-27",
       "committees": [
         "民生教育常任委員会",
@@ -622,6 +653,13 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3541.html",
       "terms": 2,
       "role": "副議長",
+      "roleHistory": [
+        {
+          "role": "副議長",
+          "from": "2026-02-02",
+          "to": null
+        }
+      ],
       "birthDate": "1956-11-30",
       "committees": [
         "総務消防常任委員会",
@@ -647,6 +685,13 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3545.html",
       "terms": 3,
       "role": "議長",
+      "roleHistory": [
+        {
+          "role": "議長",
+          "from": "2026-02-02",
+          "to": null
+        }
+      ],
       "birthDate": "1959-04-02",
       "committees": [
         "建設経済常任委員会",

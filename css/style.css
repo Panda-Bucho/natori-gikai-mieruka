@@ -138,6 +138,11 @@ table.member-table {
   vertical-align: 2px;
 }
 
+.role-badge.former {
+  color: var(--muted);
+  background: #e7ede9;
+}
+
 tr.member-row { cursor: pointer; }
 tr.member-row:hover td { background: #f2f7f5; }
 tr.detail-row { display: none; }
@@ -217,6 +222,12 @@ table.matrix {
 }
 .q-yes a:hover { color: var(--primary-dark); }
 .q-none { background: #fafcfb; }
+.q-role {
+  background: #f1f4f2;
+  color: var(--muted);
+  font-size: 0.72rem;
+  cursor: help;
+}
 
 .q-member {
   border: 1px solid var(--border);

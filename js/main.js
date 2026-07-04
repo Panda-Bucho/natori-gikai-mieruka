@@ -58,8 +58,13 @@ function detailHtml(row) {
   const media = PLATFORM_ORDER.filter((p) => m.links[p])
     .map((p) => `<a href="${escapeHtml(m.links[p])}" target="_blank" rel="noopener noreferrer">${PLATFORMS[p].label}</a>`)
     .join("、 ") || "確認できる媒体なし";
+  const roles = [];
+  if (m.role) roles.push(escapeHtml(m.role));
+  for (const h of m.roleHistory || []) {
+    if (h.to) roles.push(`前${escapeHtml(h.role)}(${formatDateJa(h.from).slice(0, 7)}〜${formatDateJa(h.to).slice(0, 7)})`);
+  }
   const items = [
-    m.role ? `<dt>役職</dt><dd>${escapeHtml(m.role)}</dd>` : "",
+    roles.length ? `<dt>役職</dt><dd>${roles.join("、 ")}</dd>` : "",
     `<dt>所属委員会</dt><dd>${(m.committees || []).map(escapeHtml).join("、 ") || "—"}</dd>`,
     `<dt>生年月日</dt><dd>${m.birthDate ? formatDateJa(m.birthDate) + `(${row.age}歳)` : "—"}</dd>`,
     `<dt>発信媒体</dt><dd>${media}</dd>`,
