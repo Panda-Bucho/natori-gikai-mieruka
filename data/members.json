@@ -9,6 +9,7 @@
       "faction": "公明名取",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3539.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1983-09-30",
@@ -48,6 +49,7 @@
       "faction": "名取維新",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3542.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1973-01-15",
@@ -101,6 +103,7 @@
       "faction": "名取医療福祉会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3546.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1988-06-18",
@@ -155,6 +158,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3547.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1973-02-10",
@@ -182,6 +186,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3551.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1963-12-23",
@@ -215,6 +220,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3549.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1980-08-16",
@@ -248,6 +254,7 @@
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/16926.html",
       "terms": 1,
+      "memberSince": "2024-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1975-03-26",
@@ -275,6 +282,7 @@
       "faction": "日本共産党議員団",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3548.html",
       "terms": 2,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1972-06-13",
@@ -304,6 +312,7 @@
       "faction": "市民クラブ",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3535.html",
       "terms": 2,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1964-09-18",
@@ -338,6 +347,7 @@
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3538.html",
       "terms": 3,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1963-04-29",
@@ -366,12 +376,18 @@
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3544.html",
       "terms": 3,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [
         {
           "role": "副議長",
           "from": "2024-02-01",
           "to": "2026-02-02"
+        },
+        {
+          "role": "監査委員",
+          "from": "2020-02-03",
+          "to": "2024-02-01"
         }
       ],
       "birthDate": "1965-05-14",
@@ -399,8 +415,15 @@
       "faction": "公明名取",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3550.html",
       "terms": 3,
-      "role": null,
-      "roleHistory": [],
+      "memberSince": "2020-02-01",
+      "role": "監査委員",
+      "roleHistory": [
+        {
+          "role": "監査委員",
+          "from": "2024-02-01",
+          "to": null
+        }
+      ],
       "birthDate": "1960-10-31",
       "committees": [
         "建設経済常任委員会",
@@ -430,6 +453,7 @@
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3553.html",
       "terms": 3,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1976-08-21",
@@ -468,6 +492,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/16937.html",
       "terms": 4,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1961-12-07",
@@ -495,12 +520,18 @@
       "faction": "市民クラブ",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3536.html",
       "terms": 5,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [
         {
           "role": "議長",
           "from": "2024-02-01",
           "to": "2026-02-02"
+        },
+        {
+          "role": "議長",
+          "from": "2020-02-03",
+          "to": "2022-02-01"
         }
       ],
       "birthDate": "1953-12-09",
@@ -527,8 +558,15 @@
       "faction": "公明名取",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3540.html",
       "terms": 6,
+      "memberSince": "2020-02-01",
       "role": null,
-      "roleHistory": [],
+      "roleHistory": [
+        {
+          "role": "議長",
+          "from": "2022-02-01",
+          "to": "2024-02-01"
+        }
+      ],
       "birthDate": "1964-10-15",
       "committees": [
         "民生教育常任委員会",
@@ -567,6 +605,7 @@
       "faction": "日本共産党議員団",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3543.html",
       "terms": 7,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1960-09-27",
@@ -600,6 +639,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3537.html",
       "terms": 7,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1951-05-23",
@@ -626,6 +666,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3552.html",
       "terms": 7,
+      "memberSince": "2020-02-01",
       "role": null,
       "roleHistory": [],
       "birthDate": "1952-02-27",
@@ -652,6 +693,7 @@
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3541.html",
       "terms": 2,
+      "memberSince": "2020-02-01",
       "role": "副議長",
       "roleHistory": [
         {
@@ -684,6 +726,7 @@
       "faction": "市民クラブ",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3545.html",
       "terms": 3,
+      "memberSince": "2020-02-01",
       "role": "議長",
       "roleHistory": [
         {

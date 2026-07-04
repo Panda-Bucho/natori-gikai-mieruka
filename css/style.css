@@ -228,6 +228,23 @@ table.matrix {
   font-size: 0.72rem;
   cursor: help;
 }
+.q-out {
+  background: #fafcfb;
+  color: var(--none);
+  cursor: help;
+}
+.q-matrix td.q-election {
+  background: #fbe9e5;
+  border-left: 2px solid var(--stale);
+  border-right: 2px solid var(--stale);
+  min-width: 14px;
+  cursor: help;
+}
+.q-matrix thead th.election-col {
+  min-width: 14px;
+  font-size: 0.72rem;
+  padding: 0.35rem 0.2rem;
+}
 
 .q-member {
   border: 1px solid var(--border);

@@ -60,8 +60,14 @@ function detailHtml(row) {
     .join("、 ") || "確認できる媒体なし";
   const roles = [];
   if (m.role) roles.push(escapeHtml(m.role));
+  const former = new Map(); // 同一役職の複数期はまとめて表示
   for (const h of m.roleHistory || []) {
-    if (h.to) roles.push(`前${escapeHtml(h.role)}(${formatDateJa(h.from).slice(0, 7)}〜${formatDateJa(h.to).slice(0, 7)})`);
+    if (!h.to) continue;
+    if (!former.has(h.role)) former.set(h.role, []);
+    former.get(h.role).push(`${formatDateJa(h.from).slice(0, 7)}〜${formatDateJa(h.to).slice(0, 7)}`);
+  }
+  for (const [role, periods] of former) {
+    roles.push(`前${escapeHtml(role)}(${periods.join("、")})`);
   }
   const items = [
     roles.length ? `<dt>役職</dt><dd>${roles.join("、 ")}</dd>` : "",
