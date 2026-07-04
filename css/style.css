@@ -123,6 +123,36 @@ table.member-table {
 .cell-name .kana { display: block; font-size: 0.72rem; color: var(--muted); }
 .cell-faction { white-space: nowrap; font-size: 0.85rem; }
 
+.cell-num { text-align: right; white-space: nowrap; }
+.cell-committee { white-space: nowrap; font-size: 0.85rem; }
+
+.role-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary-dark);
+  border-radius: 4px;
+  padding: 0 0.4rem;
+  margin-left: 0.3rem;
+  vertical-align: 2px;
+}
+
+tr.member-row { cursor: pointer; }
+tr.member-row:hover td { background: #f2f7f5; }
+tr.detail-row { display: none; }
+tr.detail-row.open { display: table-row; }
+tr.detail-row td { background: #f7faf9; }
+.member-detail {
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  gap: 0.25rem 0.8rem;
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+}
+.member-detail dt { color: var(--muted); font-weight: 700; }
+.member-detail dd { margin: 0; }
+
 .media-icon {
   display: inline-flex;
   width: 30px;
@@ -177,6 +207,40 @@ table.matrix {
   color: var(--stale);
   border-bottom: 2px solid var(--stale);
 }
+
+/* ---------- 一般質問 ---------- */
+.q-matrix td { min-width: 40px; }
+.q-yes a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.q-yes a:hover { color: var(--primary-dark); }
+.q-none { background: #fafcfb; }
+
+.q-member {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 0.1rem 0.8rem;
+  background: #fbfdfc;
+}
+.q-member summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+.q-member .q-count {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-left: 0.4rem;
+}
+.q-entry { margin: 0.3rem 0 0.8rem; font-size: 0.88rem; }
+.q-entry-head { margin: 0 0 0.2rem; font-weight: 700; }
+.q-entry-head a { font-weight: 400; font-size: 0.8rem; margin-left: 0.5rem; color: var(--primary); }
+.q-entry ul { margin: 0; padding-left: 1.3rem; }
+.q-entry li { margin-bottom: 0.1rem; }
 
 .chart-controls {
   margin-bottom: 0.7rem;

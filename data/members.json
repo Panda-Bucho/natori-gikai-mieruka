@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-07-02",
-  "source": "名取市議会議員名簿(令和8年2月2日現在)・会派別名簿(令和8年2月27日現在) https://www.city.natori.miyagi.jp/site/gikai/3533.html",
+  "asOf": "2026-07-04",
+  "source": "名取市議会議員名簿・会派別名簿・各議員紹介ページ(名取市公式、令和8年6月時点) https://www.city.natori.miyagi.jp/site/gikai/3533.html",
   "members": [
     {
       "id": "abe-masayoshi",
@@ -8,6 +8,15 @@
       "kana": "あべ まさよし",
       "faction": "公明名取",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3539.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1983-09-30",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会",
+        "議会広報特別委員会"
+      ],
+      "speakerId": 93,
       "links": {
         "website": "https://www.komei.or.jp/km/natori-abe-masayoshi/",
         "blog": null,
@@ -37,6 +46,16 @@
       "kana": "こんの しんすけ",
       "faction": "名取維新",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3542.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1973-01-15",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会",
+        "議会広報特別委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 94,
       "links": {
         "website": "https://shinsukeyuriage.com/",
         "blog": null,
@@ -79,6 +98,16 @@
       "kana": "さとう さやか",
       "faction": "名取医療福祉会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3546.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1988-06-18",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会",
+        "議会広報特別委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 95,
       "links": {
         "website": null,
         "blog": null,
@@ -122,6 +151,15 @@
       "kana": "さとう しげき",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3547.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1973-02-10",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会",
+        "議会広報特別委員会"
+      ],
+      "speakerId": 96,
       "links": {
         "website": null,
         "blog": null,
@@ -139,6 +177,14 @@
       "kana": "すずき ひでのぶ",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3551.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1963-12-23",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 97,
       "links": {
         "website": null,
         "blog": null,
@@ -163,6 +209,16 @@
       "kana": "てらしま まさこ",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3549.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1980-08-16",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会",
+        "議会広報特別委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 98,
       "links": {
         "website": "https://terashimamasakosp.wixsite.com/mysite",
         "blog": null,
@@ -185,6 +241,15 @@
       "kana": "にかいどう みつる",
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/16926.html",
+      "terms": 1,
+      "role": null,
+      "birthDate": "1975-03-26",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会",
+        "議会運営委員会"
+      ],
+      "speakerId": 99,
       "links": {
         "website": null,
         "blog": null,
@@ -202,6 +267,17 @@
       "kana": "ささもり なみ",
       "faction": "日本共産党議員団",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3548.html",
+      "terms": 2,
+      "role": null,
+      "birthDate": "1972-06-13",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会",
+        "議会運営委員会",
+        "議会広報特別委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 117,
       "links": {
         "website": null,
         "blog": null,
@@ -219,6 +295,17 @@
       "kana": "ちば えいこう",
       "faction": "市民クラブ",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3535.html",
+      "terms": 2,
+      "role": null,
+      "birthDate": "1964-09-18",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会",
+        "議会運営委員会",
+        "議会広報特別委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 121,
       "links": {
         "website": "https://hideyuki.info/",
         "blog": null,
@@ -241,6 +328,16 @@
       "kana": "いたばし みほ",
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3538.html",
+      "terms": 3,
+      "role": null,
+      "birthDate": "1963-04-29",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会",
+        "議会運営委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 120,
       "links": {
         "website": null,
         "blog": null,
@@ -258,6 +355,15 @@
       "kana": "おおいずみ のりこ",
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3544.html",
+      "terms": 3,
+      "role": null,
+      "birthDate": "1965-05-14",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会",
+        "議会運営委員会"
+      ],
+      "speakerId": 112,
       "links": {
         "website": null,
         "blog": null,
@@ -275,6 +381,14 @@
       "kana": "すがわら かずこ",
       "faction": "公明名取",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3550.html",
+      "terms": 3,
+      "role": null,
+      "birthDate": "1960-10-31",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 115,
       "links": {
         "website": "https://www.komei.or.jp/km/natori-sugawara-kazuko/",
         "blog": null,
@@ -297,6 +411,14 @@
       "kana": "よしだ りょう",
       "faction": "名和会",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3553.html",
+      "terms": 3,
+      "role": null,
+      "birthDate": "1976-08-21",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 116,
       "links": {
         "website": "https://ryo-yoshida.com/",
         "blog": null,
@@ -326,6 +448,15 @@
       "kana": "おおとも やすのぶ",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/16937.html",
+      "terms": 4,
+      "role": null,
+      "birthDate": "1961-12-07",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会",
+        "議会広報特別委員会"
+      ],
+      "speakerId": 102,
       "links": {
         "website": null,
         "blog": null,
@@ -343,6 +474,14 @@
       "kana": "ちょうなん よしひこ",
       "faction": "市民クラブ",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3536.html",
+      "terms": 5,
+      "role": null,
+      "birthDate": "1953-12-09",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 111,
       "links": {
         "website": null,
         "blog": null,
@@ -360,6 +499,16 @@
       "kana": "きくち しのぶ",
       "faction": "公明名取",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3540.html",
+      "terms": 6,
+      "role": null,
+      "birthDate": "1964-10-15",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会",
+        "議会運営委員会",
+        "議会ＩＣＴ特別委員会"
+      ],
+      "speakerId": 104,
       "links": {
         "website": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/",
         "blog": null,
@@ -389,6 +538,14 @@
       "kana": "おのでら みほ",
       "faction": "日本共産党議員団",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3543.html",
+      "terms": 7,
+      "role": null,
+      "birthDate": "1960-09-27",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 103,
       "links": {
         "website": null,
         "blog": null,
@@ -413,6 +570,14 @@
       "kana": "ごうない りょうじ",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3537.html",
+      "terms": 7,
+      "role": null,
+      "birthDate": "1951-05-23",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 105,
       "links": {
         "website": null,
         "blog": null,
@@ -430,6 +595,14 @@
       "kana": "やまだ りゅうたろう",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3552.html",
+      "terms": 7,
+      "role": null,
+      "birthDate": "1952-02-27",
+      "committees": [
+        "民生教育常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 110,
       "links": {
         "website": null,
         "blog": null,
@@ -447,6 +620,14 @@
       "kana": "くまがい かつひこ",
       "faction": "青雲倶楽部",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3541.html",
+      "terms": 2,
+      "role": "副議長",
+      "birthDate": "1956-11-30",
+      "committees": [
+        "総務消防常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 119,
       "links": {
         "website": null,
         "blog": null,
@@ -464,6 +645,14 @@
       "kana": "おおくぼ ちから",
       "faction": "市民クラブ",
       "officialPage": "https://www.city.natori.miyagi.jp/page/3545.html",
+      "terms": 3,
+      "role": "議長",
+      "birthDate": "1959-04-02",
+      "committees": [
+        "建設経済常任委員会",
+        "財務常任委員会"
+      ],
+      "speakerId": 113,
       "links": {
         "website": null,
         "blog": null,

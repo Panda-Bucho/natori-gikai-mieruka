@@ -16,6 +16,7 @@
     <nav class="site-nav">
       <a href="index.html" class="active">議員一覧</a>
       <a href="stats.html">月別発信回数</a>
+      <a href="questions.html">一般質問</a>
     </nav>
   </header>
 
@@ -29,11 +30,14 @@
             <tr>
               <th data-sort="name">氏名</th>
               <th data-sort="faction">会派</th>
+              <th data-sort="age">年齢</th>
+              <th data-sort="terms">期数</th>
+              <th data-sort="committee">常任委員会</th>
               <th data-sort="media">発信媒体</th>
             </tr>
           </thead>
           <tbody id="member-table-body">
-            <tr><td colspan="3">読み込み中…</td></tr>
+            <tr><td colspan="6">読み込み中…</td></tr>
           </tbody>
         </table>
       </div>
@@ -42,7 +46,8 @@
     <section class="card notes">
       <h2>このサイトについて</h2>
       <ul>
-        <li>議員名をクリックすると、名取市議会公式サイトの議員紹介ページが開きます。</li>
+        <li>議員名をクリックすると、名取市議会公式サイトの議員紹介ページが開きます。行のその他の部分をクリックすると、全所属委員会・生年月日などの詳細が開きます。</li>
+        <li>年齢・期数・委員会・役職は名取市議会公式サイトの各議員紹介ページ(本人申告に基づく掲載、令和8年6月時点)によります。年齢は生年月日から自動計算しています。</li>
         <li>発信頻度の参考データ(ブログ・公式サイト等、RSSで自動取得できる媒体のみが対象)は<a href="stats.html">「月別発信回数」ページ</a>をご覧ください。X(旧Twitter)・Instagram・FacebookなどはRSS取得に対応していないため集計対象外です。</li>
         <li>掲載している媒体は、プロフィール等で本人のものと確認できたもののみです。媒体をお持ちなのに掲載されていない場合や誤りがある場合は、リポジトリのIssue等でお知らせください。</li>
         <li>本サイトは特定の議員・会派を支持または批判するものではなく、公開情報の整理を目的とした非公式サイトです。</li>
