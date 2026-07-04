@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T07:02:00+09:00",
+  "generatedAt": "2026-07-05T06:53:35+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -10118,16 +10118,5 @@
       "posts": []
     }
   },
-  "errors": [
-    {
-      "memberId": "chiba-eiko",
-      "feedUrl": "https://hideyuki.info/feed/",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='hideyuki.info', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='hideyuki.info', port=443) at 0x7f9d198b22a0>, 'Connection to hideyuki.info timed out. (connect timeout=20)'))"
-    },
-    {
-      "memberId": "yoshida-ryo",
-      "feedUrl": "https://ryo-yoshida.com/feed/",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='ryo-yoshida.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='ryo-yoshida.com', port=443) at 0x7f9d19c87650>, 'Connection to ryo-yoshida.com timed out. (connect timeout=20)'))"
-    }
-  ]
+  "errors": []
 }
