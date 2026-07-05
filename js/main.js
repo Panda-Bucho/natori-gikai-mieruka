@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     buildRows(members);
     renderTable();
     renderSummary(members);
+    renderCountdown();
     setupSorting();
   } catch (e) {
     document.getElementById("member-table-body").innerHTML =
@@ -112,6 +113,31 @@ function renderTable() {
       if (detail) detail.classList.toggle("open");
     });
   });
+}
+
+/* 任期満了・次回選挙(推測)までの残りを表示 */
+function renderCountdown() {
+  const set = (id, subId, remaining, doneText, subText) => {
+    const el = document.getElementById(id);
+    const sub = document.getElementById(subId);
+    if (!el) return;
+    el.textContent = remaining || doneText;
+    if (sub) sub.textContent = subText;
+  };
+  set(
+    "term-remaining",
+    "term-remaining-sub",
+    humanizeUntil(TERM_END_DATE),
+    "任期満了(改選期)",
+    `${formatDateJa(TERM_END_DATE)} 満了`
+  );
+  set(
+    "election-remaining",
+    "election-remaining-sub",
+    humanizeUntil(NEXT_ELECTION_ESTIMATE),
+    "まもなく改選",
+    "2028年1月下旬 見込み"
+  );
 }
 
 function renderSummary(members) {

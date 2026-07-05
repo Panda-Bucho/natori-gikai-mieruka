@@ -87,6 +87,22 @@ function freshnessClass(dateStr) {
 const TERM_START = "2024-02";
 const ELECTION_MONTHS = { "2020-01": "市議選", "2024-01": "市議選", "2028-01": "市議選" };
 
+/* 任期満了(任期開始2024-02-01+4年)と、次回選挙の推測日(前回2024-01-21+4年) */
+const TERM_END_DATE = "2028-01-31";
+const NEXT_ELECTION_ESTIMATE = "2028-01-21";
+
+/* dateStr までの残りを「約N年Mか月」で返す(過ぎていれば null) */
+function humanizeUntil(dateStr) {
+  const days = -daysAgo(dateStr);
+  if (days == null || days < 0) return null;
+  const months = Math.round(days / 30.44);
+  if (months < 1) return `あと約${days}日`;
+  if (months < 12) return `あと約${months}か月`;
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  return m ? `あと約${y}年${m}か月` : `あと約${y}年`;
+}
+
 /* "YYYY-MM" 形式の月キー */
 function monthKey(year, month) {
   return `${year}-${String(month).padStart(2, "0")}`;

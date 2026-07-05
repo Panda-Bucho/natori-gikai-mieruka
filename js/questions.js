@@ -303,7 +303,10 @@ function renderCharts() {
         layout: { padding: { right: 70 } },
         plugins: {
           legend: { display: false },
-          tooltip: { callbacks: { label: (c) => `${c.raw.name}: ${c.raw.y}回` } },
+          tooltip: {
+            usePointStyle: true, // スウォッチを点の形(丸/四角)に合わせる
+            callbacks: { label: (c) => `${c.raw.name}: ${c.raw.y}回` },
+          },
         },
         scales: {
           x: {
@@ -372,6 +375,9 @@ function extractWords(entries) {
   return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 80);
 }
 
+let wcState = { list: [], max: 1, memberId: "all" }; // 現在のクラウド(検索ハイライト用に保持)
+
+/* 議員を選んでワードクラウドを描き直す(list/max を再計算) */
 function renderWordcloud(memberId) {
   if (typeof WordCloud === "undefined") return;
   const canvas = document.getElementById("wordcloud");
@@ -383,33 +389,58 @@ function renderWordcloud(memberId) {
       ? matrixEntries.flatMap((t) => t.entries)
       : (matrixEntries.find((t) => t.member.id === memberId) || { entries: [] }).entries;
   const list = extractWords(source);
-  const ctx = canvas.getContext("2d");
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  wcState = { list, max: list.length ? list[0][1] : 1, memberId };
   if (!list.length) {
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.font = "14px sans-serif";
     ctx.fillStyle = "#67766f";
     ctx.fillText("この期間の一般質問データがありません。", 20, 40);
-    return;
   }
-  const max = list[0][1];
+  paintWordcloud();
+}
+
+/* wcState.list を使って描画(検索語があれば一致語をハイライト)。レイアウトは決定的なので保たれる */
+function paintWordcloud() {
+  if (typeof WordCloud === "undefined") return;
+  const { list, max } = wcState;
+  if (!list.length) return;
+  const canvas = document.getElementById("wordcloud");
+  const query = (document.getElementById("wc-search")?.value || "").trim();
   // 画面幅が狭いときは最大フォントを抑えて長い語が描画から漏れないようにする
   const span = max === 1 ? 12 : Math.min(42, Math.max(20, canvas.width / 12));
+  const greenRamp = (weight) =>
+    weight / max > 0.6 ? "#115243" : weight / max > 0.3 ? "#1a735b" : "#4fae8e";
   WordCloud(canvas, {
     list,
     gridSize: 10,
     weightFactor: (count) => 13 + Math.sqrt(count / max) * span,
     fontFamily: '"Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo, sans-serif',
-    color: (word, weight) =>
-      weight / max > 0.6 ? "#115243" : weight / max > 0.3 ? "#1a735b" : "#4fae8e",
+    color: (word, weight) => {
+      if (!query) return greenRamp(weight);
+      return word.includes(query) ? "#d85a30" : "#c2cfc9";
+    },
     rotateRatio: 0.3,
     rotationSteps: 2,
     backgroundColor: "rgba(0,0,0,0)",
     drawOutOfBound: false,
     shuffle: false,
   });
+  updateSearchInfo(query);
 }
 
-function setupWordcloud(memberId) {
+function updateSearchInfo(query) {
+  const info = document.getElementById("wc-search-info");
+  if (!info) return;
+  if (!query) {
+    info.textContent = "";
+    return;
+  }
+  const hits = wcState.list.filter(([w]) => w.includes(query)).length;
+  info.textContent = hits ? `「${query}」を含む語: ${hits}件` : `「${query}」に一致する語はありません`;
+}
+
+function setupWordcloud() {
   const sel = document.getElementById("wc-member");
   if (!sel) return;
   sel.innerHTML =
@@ -418,5 +449,7 @@ function setupWordcloud(memberId) {
       .map((t) => `<option value="${escapeHtml(t.member.id)}">${escapeHtml(t.member.name)}</option>`)
       .join("");
   sel.addEventListener("change", () => renderWordcloud(sel.value));
+  const search = document.getElementById("wc-search");
+  if (search) search.addEventListener("input", paintWordcloud);
   renderWordcloud("all");
 }

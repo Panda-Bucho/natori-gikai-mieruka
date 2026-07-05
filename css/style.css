@@ -278,6 +278,36 @@ table.matrix {
 .q-entry ul { margin: 0; padding-left: 1.3rem; }
 .q-entry li { margin-bottom: 0.1rem; }
 
+/* ---------- 任期カウントダウン ---------- */
+.term-countdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 2.4rem;
+}
+.tc-item { display: flex; flex-direction: column; }
+.tc-label { font-size: 0.82rem; color: var(--muted); }
+.tc-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.25;
+}
+.tc-sub { font-size: 0.78rem; color: var(--muted); }
+.tc-badge {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--stale);
+  background: #fbe9e5;
+  border-radius: 4px;
+  padding: 0 0.35rem;
+  margin-left: 0.35rem;
+  vertical-align: 1px;
+}
+
+#wc-search { max-width: 220px; }
+#wc-search-info { font-size: 0.8rem; color: var(--muted); }
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
