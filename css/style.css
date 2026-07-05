@@ -113,13 +113,13 @@ table.member-table {
 .member-table thead th[data-dir="desc"]::after { content: " ▼"; font-size: 0.7em; }
 
 .cell-name .name { display: block; font-weight: 700; white-space: nowrap; }
-.cell-name .name-link {
+.name-link {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: #b9cdc6;
   text-underline-offset: 3px;
 }
-.cell-name .name-link:hover { color: var(--primary); text-decoration-color: var(--primary); }
+.name-link:hover { color: var(--primary); text-decoration-color: var(--primary); }
 .cell-name .kana { display: block; font-size: 0.72rem; color: var(--muted); }
 .cell-faction { white-space: nowrap; font-size: 0.85rem; }
 
@@ -214,6 +214,7 @@ table.matrix {
 }
 
 /* ---------- 一般質問 ---------- */
+#q-matrix-wrap { overflow-x: auto; }
 .q-matrix td { min-width: 40px; }
 .q-yes a {
   color: var(--primary);

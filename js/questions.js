@@ -103,7 +103,10 @@ function nameWithRole(m) {
   for (const [role, periods] of former) {
     badges += ` <span class="role-badge former" title="在任期間: ${escapeHtml(periods.join("、"))}">前${escapeHtml(role)}</span>`;
   }
-  return `${escapeHtml(m.name)}${badges}`;
+  const nameHtml = m.officialPage
+    ? `<a class="name-link" href="${escapeHtml(m.officialPage)}" target="_blank" rel="noopener noreferrer" title="名取市議会 公式プロフィールを開く">${escapeHtml(m.name)}</a>`
+    : escapeHtml(m.name);
+  return `${nameHtml}${badges}`;
 }
 
 function renderMatrix(termEntries) {
