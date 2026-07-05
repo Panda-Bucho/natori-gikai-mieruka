@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // RSS集計対象(フィード登録あり)の議員のみ
     tracked = members.members
       .filter((m) => (m.feeds || []).length > 0)
+      .sort((a, b) => (a.seatNo ?? 999) - (b.seatNo ?? 999))
       .map((m) => ({
         member: m,
         counts: countByMonth((posts.members[m.id] || {}).posts),
@@ -129,7 +130,7 @@ function renderMatrix() {
         return `<td class="heat" style="background: rgba(26, 115, 91, ${alpha.toFixed(2)});${c / max > 0.55 ? " color:#fff;" : ""}">${c || ""}</td>`;
       })
       .join("");
-    return `<tr><th class="sticky-col row-name">${escapeHtml(t.member.name)}</th>${cells}<td class="total">${total}</td></tr>`;
+    return `<tr><th class="sticky-col row-name"><span class="seat-no">${t.member.seatNo ?? "—"}</span>${escapeHtml(t.member.name)}</th>${cells}<td class="total">${total}</td></tr>`;
   });
 
   // 月ごとの合計行

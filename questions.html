@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>一般質問 | 名取市議会議員 見える化</title>
   <meta name="description" content="宮城県名取市の市議会議員の一般質問(本会議)の登壇状況と質問テーマの一覧です。">
-  <link rel="stylesheet" href="css/style.css?v=20260705d">
+  <link rel="stylesheet" href="css/style.css?v=20260706a">
 </head>
 <body>
   <header class="site-header">
@@ -54,7 +54,7 @@
 
     <section class="card">
       <h2>質問テーマのワードクラウド(直近5年)</h2>
-      <p class="lead">一般質問のテーマに登場する語句を、出現回数が多いほど大きく表示します。議員を切り替えると、その議員がどんな分野に関心を持って質問しているかが見えます。</p>
+      <p class="lead">一般質問のテーマに登場する語句を、出現回数が多いほど大きく表示します。議員を切り替えると、その議員がどんな分野に関心を持って質問しているかが見えます。語句にマウスを重ねると、その語で質問した議員と映像へのリンクが表示されます。</p>
       <div class="chart-controls">
         <label for="wc-member">議員:</label>
         <select id="wc-member"></select>
@@ -69,6 +69,11 @@
     <section class="card">
       <h2>質問テーマ一覧(直近5年)</h2>
       <p class="lead">議員名をクリックすると、定例会ごとの質問テーマが開きます。</p>
+      <div class="chart-controls">
+        <label for="topics-search">検索:</label>
+        <input type="search" id="topics-search" placeholder="テーマ・議員名で絞り込み(例: 防災)">
+        <span id="topics-search-info"></span>
+      </div>
       <div id="q-topics-wrap">読み込み中…</div>
     </section>
 
@@ -94,7 +99,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.3/src/wordcloud2.min.js"></script>
-  <script src="js/common.js?v=20260705d"></script>
-  <script src="js/questions.js?v=20260705d"></script>
+  <script src="js/common.js?v=20260706a"></script>
+  <script src="js/questions.js?v=20260706a"></script>
 </body>
 </html>

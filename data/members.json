@@ -11,6 +11,7 @@
   "members": [
     {
       "id": "abe-masayoshi",
+      "seatNo": 1,
       "name": "阿部 正義",
       "kana": "あべ まさよし",
       "faction": "公明名取",
@@ -55,6 +56,7 @@
     },
     {
       "id": "konno-shinsuke",
+      "seatNo": 2,
       "name": "今野 慎介",
       "kana": "こんの しんすけ",
       "faction": "名取維新",
@@ -113,6 +115,7 @@
     },
     {
       "id": "sato-sayaka",
+      "seatNo": 3,
       "name": "佐藤 さやか",
       "kana": "さとう さやか",
       "faction": "名取医療福祉会",
@@ -172,6 +175,7 @@
     },
     {
       "id": "sato-shigeki",
+      "seatNo": 4,
       "name": "佐藤 繁樹",
       "kana": "さとう しげき",
       "faction": "青雲倶楽部",
@@ -204,6 +208,7 @@
     },
     {
       "id": "suzuki-hidenobu",
+      "seatNo": 5,
       "name": "鈴木 英信",
       "kana": "すずき ひでのぶ",
       "faction": "青雲倶楽部",
@@ -242,6 +247,7 @@
     },
     {
       "id": "terashima-masako",
+      "seatNo": 6,
       "name": "寺嶋 雅子",
       "kana": "てらしま まさこ",
       "faction": "青雲倶楽部",
@@ -280,6 +286,7 @@
     },
     {
       "id": "nikaido-mitsuru",
+      "seatNo": 7,
       "name": "二階堂 充",
       "kana": "にかいどう みつる",
       "faction": "名和会",
@@ -312,6 +319,7 @@
     },
     {
       "id": "sasamori-nami",
+      "seatNo": 9,
       "name": "笹森 波",
       "kana": "ささもり なみ",
       "faction": "日本共産党議員団",
@@ -346,6 +354,7 @@
     },
     {
       "id": "chiba-eiko",
+      "seatNo": 10,
       "name": "千葉 栄幸",
       "kana": "ちば えいこう",
       "faction": "市民クラブ",
@@ -385,6 +394,7 @@
     },
     {
       "id": "itabashi-miho",
+      "seatNo": 11,
       "name": "板橋 美保",
       "kana": "いたばし みほ",
       "faction": "名和会",
@@ -418,6 +428,7 @@
     },
     {
       "id": "oizumi-noriko",
+      "seatNo": 20,
       "name": "大泉 徳子",
       "kana": "おおいずみ のりこ",
       "faction": "名和会",
@@ -461,6 +472,7 @@
     },
     {
       "id": "sugawara-kazuko",
+      "seatNo": 13,
       "name": "菅原 和子",
       "kana": "すがわら かずこ",
       "faction": "公明名取",
@@ -503,6 +515,7 @@
     },
     {
       "id": "yoshida-ryo",
+      "seatNo": 14,
       "name": "吉田 良",
       "kana": "よしだ りょう",
       "faction": "名和会",
@@ -546,6 +559,7 @@
     },
     {
       "id": "otomo-yasunobu",
+      "seatNo": 15,
       "name": "大友 康信",
       "kana": "おおとも やすのぶ",
       "faction": "青雲倶楽部",
@@ -578,6 +592,7 @@
     },
     {
       "id": "chonan-yoshihiko",
+      "seatNo": 21,
       "name": "長南 良彦",
       "kana": "ちょうなん よしひこ",
       "faction": "市民クラブ",
@@ -620,6 +635,7 @@
     },
     {
       "id": "kikuchi-shinobu",
+      "seatNo": 16,
       "name": "菊地 忍",
       "kana": "きくち しのぶ",
       "faction": "公明名取",
@@ -671,6 +687,7 @@
     },
     {
       "id": "onodera-miho",
+      "seatNo": 17,
       "name": "小野寺 美穂",
       "kana": "おのでら みほ",
       "faction": "日本共産党議員団",
@@ -709,6 +726,7 @@
     },
     {
       "id": "gonai-ryoji",
+      "seatNo": 18,
       "name": "郷内 良治",
       "kana": "ごうない りょうじ",
       "faction": "青雲倶楽部",
@@ -740,6 +758,7 @@
     },
     {
       "id": "yamada-ryutaro",
+      "seatNo": 19,
       "name": "山田 龍太郎",
       "kana": "やまだ りゅうたろう",
       "faction": "青雲倶楽部",
@@ -771,6 +790,7 @@
     },
     {
       "id": "kumagai-katsuhiko",
+      "seatNo": 8,
       "name": "熊谷 克彦",
       "kana": "くまがい かつひこ",
       "faction": "青雲倶楽部",
@@ -808,6 +828,7 @@
     },
     {
       "id": "okubo-chikara",
+      "seatNo": 12,
       "name": "大久保 主計",
       "kana": "おおくぼ ちから",
       "faction": "市民クラブ",

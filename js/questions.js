@@ -37,11 +37,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         share: m.lastElection ? m.lastElection.share : null,
       };
     });
+    // 既定は議席番号順(公式の中立な並び)
+    matrixEntries.sort((a, b) => (a.member.seatNo ?? 999) - (b.member.seatNo ?? 999));
 
     renderMatrix();
     renderCharts();
     setupWordcloud();
     renderTopics(matrixEntries);
+    setupTopicsSearch();
     renderGeneratedAt(questions);
   } catch (e) {
     document.getElementById("q-matrix-wrap").innerHTML =
@@ -183,9 +186,10 @@ function renderMatrix() {
         return '<td class="q-none"></td>';
       })
       .join("");
-    const votesTd = t.votes != null ? t.votes.toLocaleString() : "—";
-    const shareTd = t.share != null ? t.share.toFixed(2) + "%" : "—";
-    return `<tr><th class="sticky-col row-name">${nameWithRole(m)}</th><td class="q-terms">${m.terms ?? "—"}</td>${cells}<td class="total">${t.termCount}</td><td class="total">${t.entries.length}</td><td class="total">${votesTd}</td><td class="total">${shareTd}</td></tr>`;
+    const votesTd = formatVotesHtml(t.votes);
+    const shareTd = formatShareHtml(t.share);
+    const seat = `<span class="seat-no">${m.seatNo ?? "—"}</span>`;
+    return `<tr><th class="sticky-col row-name">${seat}${nameWithRole(m)}</th><td class="q-terms">${m.terms ?? "—"}</td>${cells}<td class="total">${t.termCount}</td><td class="total">${t.entries.length}</td><td class="total">${votesTd}</td><td class="total">${shareTd}</td></tr>`;
   });
 
   wrap.innerHTML = `<table class="matrix q-matrix"><thead>${head}</thead><tbody>${rows.join("")}</tbody></table>`;
@@ -220,12 +224,34 @@ function renderTopics(termEntries) {
           </div>`;
         })
         .join("");
-      return `<details class="q-member">
-        <summary>${nameWithRole(t.member)} <span class="q-count">${t.entries.length} 回</span></summary>
+      const seat = `<span class="seat-no">${t.member.seatNo ?? "—"}</span>`;
+      const haystack = [t.member.name, t.member.kana, ...t.entries.flatMap((e) => e.topics)]
+        .join(" ")
+        .toLowerCase();
+      return `<details class="q-member" data-search="${escapeHtml(haystack)}">
+        <summary>${seat}${nameWithRole(t.member)} <span class="q-count">${t.entries.length} 回</span></summary>
         ${items || '<p class="q-entry">直近5年の一般質問はありません。</p>'}
       </details>`;
     })
     .join("");
+}
+
+/* 質問テーマ一覧のインクリメンタル検索(議員名・テーマで絞り込み) */
+function setupTopicsSearch() {
+  const input = document.getElementById("topics-search");
+  if (!input) return;
+  input.addEventListener("input", () => {
+    const q = input.value.trim().toLowerCase();
+    const info = document.getElementById("topics-search-info");
+    let shown = 0;
+    document.querySelectorAll("#q-topics-wrap details.q-member").forEach((d) => {
+      const match = !q || (d.dataset.search || "").includes(q);
+      d.hidden = !match;
+      d.open = Boolean(q) && match; // 検索中は該当を開く
+      if (match) shown++;
+    });
+    if (info) info.textContent = q ? `${shown}名が一致` : "";
+  });
 }
 
 /* ---------- 相関グラフ ---------- */
@@ -353,43 +379,64 @@ const WC_COMPOUNDS = [
   ["子どもの居場所", "子どもの居場所"],
 ];
 
-/* 質問テーマ文から語句を抽出して頻度順に返す */
-function extractWords(entries) {
+/* 質問テーマ文から語句を抽出して頻度順のリストと、語→登壇の索引を返す */
+function buildCloud(items) {
   const counts = new Map();
-  for (const e of entries) {
-    for (const t of e.topics || []) {
+  const index = new Map(); // 語 -> [{memberName, seatNo, url, assembly, date}]
+  const wordRe = /[一-龥ヶ]{2,8}|[ァ-ヴー]{3,}|[A-Za-z0-9]{2,}/g;
+  for (const { member, entry } of items) {
+    for (const t of entry.topics || []) {
       let s = t.replace(/について.*$/, "");
+      const inThisTopic = new Set();
       for (const [pat, token] of WC_COMPOUNDS) {
         const n = s.split(pat).length - 1;
         if (n > 0) {
           counts.set(token, (counts.get(token) || 0) + n);
           s = s.split(pat).join(" ");
+          inThisTopic.add(token);
         }
       }
-      for (const w of s.match(/[一-龥ヶ]{2,8}|[ァ-ヴー]{3,}|[A-Za-z0-9]{2,}/g) || []) {
+      for (const w of s.match(wordRe) || []) {
         if (WC_STOP.has(w)) continue;
         counts.set(w, (counts.get(w) || 0) + 1);
+        inThisTopic.add(w);
+      }
+      for (const w of inThisTopic) {
+        if (!index.has(w)) index.set(w, []);
+        index.get(w).push({
+          memberName: member.name,
+          seatNo: member.seatNo,
+          url: entry.url,
+          assembly: entry.assembly,
+          date: entry.date,
+        });
       }
     }
   }
-  return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 80);
+  const list = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 80);
+  return { list, index };
 }
 
-let wcState = { list: [], max: 1, memberId: "all" }; // 現在のクラウド(検索ハイライト用に保持)
+let wcState = { list: [], max: 1, index: new Map(), memberId: "all" };
 
-/* 議員を選んでワードクラウドを描き直す(list/max を再計算) */
+function cloudItems(memberId) {
+  if (memberId === "all") {
+    return matrixEntries.flatMap((t) => t.entries.map((e) => ({ member: t.member, entry: e })));
+  }
+  const t = matrixEntries.find((x) => x.member.id === memberId);
+  return t ? t.entries.map((e) => ({ member: t.member, entry: e })) : [];
+}
+
+/* 議員を選んでワードクラウドを描き直す(list/index を再計算) */
 function renderWordcloud(memberId) {
   if (typeof WordCloud === "undefined") return;
   const canvas = document.getElementById("wordcloud");
   const wrap = document.getElementById("wordcloud-wrap");
   canvas.width = wrap.clientWidth || 800;
   canvas.height = 320;
-  const source =
-    memberId === "all"
-      ? matrixEntries.flatMap((t) => t.entries)
-      : (matrixEntries.find((t) => t.member.id === memberId) || { entries: [] }).entries;
-  const list = extractWords(source);
-  wcState = { list, max: list.length ? list[0][1] : 1, memberId };
+  hideWcPopup();
+  const { list, index } = buildCloud(cloudItems(memberId));
+  wcState = { list, max: list.length ? list[0][1] : 1, index, memberId };
   if (!list.length) {
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -425,8 +472,71 @@ function paintWordcloud() {
     backgroundColor: "rgba(0,0,0,0)",
     drawOutOfBound: false,
     shuffle: false,
+    hover: (item, dim, ev) => {
+      if (item) showWcPopup(item[0], ev);
+      else scheduleHideWcPopup();
+    },
   });
   updateSearchInfo(query);
+}
+
+/* ---------- ワードクラウドのホバーポップアップ(どの議員が質問したか+映像リンク) ---------- */
+
+let wcPopupTimer = null;
+
+function ensureWcPopup() {
+  let p = document.getElementById("wc-popup");
+  if (!p) {
+    p = document.createElement("div");
+    p.id = "wc-popup";
+    p.addEventListener("mouseenter", () => {
+      if (wcPopupTimer) clearTimeout(wcPopupTimer);
+    });
+    p.addEventListener("mouseleave", hideWcPopup);
+    document.getElementById("wordcloud-wrap").appendChild(p);
+  }
+  return p;
+}
+
+function showWcPopup(word, ev) {
+  if (wcPopupTimer) clearTimeout(wcPopupTimer);
+  const raw = wcState.index.get(word) || [];
+  const seen = new Set();
+  const rows = [];
+  for (const r of raw) {
+    const k = `${r.memberName}|${r.url}`;
+    if (seen.has(k)) continue;
+    seen.add(k);
+    rows.push(r);
+  }
+  if (!rows.length) return;
+  const p = ensureWcPopup();
+  p.innerHTML =
+    `<p class="wc-pop-word">${escapeHtml(word)}(${rows.length}件)</p>` +
+    `<ul>${rows
+      .map(
+        (r) =>
+          `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(
+            r.memberName
+          )} — ${escapeHtml(shortAssembly(r.assembly))}(${escapeHtml(formatDateJa(r.date))})</a></li>`
+      )
+      .join("")}</ul>`;
+  const wrap = document.getElementById("wordcloud-wrap");
+  const x = ev && ev.offsetX != null ? ev.offsetX : 20;
+  const y = ev && ev.offsetY != null ? ev.offsetY : 20;
+  p.style.left = `${Math.max(0, Math.min(x + 12, wrap.clientWidth - 210))}px`;
+  p.style.top = `${y + 12}px`;
+  p.classList.add("show");
+}
+
+function scheduleHideWcPopup() {
+  if (wcPopupTimer) clearTimeout(wcPopupTimer);
+  wcPopupTimer = setTimeout(hideWcPopup, 350);
+}
+
+function hideWcPopup() {
+  const p = document.getElementById("wc-popup");
+  if (p) p.classList.remove("show");
 }
 
 function updateSearchInfo(query) {

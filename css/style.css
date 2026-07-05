@@ -308,6 +308,48 @@ table.matrix {
 #wc-search { max-width: 220px; }
 #wc-search-info { font-size: 0.8rem; color: var(--muted); }
 
+/* 得票数・得票率の小数部を小さく */
+.frac { font-size: 0.72em; opacity: 0.72; }
+
+/* 議席番号 */
+.cell-seat { color: var(--muted); }
+.seat-no {
+  display: inline-block;
+  min-width: 1.6em;
+  margin-right: 0.35rem;
+  padding: 0 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background: #eef3f1;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* ワードクラウドのホバーポップアップ */
+#wordcloud-wrap { position: relative; }
+#wc-popup {
+  position: absolute;
+  z-index: 10;
+  max-width: 300px;
+  max-height: 220px;
+  overflow-y: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.8rem;
+  display: none;
+}
+#wc-popup.show { display: block; }
+#wc-popup .wc-pop-word { font-weight: 700; margin: 0 0 0.3rem; }
+#wc-popup ul { margin: 0; padding-left: 0; list-style: none; }
+#wc-popup li { margin-bottom: 0.2rem; }
+#wc-popup a { color: var(--primary); }
+
+#topics-search { max-width: 260px; }
+#topics-search-info { font-size: 0.8rem; color: var(--muted); margin-left: 0.4rem; }
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;

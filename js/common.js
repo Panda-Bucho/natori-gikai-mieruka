@@ -87,9 +87,8 @@ function freshnessClass(dateStr) {
 const TERM_START = "2024-02";
 const ELECTION_MONTHS = { "2020-01": "市議選", "2024-01": "市議選", "2028-01": "市議選" };
 
-/* 任期満了(任期開始2024-02-01+4年)と、次回選挙の推測日(前回2024-01-21+4年) */
+/* 任期満了(任期開始2024-02-01+4年) */
 const TERM_END_DATE = "2028-01-31";
-const NEXT_ELECTION_ESTIMATE = "2028-01-21";
 
 /* dateStr までの残りを「約N年Mか月」で返す(過ぎていれば null) */
 function humanizeUntil(dateStr) {
@@ -146,6 +145,22 @@ function countByMonth(posts) {
     counts[key] = (counts[key] || 0) + 1;
   }
   return counts;
+}
+
+/* 得票数を「整数部 + 小さな小数部」のHTMLで返す(端数は丸めず保持) */
+function formatVotesHtml(v) {
+  if (v == null) return "—";
+  const s = v.toLocaleString("ja-JP", { maximumFractionDigits: 3 });
+  const dot = s.indexOf(".");
+  return dot < 0 ? s : `${s.slice(0, dot)}<span class="frac">${s.slice(dot)}</span>`;
+}
+
+/* 得票率を「整数部 + 小さな小数部 + %」のHTMLで返す */
+function formatShareHtml(v) {
+  if (v == null) return "—";
+  const s = v.toFixed(2);
+  const dot = s.indexOf(".");
+  return `${s.slice(0, dot)}<span class="frac">${s.slice(dot)}</span>%`;
 }
 
 function escapeHtml(s) {
