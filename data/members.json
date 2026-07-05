@@ -1,6 +1,13 @@
 {
   "asOf": "2026-07-04",
   "source": "名取市議会議員名簿・会派別名簿・各議員紹介ページ(名取市公式、令和8年6月時点) https://www.city.natori.miyagi.jp/site/gikai/3533.html",
+  "election": {
+    "name": "名取市議会議員一般選挙",
+    "date": "2024-01-21",
+    "validVotes": 22775,
+    "turnout": 35.55,
+    "source": "https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf"
+  },
   "members": [
     {
       "id": "abe-masayoshi",
@@ -10,6 +17,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3539.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 799.0,
+        "share": 3.51
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1983-09-30",
@@ -50,6 +61,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3542.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 832.0,
+        "share": 3.65
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1973-01-15",
@@ -104,6 +119,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3546.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 1035.464,
+        "share": 4.55
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1988-06-18",
@@ -159,6 +178,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3547.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 727.326,
+        "share": 3.19
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1973-02-10",
@@ -187,6 +210,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3551.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 1292.0,
+        "share": 5.67
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1963-12-23",
@@ -221,6 +248,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3549.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 1562.0,
+        "share": 6.86
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1980-08-16",
@@ -255,6 +286,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/16926.html",
       "terms": 1,
       "memberSince": "2024-02-01",
+      "lastElection": {
+        "votes": 1128.0,
+        "share": 4.95
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1975-03-26",
@@ -283,6 +318,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3548.html",
       "terms": 2,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 809.0,
+        "share": 3.55
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1972-06-13",
@@ -313,6 +352,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3535.html",
       "terms": 2,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 1152.0,
+        "share": 5.06
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1964-09-18",
@@ -348,6 +391,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3538.html",
       "terms": 3,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 648.381,
+        "share": 2.85
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1963-04-29",
@@ -377,6 +424,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3544.html",
       "terms": 3,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 1170.0,
+        "share": 5.14
+      },
       "role": null,
       "roleHistory": [
         {
@@ -416,6 +467,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3550.html",
       "terms": 3,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 990.0,
+        "share": 4.35
+      },
       "role": "監査委員",
       "roleHistory": [
         {
@@ -454,6 +509,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3553.html",
       "terms": 3,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 1515.0,
+        "share": 6.65
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1976-08-21",
@@ -493,6 +552,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/16937.html",
       "terms": 4,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 958.0,
+        "share": 4.21
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1961-12-07",
@@ -521,6 +584,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3536.html",
       "terms": 5,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 1087.0,
+        "share": 4.77
+      },
       "role": null,
       "roleHistory": [
         {
@@ -559,6 +626,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3540.html",
       "terms": 6,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 792.0,
+        "share": 3.48
+      },
       "role": null,
       "roleHistory": [
         {
@@ -606,6 +677,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3543.html",
       "terms": 7,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 1052.618,
+        "share": 4.62
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1960-09-27",
@@ -640,6 +715,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3537.html",
       "terms": 7,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 870.0,
+        "share": 3.82
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1951-05-23",
@@ -667,6 +746,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3552.html",
       "terms": 7,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 950.0,
+        "share": 4.17
+      },
       "role": null,
       "roleHistory": [],
       "birthDate": "1952-02-27",
@@ -694,6 +777,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3541.html",
       "terms": 2,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 1043.0,
+        "share": 4.58
+      },
       "role": "副議長",
       "roleHistory": [
         {
@@ -727,6 +814,10 @@
       "officialPage": "https://www.city.natori.miyagi.jp/page/3545.html",
       "terms": 3,
       "memberSince": "2020-02-01",
+      "lastElection": {
+        "votes": 745.0,
+        "share": 3.27
+      },
       "role": "議長",
       "roleHistory": [
         {

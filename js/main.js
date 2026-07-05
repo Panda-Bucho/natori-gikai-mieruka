@@ -41,6 +41,8 @@ function buildRows(members) {
     age: calcAge(m.birthDate),
     committee: standingCommittee(m),
     mediaCount: PLATFORM_ORDER.filter((p) => m.links[p]).length,
+    votes: m.lastElection ? m.lastElection.votes : null,
+    share: m.lastElection ? m.lastElection.share : null,
   }));
 }
 
@@ -73,10 +75,11 @@ function detailHtml(row) {
     roles.length ? `<dt>役職</dt><dd>${roles.join("、 ")}</dd>` : "",
     `<dt>所属委員会</dt><dd>${(m.committees || []).map(escapeHtml).join("、 ") || "—"}</dd>`,
     `<dt>生年月日</dt><dd>${m.birthDate ? formatDateJa(m.birthDate) + `(${row.age}歳)` : "—"}</dd>`,
+    row.votes != null ? `<dt>前回市議選</dt><dd>${row.votes.toLocaleString()}票(得票率 ${row.share.toFixed(2)}%)/ 2024年1月21日執行</dd>` : "",
     `<dt>発信媒体</dt><dd>${media}</dd>`,
     `<dt>公式情報</dt><dd><a href="${escapeHtml(m.officialPage)}" target="_blank" rel="noopener noreferrer">名取市議会 議員紹介ページ</a></dd>`,
   ].join("");
-  return `<tr class="detail-row" data-detail="${escapeHtml(m.id)}"><td colspan="6"><dl class="member-detail">${items}</dl></td></tr>`;
+  return `<tr class="detail-row" data-detail="${escapeHtml(m.id)}"><td colspan="8"><dl class="member-detail">${items}</dl></td></tr>`;
 }
 
 function renderTable() {
@@ -93,6 +96,8 @@ function renderTable() {
         <td class="cell-faction">${escapeHtml(m.faction)}</td>
         <td class="cell-num">${row.age ?? "—"}</td>
         <td class="cell-num">${m.terms ?? "—"}</td>
+        <td class="cell-num">${row.votes != null ? row.votes.toLocaleString() : "—"}</td>
+        <td class="cell-num">${row.share != null ? row.share.toFixed(2) + "%" : "—"}</td>
         <td class="cell-committee">${row.committee ? escapeHtml(row.committee.replace("常任委員会", "")) : "—"}</td>
         <td class="cell-media">${mediaIconsHtml(m)}</td>
       </tr>` + detailHtml(row);
@@ -143,6 +148,8 @@ function sortRows() {
       a.member.faction.localeCompare(b.member.faction, "ja") || a.index - b.index,
     age: (a, b) => (a.age ?? -1) - (b.age ?? -1) || a.index - b.index,
     terms: (a, b) => (a.member.terms ?? -1) - (b.member.terms ?? -1) || a.index - b.index,
+    votes: (a, b) => (a.votes ?? -1) - (b.votes ?? -1) || a.index - b.index,
+    share: (a, b) => (a.share ?? -1) - (b.share ?? -1) || a.index - b.index,
     committee: (a, b) =>
       (a.committee || "").localeCompare(b.committee || "", "ja") || a.index - b.index,
     media: (a, b) => a.mediaCount - b.mediaCount || a.index - b.index,

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>名取市議会議員 見える化 | Web発信と一般質問</title>
   <meta name="description" content="宮城県名取市の市議会議員のWeb発信状況(公式サイト・ブログ・SNS)と議会での一般質問の登壇状況を可視化する有権者向けサイトです。">
-  <link rel="stylesheet" href="css/style.css?v=20260705a">
+  <link rel="stylesheet" href="css/style.css?v=20260705b">
 </head>
 <body>
   <header class="site-header">
@@ -32,12 +32,14 @@
               <th data-sort="faction">会派</th>
               <th data-sort="age">年齢</th>
               <th data-sort="terms">期数</th>
+              <th data-sort="votes" title="前回市議選(2024年1月)の得票数">得票数</th>
+              <th data-sort="share" title="前回市議選(2024年1月)の得票率(有効投票数に対する割合)">得票率</th>
               <th data-sort="committee">常任委員会</th>
               <th data-sort="media">発信媒体</th>
             </tr>
           </thead>
           <tbody id="member-table-body">
-            <tr><td colspan="6">読み込み中…</td></tr>
+            <tr><td colspan="8">読み込み中…</td></tr>
           </tbody>
         </table>
       </div>
@@ -48,6 +50,7 @@
       <ul>
         <li>議員名をクリックすると、名取市議会公式サイトの議員紹介ページが開きます。行のその他の部分をクリックすると、全所属委員会・生年月日などの詳細が開きます。</li>
         <li>年齢・期数・委員会・役職は名取市議会公式サイトの各議員紹介ページ(本人申告に基づく掲載、令和8年6月時点)によります。年齢は生年月日から自動計算しています。</li>
+        <li>得票数・得票率は、2024年1月21日執行の名取市議会議員一般選挙の<a href="https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" target="_blank" rel="noopener noreferrer">開票結果(名取市選挙管理委員会)</a>によります。得票率は有効投票数22,775票に対する割合です。得票数の小数点以下は、氏名の一部が共通する複数候補への投票を得票数に応じて配分した「按分票」によるものです。</li>
         <li>発信頻度の参考データ(ブログ・公式サイト等、RSSで自動取得できる媒体のみが対象)は<a href="stats.html">「月別発信回数」ページ</a>をご覧ください。X(旧Twitter)・Instagram・FacebookなどはRSS取得に対応していないため集計対象外です。</li>
         <li>掲載している媒体は、プロフィール等で本人のものと確認できたもののみです。媒体をお持ちなのに掲載されていない場合や誤りがある場合は、リポジトリのIssue等でお知らせください。</li>
         <li>本サイトは特定の議員・会派を支持または批判するものではなく、公開情報の整理を目的とした非公式サイトです。</li>
@@ -61,7 +64,7 @@
     </div>
   </footer>
 
-  <script src="js/common.js?v=20260705a"></script>
-  <script src="js/main.js?v=20260705a"></script>
+  <script src="js/common.js?v=20260705b"></script>
+  <script src="js/main.js?v=20260705b"></script>
 </body>
 </html>

@@ -216,6 +216,13 @@ table.matrix {
 /* ---------- 一般質問 ---------- */
 #q-matrix-wrap { overflow-x: auto; }
 .q-matrix td { min-width: 40px; }
+.q-matrix thead th[data-sort] {
+  cursor: pointer;
+  user-select: none;
+}
+.q-matrix thead th[data-sort]:hover { background: #e2ebe7; }
+.q-matrix thead th[data-dir="asc"]::after { content: " ▲"; font-size: 0.7em; }
+.q-matrix thead th[data-dir="desc"]::after { content: " ▼"; font-size: 0.7em; }
 .q-yes a {
   color: var(--primary);
   text-decoration: none;
