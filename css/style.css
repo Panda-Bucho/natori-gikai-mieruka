@@ -278,6 +278,39 @@ table.matrix {
 .q-entry ul { margin: 0; padding-left: 1.3rem; }
 .q-entry li { margin-bottom: 0.1rem; }
 
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.chart-legend > span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.lg-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.lg-sq {
+  width: 10px;
+  height: 10px;
+  background: #9aa8a1;
+  display: inline-block;
+  flex-shrink: 0;
+}
+h3.chart-sub {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 1rem 0 0.3rem;
+}
+#wordcloud-wrap { width: 100%; }
+#wordcloud { display: block; width: 100%; height: 320px; }
+.q-terms { background: #fbfdfc; }
+
 .chart-controls {
   margin-bottom: 0.7rem;
   font-size: 0.9rem;
