@@ -344,8 +344,20 @@ table.matrix {
 #wc-popup.show { display: block; }
 #wc-popup .wc-pop-word { font-weight: 700; margin: 0 0 0.3rem; }
 #wc-popup ul { margin: 0; padding-left: 0; list-style: none; }
-#wc-popup li { margin-bottom: 0.2rem; }
+#wc-popup li { margin-bottom: 0.4rem; }
 #wc-popup a { color: var(--primary); }
+#wc-popup .wc-pop-topic {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--muted);
+  padding-left: 0.8rem;
+}
+
+/* テーマ一覧の検索一致ハイライト */
+#q-topics-wrap li.hl {
+  background: #fff6d9;
+  border-radius: 3px;
+}
 
 #topics-search { max-width: 260px; }
 #topics-search-info { font-size: 0.8rem; color: var(--muted); margin-left: 0.4rem; }

@@ -16,7 +16,8 @@ function cutoffDate() {
 }
 
 let matrixEntries = []; // マトリクスのソート用に保持
-let qSort = { key: "default", asc: true };
+// 既定は議席番号順。昇順/降順はアクセスごとにランダム(掲載順の有利不利をなくすため)
+let qSort = { key: "seat", asc: Math.random() < 0.5 };
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -37,8 +38,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         share: m.lastElection ? m.lastElection.share : null,
       };
     });
-    // 既定は議席番号順(公式の中立な並び)
-    matrixEntries.sort((a, b) => (a.member.seatNo ?? 999) - (b.member.seatNo ?? 999));
+    // 既定は議席番号順。マトリクスとテーマ一覧を同じ向きに揃える
+    const seatDir = qSort.asc ? 1 : -1;
+    matrixEntries.sort((a, b) => seatDir * ((a.member.seatNo ?? 999) - (b.member.seatNo ?? 999)));
 
     renderMatrix();
     renderCharts();
@@ -128,6 +130,7 @@ function sortedMatrixEntries() {
   const { key, asc } = qSort;
   const dir = asc ? 1 : -1;
   const cmp = {
+    seat: (a, b) => (a.t.member.seatNo ?? 999) - (b.t.member.seatNo ?? 999),
     name: (a, b) =>
       (a.t.member.kana || a.t.member.name).localeCompare(b.t.member.kana || b.t.member.name, "ja"),
     terms: (a, b) => (a.t.member.terms ?? -1) - (b.t.member.terms ?? -1) || a.i - b.i,
@@ -215,7 +218,9 @@ function renderTopics(termEntries) {
       const items = t.entries
         .map((e) => {
           const topics = e.topics.length
-            ? `<ul>${e.topics.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>`
+            ? `<ul>${e.topics
+                .map((x) => `<li data-topic="${escapeHtml(x.toLowerCase())}">${escapeHtml(x)}</li>`)
+                .join("")}</ul>`
             : "<ul><li>(テーマ情報なし)</li></ul>";
           return `<div class="q-entry">
             <p class="q-entry-head">${escapeHtml(e.assembly)}(${formatDateJa(e.date)})
@@ -225,10 +230,8 @@ function renderTopics(termEntries) {
         })
         .join("");
       const seat = `<span class="seat-no">${t.member.seatNo ?? "—"}</span>`;
-      const haystack = [t.member.name, t.member.kana, ...t.entries.flatMap((e) => e.topics)]
-        .join(" ")
-        .toLowerCase();
-      return `<details class="q-member" data-search="${escapeHtml(haystack)}">
+      const nameKey = `${t.member.name} ${t.member.kana || ""}`.toLowerCase();
+      return `<details class="q-member" data-name="${escapeHtml(nameKey)}">
         <summary>${seat}${nameWithRole(t.member)} <span class="q-count">${t.entries.length} 回</span></summary>
         ${items || '<p class="q-entry">直近5年の一般質問はありません。</p>'}
       </details>`;
@@ -236,21 +239,38 @@ function renderTopics(termEntries) {
     .join("");
 }
 
-/* 質問テーマ一覧のインクリメンタル検索(議員名・テーマで絞り込み) */
+/* 質問テーマ一覧の検索: 一致したテーマ(定例会)だけを表示する */
 function setupTopicsSearch() {
   const input = document.getElementById("topics-search");
   if (!input) return;
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
     const info = document.getElementById("topics-search-info");
-    let shown = 0;
+    let members = 0;
+    let hits = 0;
     document.querySelectorAll("#q-topics-wrap details.q-member").forEach((d) => {
-      const match = !q || (d.dataset.search || "").includes(q);
-      d.hidden = !match;
-      d.open = Boolean(q) && match; // 検索中は該当を開く
-      if (match) shown++;
+      const nameMatch = q && (d.dataset.name || "").includes(q);
+      let visibleEntries = 0;
+      d.querySelectorAll(".q-entry").forEach((entry) => {
+        let visibleLis = 0;
+        entry.querySelectorAll("li[data-topic]").forEach((li) => {
+          const textMatch = Boolean(q) && (li.dataset.topic || "").includes(q);
+          const show = !q || nameMatch || textMatch;
+          li.hidden = !show;
+          li.classList.toggle("hl", textMatch);
+          if (textMatch) hits++;
+          if (show) visibleLis++;
+        });
+        const showEntry = !q || visibleLis > 0;
+        entry.hidden = !showEntry;
+        if (showEntry) visibleEntries++;
+      });
+      const showMember = !q || visibleEntries > 0;
+      d.hidden = !showMember;
+      d.open = Boolean(q) && showMember;
+      if (showMember && q) members++;
     });
-    if (info) info.textContent = q ? `${shown}名が一致` : "";
+    if (info) info.textContent = q ? `${members}名 / ${hits}件のテーマが一致` : "";
   });
 }
 
@@ -409,6 +429,7 @@ function buildCloud(items) {
           url: entry.url,
           assembly: entry.assembly,
           date: entry.date,
+          topic: t,
         });
       }
     }
@@ -501,14 +522,16 @@ function ensureWcPopup() {
 function showWcPopup(word, ev) {
   if (wcPopupTimer) clearTimeout(wcPopupTimer);
   const raw = wcState.index.get(word) || [];
-  const seen = new Set();
-  const rows = [];
+  // 議員×登壇でまとめ、その語を含む質問テーマを集約
+  const groups = new Map();
   for (const r of raw) {
     const k = `${r.memberName}|${r.url}`;
-    if (seen.has(k)) continue;
-    seen.add(k);
-    rows.push(r);
+    if (!groups.has(k)) {
+      groups.set(k, { memberName: r.memberName, url: r.url, assembly: r.assembly, date: r.date, topics: new Set() });
+    }
+    if (r.topic) groups.get(k).topics.add(r.topic);
   }
+  const rows = [...groups.values()];
   if (!rows.length) return;
   const p = ensureWcPopup();
   p.innerHTML =
@@ -518,7 +541,11 @@ function showWcPopup(word, ev) {
         (r) =>
           `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(
             r.memberName
-          )} — ${escapeHtml(shortAssembly(r.assembly))}(${escapeHtml(formatDateJa(r.date))})</a></li>`
+          )} — ${escapeHtml(shortAssembly(r.assembly))}(${escapeHtml(formatDateJa(r.date))})</a>` +
+          [...r.topics]
+            .map((tp) => `<span class="wc-pop-topic">${escapeHtml(tp)}</span>`)
+            .join("") +
+          `</li>`
       )
       .join("")}</ul>`;
   const wrap = document.getElementById("wordcloud-wrap");

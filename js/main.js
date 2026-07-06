@@ -1,7 +1,8 @@
 /* トップページ: 議員一覧テーブル(氏名・会派・年齢・期数・常任委員会・発信媒体) */
 
 let tableRows = []; // ソート用に保持
-let sortState = { key: "seat", asc: true }; // 既定は議席番号順(公式の中立な並び)
+// 既定は議席番号順。掲載順の有利不利をなくすため、昇順/降順はアクセスごとにランダム
+let sortState = { key: "seat", asc: Math.random() < 0.5 };
 
 /* 常任委員会(総務消防/建設経済/民生教育)。財務は全員所属のため一覧では省略 */
 const STANDING_COMMITTEES = ["総務消防常任委員会", "建設経済常任委員会", "民生教育常任委員会"];
@@ -15,6 +16,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderSummary(members);
     renderCountdown();
     setupSorting();
+    // 初期の並び方向(ランダム)を見出しの▲▼に反映
+    const seatTh = document.querySelector('th[data-sort="seat"]');
+    if (seatTh) seatTh.setAttribute("data-dir", sortState.asc ? "asc" : "desc");
   } catch (e) {
     document.getElementById("member-table-body").innerHTML =
       `<tr><td colspan="9">データの読み込みに失敗しました: ${escapeHtml(e.message)}</td></tr>`;

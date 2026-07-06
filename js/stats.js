@@ -42,9 +42,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     baseDate = posts.generatedAt ? new Date(posts.generatedAt) : new Date();
 
     // RSS集計対象(フィード登録あり)の議員のみ
+    // 議席番号順。昇順/降順はアクセスごとにランダム(掲載順の有利不利をなくすため)
+    const seatDir = Math.random() < 0.5 ? 1 : -1;
     tracked = members.members
       .filter((m) => (m.feeds || []).length > 0)
-      .sort((a, b) => (a.seatNo ?? 999) - (b.seatNo ?? 999))
+      .sort((a, b) => seatDir * ((a.seatNo ?? 999) - (b.seatNo ?? 999)))
       .map((m) => ({
         member: m,
         counts: countByMonth((posts.members[m.id] || {}).posts),
