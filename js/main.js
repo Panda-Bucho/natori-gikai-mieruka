@@ -25,17 +25,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-function calcAge(birthDate) {
-  const b = parseDate(birthDate);
-  if (!b) return null;
-  const now = new Date();
-  let age = now.getFullYear() - b.getFullYear();
-  if (now.getMonth() < b.getMonth() || (now.getMonth() === b.getMonth() && now.getDate() < b.getDate())) {
-    age--;
-  }
-  return age;
-}
-
 function standingCommittee(m) {
   return (m.committees || []).find((c) => STANDING_COMMITTEES.includes(c)) || null;
 }

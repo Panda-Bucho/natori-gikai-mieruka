@@ -329,19 +329,19 @@ function renderCharts() {
       }
     },
   };
-  const build = (canvasId, xKey, xTitle, xMin, xMax, jitter) => {
+  const build = (canvasId, xKey, xTitle, xMin, xMax, jitterStep) => {
     const normal = [];
     const withRole = [];
     const seen = {};
     for (const t of matrixEntries) {
       const m = t.member;
-      let x = xKey === "share" ? t.share : m.terms;
+      let x = xKey === "share" ? t.share : xKey === "age" ? calcAge(m.birthDate) : m.terms;
       if (x == null) continue;
-      if (jitter) {
+      if (jitterStep) {
         // 同一座標の議員が重なって見えなくなるのを防ぐ
         const key = `${x}:${t.termCount}`;
         seen[key] = (seen[key] || 0) + 1;
-        if (seen[key] > 1) x += (seen[key] - 1) * 0.15;
+        if (seen[key] > 1) x += (seen[key] - 1) * jitterStep;
       }
       const p = { x, y: t.termCount, name: m.name.replace(/\s+/g, "") };
       (hasRoleThisTerm(m) ? withRole : normal).push(p);
@@ -385,8 +385,9 @@ function renderCharts() {
       plugins: [labelPlugin],
     });
   };
-  build("corr-share", "share", "得票率(%、2024年1月市議選)", 2.4, 7.4, false);
-  build("corr-terms", "terms", "期数", 0.4, 7.8, true);
+  build("corr-share", "share", "得票率(%、2024年1月市議選)", 2.4, 7.4, 0);
+  build("corr-terms", "terms", "期数", 0.4, 7.8, 0.15);
+  build("corr-age", "age", "年齢(歳)", 35, 80, 0.5);
 }
 
 /* ---------- ワードクラウド ---------- */

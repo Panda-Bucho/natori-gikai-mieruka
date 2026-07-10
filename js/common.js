@@ -73,6 +73,18 @@ function formatDateJa(dateStr) {
   return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, "0")}/${String(d.getDate()).padStart(2, "0")}`;
 }
 
+/* 表示日時点の満年齢 */
+function calcAge(birthDate) {
+  const b = parseDate(birthDate);
+  if (!b) return null;
+  const now = new Date();
+  let age = now.getFullYear() - b.getFullYear();
+  if (now.getMonth() < b.getMonth() || (now.getMonth() === b.getMonth() && now.getDate() < b.getDate())) {
+    age--;
+  }
+  return age;
+}
+
 /* 鮮度に応じたCSSクラス */
 function freshnessClass(dateStr) {
   const days = daysAgo(dateStr);
