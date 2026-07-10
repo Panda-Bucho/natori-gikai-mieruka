@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-10T07:17:47+09:00",
-  "source": "名取市議会映像配信 https://natori-city.stream.jfit.co.jp/",
+  "generatedAt": "2026-07-08T13:23:57+09:00",
+  "source": "名取市議会映像配信 https://natori-city.stream.jfit.co.jp/ / 名取市議会会議録検索システム https://www.city.natori.miyagi.dbsr.jp/index.php/100000",
   "members": {
     "abe-masayoshi": [
       {
@@ -10,7 +10,7 @@
           "感震ブレーカーの普及推進について",
           "学校教育体制について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1058"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -18,7 +18,8 @@
         "topics": [
           "地域包括ケアシステムの深化・推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1034",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2544#one:98"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -28,7 +29,8 @@
           "教育支援センターについて",
           "学校教育活動について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1018",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2532#one:5"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -36,7 +38,8 @@
         "topics": [
           "自主財源の確保について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=989",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2500#one:178"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -45,7 +48,8 @@
           "移住定住支援について",
           "グリーフケアについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=966",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2486#one:261"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -54,7 +58,8 @@
           "救急対応について",
           "学校教育体制について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=951",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2464#one:373"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -63,7 +68,8 @@
           "環境美化と保全について",
           "防犯について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=927",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2448#one:139"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -72,7 +78,8 @@
           "交通事故防止及び防犯対策について",
           "市職員の意欲向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=899",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1521#one:184"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -81,7 +88,8 @@
           "入院している児童生徒への支援について",
           "不登校対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=872",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1505#one:79"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -91,7 +99,8 @@
           "なとりんくるについて",
           "ＡＥＤの普及推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=93"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=849",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1491#one:5"
       }
     ],
     "konno-shinsuke": [
@@ -101,7 +110,7 @@
         "topics": [
           "ふるさと納税体験型返礼品について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=94"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1072"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -110,7 +119,8 @@
           "カムチャツカ半島付近の地震発生時における本市の対応について",
           "防災ラジオの有償配布について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=94"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=995",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2504#one:5"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -119,7 +129,8 @@
           "防犯カメラを活用した安全・安心な生活環境づくりについて",
           "閖上地区海浜地の利活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=94"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=974",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2490#one:149"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -128,7 +139,8 @@
           "名取市墓地公園へのアクセスについて",
           "主要地方道塩釜亘理線と県道閖上港線の交差点の渋滞対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=94"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=918",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2444#one:59"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -136,7 +148,8 @@
         "topics": [
           "在住外国人に対する多言語サービスについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=94"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=875",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1507#one:4"
       }
     ],
     "sato-sayaka": [
@@ -146,7 +159,7 @@
         "topics": [
           "国・県からの照会業務等の見える化と職員の負担軽減について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1056"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -154,7 +167,8 @@
         "topics": [
           "若年者のオーバードーズについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1021",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2532#one:251"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -162,7 +176,8 @@
         "topics": [
           "医療費削減の取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=984",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2498#one:99"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -170,7 +185,8 @@
         "topics": [
           "独り暮らしの高齢者福祉について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=943",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2460#one:240"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -179,7 +195,8 @@
           "産後ケア事業の改善と周知について",
           "広報なとりのアプリ配信について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=930",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2450#one:42"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -188,7 +205,8 @@
           "市の情報発信について",
           "なとりコインについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=904",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1523#one:249"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -197,7 +215,8 @@
           "本市における医療機関との医療連携について",
           "名取市公式ＬＩＮＥの運用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=95"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=850",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1491#one:75"
       }
     ],
     "sato-shigeki": [
@@ -207,7 +226,7 @@
         "topics": [
           "サイクルスポーツセンターの収支改善等に向けた取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=96"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1066"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -215,7 +234,8 @@
         "topics": [
           "中学校部活動の地域展開について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=96"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1020",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2532#one:201"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -223,7 +243,8 @@
         "topics": [
           "スポーツで活躍する人への支援の充実について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=96"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=986",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2498#one:277"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -231,7 +252,8 @@
         "topics": [
           "中学校部活動の地域移行について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=96"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=937",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2458#one:38"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -240,7 +262,8 @@
           "障がい者スポーツの振興について",
           "市民体育館武道場の環境整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=96"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=897",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1521#one:4"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -248,7 +271,8 @@
         "topics": [
           "任意の組織である町内会等の設置状況及び課題と運営への支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=96"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=874",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1505#one:174"
       }
     ],
     "suzuki-hidenobu": [
@@ -259,7 +283,8 @@
           "水泳教育について",
           "温水プール施設の有効性について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=97"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1011",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2528#one:78"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -267,7 +292,8 @@
         "topics": [
           "カムチャツカ半島付近の地震に伴う津波への対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=97"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=994",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2502#one:301"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -276,7 +302,8 @@
           "保育児童の受入れの現状について",
           "子育て環境の改善に取り組む地元企業への支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=97"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=936",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2458#one:4"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -286,7 +313,8 @@
           "消防団について",
           "消防職員の充足率向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=97"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=917",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2444#one:5"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -295,7 +323,8 @@
           "中小企業施策について",
           "日本海溝・千島海溝周辺海溝型地震対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=97"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=879",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1509#one:4"
       }
     ],
     "terashima-masako": [
@@ -305,7 +334,7 @@
         "topics": [
           "父親の育児におけるメンタルヘルス支援の強化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1070"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -313,7 +342,8 @@
         "topics": [
           "本市の文化振興と名取市文化会館の利活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1038",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2546#one:78"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -322,7 +352,8 @@
           "不登校児童生徒の多様な居場所における支援について",
           "道路交通法改正における児童生徒への自転車交通安全教育について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1010",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2528#one:4"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -331,7 +362,8 @@
           "令和７年７月30日の津波警報と新たな地区別防災マニュアルについて",
           "屋内遊戯施設なとりぱーくについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=990",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2500#one:290"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -340,7 +372,8 @@
           "中学生海外派遣事業について",
           "国際交流及び多文化共生の体制づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=964",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2486#one:92"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -348,7 +381,8 @@
         "topics": [
           "名取市サイクルスポーツセンターの利用促進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=942",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2460#one:172"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -357,7 +391,8 @@
           "アプリの普及・整理について",
           "災害時のＩＣＴ活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=902",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1523#one:92"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -367,7 +402,8 @@
           "プレーパーク（冒険遊び場）の常設について",
           "名取市ゼロカーボンシティ宣言を踏まえた、宅配ボックス設置促進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=878",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1507#one:86"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -376,7 +412,8 @@
           "子どもの心のケアハウス・はなもも教室への通所について",
           "不登校児童生徒の居場所づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=852",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1491#one:231"
       }
     ],
     "nikaido-mitsuru": [
@@ -386,7 +423,7 @@
         "topics": [
           "県道美田園増田線と国道４号線及び市道下増田関下線交差点における渋滞対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1067"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -394,7 +431,8 @@
         "topics": [
           "屋内外遊戯施設の整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1043",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2548#one:290"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -402,7 +440,8 @@
         "topics": [
           "本市の有料広告事業の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1019",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2532#one:150"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -410,7 +449,8 @@
         "topics": [
           "増田西老人憩の家の今後について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=982",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2498#one:4"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -419,7 +459,8 @@
           "名取市総合評価競争入札方式落札者決定基準について",
           "地元企業育成のための入札制度改善について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=975",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2492#one:5"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -427,7 +468,8 @@
         "topics": [
           "名取土地改良区が管理している増田承水路の本市への管理の移管について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=949",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2464#one:196"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -436,7 +478,8 @@
           "産後ケア事業について",
           "育児ヘルプサービスについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=922",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2446#one:95"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -445,7 +488,8 @@
           "名取駅周辺のにぎわい創出について",
           "増田西老人憩の家の今後について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=890",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1517#one:74"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -453,7 +497,8 @@
         "topics": [
           "インバウンドの取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=876",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1507#one:22"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -462,7 +507,8 @@
           "投票率アップについて",
           "自動運転システムの取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=99"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=854",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1493#one:58"
       }
     ],
     "sasamori-nami": [
@@ -473,7 +519,7 @@
           "小学生の通学かばんについて",
           "児童生徒の情報モラル教育について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1061"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -483,7 +529,8 @@
           "児童生徒の健康診断について",
           "第一中学校への通学について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1041",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2548#one:77"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -492,7 +539,8 @@
           "名取駅を活用したシティープロモーションについて",
           "献血の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1012",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2528#one:142"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -501,7 +549,8 @@
           "児童生徒の熱中症対策について",
           "人生会議（ＡＣＰ）の普及・啓発について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=996",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2504#one:51"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -510,7 +559,8 @@
           "熱中症対策について",
           "平和行政及び平和教育について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=963",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2486#one:5"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -519,7 +569,8 @@
           "学校給食費無償化について",
           "災害時のトイレ対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=940",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2460#one:4"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -528,7 +579,8 @@
           "女川原子力発電所再稼働について",
           "防災教育について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=921",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2446#one:4"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -537,7 +589,8 @@
           "ケアラー支援について",
           "第一中学校の環境整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=898",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1521#one:73"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -547,7 +600,8 @@
           "防災体制について",
           "災害支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=873",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1505#one:132"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -556,7 +610,8 @@
           "避難行動要支援者避難支援計画について",
           "避難所での要支援者の対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=855",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1493#one:97"
       },
       {
         "assembly": "令和5年第5回定例会",
@@ -565,7 +620,8 @@
           "学校給食費について",
           "補聴器購入費助成制度の導入について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=844",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1485#one:127"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -574,7 +630,8 @@
           "教育環境の改善について",
           "多文化共生社会の実現について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=826",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1473#one:5"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -583,7 +640,8 @@
           "健康づくり推進について",
           "ヘルプマーク・ヘルプカードの普及と啓発について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=811",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1461#one:206"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -591,7 +649,8 @@
         "topics": [
           "新型コロナウイルス感染症の５類への移行による市の対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=781",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1443#one:82"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -600,7 +659,8 @@
           "市民の健康寿命を延ばす取組について",
           "高齢者への補聴器購入費助成制度の創設について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=773",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1437#one:132"
       },
       {
         "assembly": "令和4年第7回定例会",
@@ -609,7 +669,8 @@
           "小中義務教育学校において子供からのＳＯＳを受け止める取組について",
           "避難所の熱中症対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=745",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1419#one:305"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -618,7 +679,8 @@
           "帯状疱疹ワクチン接種について",
           "学校給食費について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=732",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1409#one:226"
       },
       {
         "assembly": "令和4年第3回定例会",
@@ -627,7 +689,8 @@
           "新型コロナウイルス感染症対策について",
           "後期高齢者医療制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=712",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1399#one:172"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -636,7 +699,8 @@
           "高齢者の難聴対策について",
           "高齢者のもの忘れ検診について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=690",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1385#one:176"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -645,7 +709,8 @@
           "子供の貧困対策について",
           "子ども医療費助成について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=666",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1371#one:225"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -654,7 +719,8 @@
           "市内の高齢者福祉施設の新型コロナウイルス感染症対策について",
           "被災者支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=660",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1365#one:193"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -662,7 +728,7 @@
         "topics": [
           "35人学級の実施について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=632"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -671,7 +737,7 @@
           "新型コロナウイルス感染症対策について",
           "名取市自死対策計画について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=616"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -680,7 +746,7 @@
           "本市における新型コロナウイルス感染症に起因する人権問題対策について",
           "新型コロナウイルス感染症における医療機関と行政の連携について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=568"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -689,7 +755,7 @@
           "本市におけるＤＶ被害対策について",
           "生活保護受給者の医療扶助適用外費用の助成について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=513"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -697,7 +763,7 @@
         "topics": [
           "子ども医療費助成の拡充について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=117"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=494"
       }
     ],
     "chiba-eiko": [
@@ -707,7 +773,7 @@
         "topics": [
           "スポーツ推進委員制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1065"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -716,7 +782,8 @@
           "（仮称）市民活動支援センター分館整備事業について",
           "ＡＥＤの普及推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1037",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2546#one:5"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -725,7 +792,8 @@
           "川内沢ダムを活用した地域活性化について",
           "本市における小中義務教育学校運営について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1016",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2530#one:246"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -734,7 +802,8 @@
           "令和７年７月30日に発生したカムチャツカ半島付近の地震による津波の対応について",
           "増田地区防災広場について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=991",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2502#one:4"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -742,7 +811,8 @@
         "topics": [
           "名取市教育振興基本計画における生涯スポーツの振興について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=965",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2486#one:181"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -751,7 +821,8 @@
           "本市における食と農について",
           "終活支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=944",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2462#one:5"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -760,7 +831,8 @@
           "本市におけるスポーツ振興について",
           "Ｌｉｖｅ119映像通報システムについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=901",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1523#one:5"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -769,7 +841,8 @@
           "教育委員会所掌事務の移管について",
           "選挙事務について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=881",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1509#one:135"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -778,7 +851,8 @@
           "包括連携協定について",
           "市内小中義務教育学校の学校徴収金について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=805",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1459#one:115"
       },
       {
         "assembly": "令和4年第3回定例会",
@@ -787,7 +861,8 @@
           "新型コロナウイルス感染症対応について",
           "スポーツ庁が進める運動部活動改革について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=706",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1397#one:4"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -796,7 +871,8 @@
           "名取市空家等対策計画について",
           "市内小中義務教育学校の新型コロナウイルス感染症対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=668",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1373#one:4"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -804,7 +880,7 @@
         "topics": [
           "本市における地域の特性と魅力を最大限引き出すための方策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=633"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -813,7 +889,7 @@
           "新たな食料・農業・農村基本計画について",
           "スポーツ施設の充実について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=559"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -823,7 +899,7 @@
           "学校給食費等の徴収について",
           "スポーツ振興について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=121"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=487"
       }
     ],
     "itabashi-miho": [
@@ -833,7 +909,7 @@
         "topics": [
           "空き教室等の利活用と不登校・発達支援体制の充実について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1071"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -842,7 +918,8 @@
           "高齢者及び難聴児を対象とする補聴器購入費助成制度の拡充について",
           "高舘小学校の児童数減少に伴う複式学級への懸念と単式学級の維持について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1033",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2544#one:5"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -850,7 +927,8 @@
         "topics": [
           "本市のクマ対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1015",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2530#one:92"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -859,7 +937,8 @@
           "誰もが共に遊び、育つインクルーシブな遊び場の整備について",
           "農業用ため池の水資源確保について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=985",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2498#one:138"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -868,7 +947,8 @@
           "高舘いこいの森の早期復旧と市民が多世代で活用できる自然体験拠点について",
           "身体障害者用自動車改造費補助金制度の拡充について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=968",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2488#one:169"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -877,7 +957,8 @@
           "一側性難聴者への理解と支援について",
           "消防団の在り方について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=941",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2460#one:60"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -886,7 +967,8 @@
           "動物の愛護及び管理について",
           "地域公共交通について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=924",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2446#one:261"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -895,7 +977,8 @@
           "公園等の維持管理について",
           "防災情報の見える化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=889",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1517#one:4"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -903,7 +986,8 @@
         "topics": [
           "電子図書館の導入について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=856",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1493#one:207"
       },
       {
         "assembly": "令和5年第5回定例会",
@@ -911,7 +995,8 @@
         "topics": [
           "宮城県の４病院再編構想について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=841",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1483#one:399"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -921,7 +1006,8 @@
           "市道八ツ口前線の整備について",
           "不登校の子供の居場所づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=785",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1445#one:156"
       },
       {
         "assembly": "令和4年第7回定例会",
@@ -930,7 +1016,8 @@
           "スポーツ施設について",
           "道路の管理について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=744",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1419#one:181"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -939,7 +1026,8 @@
           "認知症の早期発見について",
           "スポーツ施設の整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=737",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1413#one:4"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -949,7 +1037,8 @@
           "消防団の現状と課題について",
           "電子書籍について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=698",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1389#one:334"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -957,7 +1046,7 @@
         "topics": [
           "図書館の利用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=639"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -965,7 +1054,7 @@
         "topics": [
           "ごみの出し方や分別等について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=558"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -973,7 +1062,7 @@
         "topics": [
           "なとり百選について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=120"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=519"
       }
     ],
     "oizumi-noriko": [
@@ -983,7 +1072,7 @@
         "topics": [
           "国際空港所在都市としてのアウトバウンド施策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1063"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -993,7 +1082,8 @@
           "市内小中義務教育学校におけるタブレット端末を用いた学習について",
           "なとりん号のバス停改善について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1042",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2548#one:214"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -1002,7 +1092,8 @@
           "市有地の利活用について",
           "台湾桃園市との交流促進協定について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=983",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2498#one:44"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -1011,7 +1102,8 @@
           "子育て環境と保育士の充実について",
           "外国人に対する日本語教育の在り方について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=929",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2450#one:4"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -1020,7 +1112,8 @@
           "起業者への支援について",
           "市営住宅小豆島団地の環境改善について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=896",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1519#one:216"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -1030,7 +1123,8 @@
           "給食費の段階的無償化について",
           "児童センターの環境改善について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=858",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1495#one:147"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -1039,7 +1133,7 @@
           "市民体育館の利用向上について",
           "公民館の利用向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=425"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -1048,7 +1142,7 @@
           "（仮称）歴史民俗資料館について",
           "歴史遺産の活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=402"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -1057,7 +1151,7 @@
           "教育環境の改善について",
           "ホストタウン関連事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=381"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -1066,7 +1160,7 @@
           "東京五輪関連事業への参加について",
           "協働教育の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=355"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -1074,7 +1168,7 @@
         "topics": [
           "災害に強いまちづくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=340"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -1083,7 +1177,7 @@
           "子育て支援環境の充実について",
           "市制施行60周年記念事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=316"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -1091,7 +1185,7 @@
         "topics": [
           "宮城県立名取支援学校分校の設置について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=299"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -1100,7 +1194,7 @@
           "学校施設開放のあり方について",
           "閖上小中一貫校について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=267"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -1109,7 +1203,7 @@
           "女性の再就職支援と雇用の促進について",
           "施設の利用しやすい環境整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=233"
       },
       {
         "assembly": "平成28年第2回定例会",
@@ -1118,7 +1212,7 @@
           "館腰交番名取が丘連絡所跡地の利活用について",
           "災害時の市民への情報伝達について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=112"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=194"
       }
     ],
     "sugawara-kazuko": [
@@ -1129,7 +1223,7 @@
           "ＡＥＤについて",
           "低出生体重児への支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1069"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -1138,7 +1232,8 @@
           "安心して搾乳できる環境づくりについて",
           "ひとり親家庭への支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1039",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2546#one:164"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -1147,7 +1242,8 @@
           "高齢者施策について",
           "こころの健康について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1023",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2534#one:159"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -1156,7 +1252,8 @@
           "ギャンブル依存症について",
           "市民の健康を守る取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=988",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2500#one:90"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -1166,7 +1263,8 @@
           "災害時のペット同行避難について",
           "古墳を生かしたまちづくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=969",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2488#one:256"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -1176,7 +1274,8 @@
           "おくやみ手続のサポートについて",
           "防犯対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=945",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2462#one:80"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -1187,7 +1286,8 @@
           "難聴の方への窓口等の対応について",
           "受領委任払いについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=923",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2446#one:174"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -1197,7 +1297,8 @@
           "母子健康事業について",
           "投票環境の改善と投票率アップに向けた取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=880",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1509#one:61"
       },
       {
         "assembly": "令和5年第5回定例会",
@@ -1206,7 +1307,8 @@
           "市民のスポーツ活動を応援する取組について",
           "財源確保について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=845",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1485#one:182"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -1215,7 +1317,8 @@
           "熱中症対策について",
           "ＬＧＢＴＱ＋について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=818",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1469#one:4"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -1225,7 +1328,8 @@
           "認知症高齢者の見守りについて",
           "ひきこもり対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=807",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1459#one:352"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -1234,7 +1338,8 @@
           "地域共生社会を目指して",
           "特殊詐欺に対する取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=782",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1443#one:173"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -1243,7 +1348,8 @@
           "女性の健康について",
           "出産・子育て応援交付金事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=770",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1435#one:73"
       },
       {
         "assembly": "令和4年第7回定例会",
@@ -1252,7 +1358,8 @@
           "市民福祉サービスについて",
           "化学物質過敏症について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=748",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1421#one:126"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -1261,7 +1368,8 @@
           "新生児検査等について",
           "防災について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=735",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1411#one:152"
       },
       {
         "assembly": "令和4年第3回定例会",
@@ -1270,7 +1378,8 @@
           "障害者施策について",
           "防災について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=711",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1399#one:118"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -1280,7 +1389,8 @@
           "子宮頸がんワクチン接種について",
           "防犯対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=694",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1387#one:260"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -1289,7 +1399,8 @@
           "母子を守る産後ケア事業について",
           "災害対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=670",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1373#one:104"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -1299,7 +1410,8 @@
           "災害時のペット同行避難について",
           "がん対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=657",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1363#one:374"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -1309,7 +1421,7 @@
           "生活習慣病対策について",
           "共生社会の実現に向けた取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=635"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -1319,7 +1431,7 @@
           "幼児の目の異常の早期発見について",
           "保育所の事故防止について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=622"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -1328,7 +1440,7 @@
           "市営住宅の入居条件について",
           "ＩＣＴの活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=561"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -1337,7 +1449,7 @@
           "災害時における避難所での感染症対策について",
           "視覚障がい者の生活支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=506"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -1346,7 +1458,7 @@
           "市民の健康を守る取り組みについて",
           "防災、減災について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=489"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -1355,7 +1467,7 @@
           "防犯対策について",
           "読書に親しむ環境づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=417"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -1364,7 +1476,7 @@
           "心のバリアフリー推進について",
           "防災・減災の取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=410"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -1373,7 +1485,7 @@
           "高齢者施策について",
           "災害時の対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=382"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -1383,7 +1495,7 @@
           "不育症について",
           "ゆずりあい駐車場利用制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=375"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -1392,7 +1504,7 @@
           "学校教育について",
           "子育て支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=347"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -1402,7 +1514,7 @@
           "市民との協働によるまちづくりについて",
           "市制施行60周年記念事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=338"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -1410,7 +1522,7 @@
         "topics": [
           "防災について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=310"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -1420,7 +1532,7 @@
           "緊急通報システム事業について",
           "１歳８カ月児健診について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=296"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -1429,7 +1541,7 @@
           "高齢者施策について",
           "通学路の安全対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=276"
       },
       {
         "assembly": "平成28年第7回定例会",
@@ -1437,7 +1549,7 @@
         "topics": [
           "防災対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=263"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -1446,7 +1558,7 @@
           "子育て支援について",
           "読書環境の整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=232"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -1456,7 +1568,7 @@
           "予防接種事業について",
           "若者支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=222"
       },
       {
         "assembly": "平成28年第2回定例会",
@@ -1465,7 +1577,7 @@
           "子育て支援について",
           "がん教育の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=115"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=198"
       }
     ],
     "yoshida-ryo": [
@@ -1475,7 +1587,7 @@
         "topics": [
           "令和８年３月21日に手倉田八幡地区で発生した火災への対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1059"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -1485,7 +1597,8 @@
           "名取駅コミュニティプラザの運営について",
           "令和８年２月６日に告示された住民監査請求の結果について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1036",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2544#one:257"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -1494,7 +1607,8 @@
           "地方創生臨時交付金を活用した家計支援策について",
           "名取スポーツパーク跡地を工業団地とする県の計画について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1022",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2534#one:5"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -1504,7 +1618,8 @@
           "住民監査請求の要件審理について",
           "仙台ビール園等の跡地における開発について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=998",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2504#one:216"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -1513,7 +1628,8 @@
           "名取市環境美化の促進に関する条例の運用について",
           "ウエルビーイングの推進と指標の活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=967",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2488#one:4"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -1522,7 +1638,8 @@
           "虚偽の住民登録に基づく就学の件について",
           "本市の人口動態と空き家対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=948",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2464#one:5"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -1533,7 +1650,8 @@
           "総合教育会議の運営について",
           "学校法人が所有し疑義が生じている非課税の固定資産について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=920",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2444#one:241"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -1542,7 +1660,8 @@
           "良好な景観の形成及び保全について",
           "令和５年12月に市立学校で発生した重大事態について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=891",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1517#one:109"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -1550,7 +1669,8 @@
         "topics": [
           "仙台赤十字病院と県立がんセンターの統合構想について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=882",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1509#one:230"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -1560,7 +1680,8 @@
           "清掃推進員制度の変更について",
           "文化芸術に関する顕彰と報奨について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=857",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1495#one:5"
       },
       {
         "assembly": "令和5年第5回定例会",
@@ -1569,7 +1690,8 @@
           "学校法人に対する固定資産税の賦課徴収について",
           "分煙施設の整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=840",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1483#one:160"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -1578,7 +1700,8 @@
           "児童生徒の学力向上について",
           "仙台市との合併構想について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=822",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1471#one:5"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -1588,7 +1711,8 @@
           "Ｖ２Ｈの活用について",
           "企業版ふるさと納税について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=812",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1463#one:4"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -1598,7 +1722,8 @@
           "名取市民憲章について",
           "生徒指導提要の改訂を受けた取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=787",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1447#one:4"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -1608,7 +1733,8 @@
           "小山雨水調整池の整備について",
           "市長による模造銃所持画像のＳＮＳ投稿について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=765",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1433#one:113"
       },
       {
         "assembly": "令和4年第7回定例会",
@@ -1618,7 +1744,8 @@
           "校内合唱コンクールの上位大会について",
           "昭和三陸津波の標柱について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=749",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1421#one:202"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -1627,7 +1754,8 @@
           "地域防災力の強化について",
           "児童生徒の新型コロナウイルス感染対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=729",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1409#one:4"
       },
       {
         "assembly": "令和4年第3回定例会",
@@ -1636,7 +1764,8 @@
           "市政における財政民主主義の進展について",
           "中高生世代の居場所づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=710",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1399#one:5"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -1645,7 +1774,8 @@
           "交通指導隊の組織と運営について",
           "ゼロカーボンシティ宣言について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=696",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1389#one:84"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -1653,7 +1783,8 @@
         "topics": [
           "新たな区長制度の運用に対する評価について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=665",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1371#one:43"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -1662,7 +1793,8 @@
           "地域防災力の向上について",
           "障がい児保育事業の対象の拡大について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=655",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1363#one:101"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -1671,7 +1803,7 @@
           "ＩＣＴの活用について",
           "市立学校における自治的活動の実践について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=638"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -1680,7 +1812,7 @@
           "交通安全のための施策について",
           "約３年間にわたる水道料金誤請求の件について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=617"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -1689,7 +1821,7 @@
           "雨水・排水対策の推進について",
           "名取駅周辺のにぎわいづくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=556"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -1698,7 +1830,7 @@
           "オンライン学習環境の整備について",
           "住民の幸福実感について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=509"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -1707,7 +1839,7 @@
           "職員採用試験について",
           "愛島台の土地活用に係る包括協定について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=485"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -1717,7 +1849,7 @@
           "地方公務員制度の見直しによる影響について",
           "にぎわいの創出について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=419"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -1726,7 +1858,7 @@
           "良好な環境の保全について",
           "温室効果ガスの排出抑制について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=405"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -1735,7 +1867,7 @@
           "異常高温への対策について",
           "隣接自治体との連携について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=386"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -1745,7 +1877,7 @@
           "特別職礼遇者制度について",
           "人の終末に関する施策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=374"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -1755,7 +1887,7 @@
           "区長制度の見直しについて",
           "中学校制服の価格について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=354"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -1764,7 +1896,7 @@
           "ＩＣＴやモバイル端末の普及拡大を受けた施策について",
           "市民協働の進展について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=330"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -1773,7 +1905,7 @@
           "他国によるミサイル発射等に対する市民生命の保護について",
           "ポケットギャラリーの使用許可について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=309"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -1784,7 +1916,7 @@
           "職員と利害関係者等との接触について",
           "いじめの現状と対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=292"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -1795,7 +1927,7 @@
           "仮設住宅の利活用について",
           "復旧・復興に係る予算について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=271"
       },
       {
         "assembly": "平成28年第7回定例会",
@@ -1805,7 +1937,7 @@
           "公共施設の運用について",
           "市の組織と人事制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=260"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -1815,7 +1947,7 @@
           "歴史・文化的資源の保存と活用について",
           "道路の安全性と利便性の向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=235"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -1824,7 +1956,7 @@
           "ＪＲ名取駅西口広場の整備について",
           "教育の負担軽減と、費用対効果向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=219"
       },
       {
         "assembly": "平成28年第2回定例会",
@@ -1833,7 +1965,7 @@
           "行政改革について",
           "教育について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=116"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=201"
       }
     ],
     "otomo-yasunobu": [
@@ -1843,7 +1975,7 @@
         "topics": [
           "防犯教育について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1064"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -1851,7 +1983,8 @@
         "topics": [
           "市民の命と健康を守る取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1013",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2528#one:217"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -1861,7 +1994,8 @@
           "市民体育館アリーナの一般公開について",
           "不登校、登校困難児童生徒の状況把握について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=987",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2500#one:4"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -1869,7 +2003,8 @@
         "topics": [
           "子宮頸がん予防ワクチン接種の勧奨について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=973",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2490#one:126"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -1878,7 +2013,8 @@
           "本市における有機フッ素化合物への対応について",
           "ＤＸの推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=939",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2458#one:135"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -1886,7 +2022,8 @@
         "topics": [
           "予防接種による健康被害について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=895",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1519#one:145"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -1896,7 +2033,8 @@
           "県の学校施設におけるシックハウス症候群発症防止指針について",
           "県立がんセンターと仙台赤十字病院を統合した新病院整備予定地の提供について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=860",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1495#one:286"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -1904,7 +2042,8 @@
         "topics": [
           "新型コロナワクチン接種推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=823",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1471#one:142"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -1912,7 +2051,8 @@
         "topics": [
           "学校事故を防ぐための危機管理体制の点検と改善について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=808",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1461#one:5"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -1921,7 +2061,8 @@
           "新型コロナワクチン接種について",
           "新型コロナ感染症の５類への移行について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=783",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1445#one:4"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -1930,7 +2071,8 @@
           "これからの子供・子育て支援の体制づくりについて",
           "新型コロナワクチン接種の周知について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=775",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1437#one:321"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -1938,7 +2080,8 @@
         "topics": [
           "市政広報について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=739",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1413#one:192"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -1946,7 +2089,8 @@
         "topics": [
           "クリーンキャンペーンの取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=691",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1387#one:5"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -1955,7 +2099,8 @@
           "上下水道の運営について",
           "防災訓練について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=652",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1361#one:111"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -1963,7 +2108,7 @@
         "topics": [
           "避難所運営における防災体制の強化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=623"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -1971,7 +2116,7 @@
         "topics": [
           "生活困窮者自立支援事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=569"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -1979,7 +2124,7 @@
         "topics": [
           "市民全体で支える新たな子ども食堂の仕組みづくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=510"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -1988,7 +2133,7 @@
           "消費税増税に向けた対策について",
           "入札制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=423"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -1997,7 +2142,7 @@
           "中小企業振興基本条例の制定について",
           "地域経済の発展と企業育成について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=379"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -2006,7 +2151,7 @@
           "サイクルスポーツセンターについて",
           "防災体制の強化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=373"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -2015,7 +2160,7 @@
           "児童の通学路の安全確保について",
           "働き方改革「イクボス」の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=346"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -2025,7 +2170,7 @@
           "奨学金制度について",
           "職員への奨励について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=341"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -2034,7 +2179,7 @@
           "自転車の交通事故防止について",
           "水難救助体制について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=293"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -2043,7 +2188,7 @@
           "地域経済の育成と発展について",
           "不正の防止について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=278"
       },
       {
         "assembly": "平成28年第7回定例会",
@@ -2053,7 +2198,7 @@
           "ごみ集積所について",
           "感染性胃腸炎等の対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=257"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -2061,7 +2206,7 @@
         "topics": [
           "市長の選挙公約について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=240"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -2071,7 +2216,7 @@
           "名取市公共施設等総合管理計画について",
           "内水面の水難事故時の対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=102"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=224"
       }
     ],
     "chonan-yoshihiko": [
@@ -2082,7 +2227,7 @@
           "道路交通法の一部改正に伴う自転車の安全対策について",
           "小正月の伝統行事「どんと祭」における消防体制について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1062"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -2092,7 +2237,8 @@
           "高舘公民館の現状と今後の改築計画について",
           "投票率の向上に向けた取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=819",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1469#one:93"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -2101,7 +2247,8 @@
           "市内の都市公園の維持管理について",
           "なとりん号の運賃見直しについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=788",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1447#one:173"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -2110,7 +2257,8 @@
           "市道三日町熊野堂線の歩道拡幅整備について",
           "児童生徒の交通事故防止対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=766",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1433#one:280"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -2119,7 +2267,8 @@
           "消防力の向上について",
           "名取市橋梁長寿命化修繕計画について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=733",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1411#one:5"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -2128,7 +2277,7 @@
           "自然を楽しむ環境整備について",
           "旧名取スポーツパークについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=406"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -2137,7 +2286,7 @@
           "なとり百選を生かしたにぎわいのあるまちづくりについて",
           "都市公園の維持管理について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=369"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -2145,7 +2294,7 @@
         "topics": [
           "除雪対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=349"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -2154,7 +2303,7 @@
           "交通安全対策について",
           "消防力の向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=335"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -2163,7 +2312,7 @@
           "第10次名取市交通安全計画について",
           "名取市自転車利用環境整備計画について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=302"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -2172,7 +2321,7 @@
           "川内沢ダム建設事業について",
           "愛島台の市有地の有効活用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=268"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -2181,7 +2330,7 @@
           "聞く耳と対話のある政治について",
           "市内の均衡ある発展について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=229"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -2189,7 +2338,7 @@
         "topics": [
           "来庁者の利便性、安全性向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=221"
       },
       {
         "assembly": "平成28年第2回定例会",
@@ -2198,7 +2347,7 @@
           "ごみ屋敷対策について",
           "イノシシ被害対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=111"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=196"
       }
     ],
     "kikuchi-shinobu": [
@@ -2209,7 +2358,7 @@
           "木造住宅の耐震化について",
           "「生命（いのち）の安全教育」について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1060"
       },
       {
         "assembly": "令和8年第3回定例会",
@@ -2217,7 +2366,8 @@
         "topics": [
           "妊産婦等への支援策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1040",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2548#one:5"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -2226,7 +2376,8 @@
           "がん対策について",
           "地域住民による消火活動について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1014",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2530#one:4"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -2234,7 +2385,8 @@
         "topics": [
           "防災・減災への取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=992",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2502#one:87"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -2243,7 +2395,8 @@
           "電気自動車等の普及について",
           "聴覚情報処理障害（ＡＰＤ）及び聞き取り困難症（ＬｉＤ）について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=971",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2490#one:5"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -2252,7 +2405,8 @@
           "環境に配慮した取組について",
           "ヤングケアラーについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=938",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2458#one:73"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -2262,7 +2416,8 @@
           "認知症対策について",
           "奨学金制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=919",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2444#one:142"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -2271,7 +2426,8 @@
           "災害ケースマネジメントについて",
           "学力及び体力向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=900",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1521#one:251"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -2280,7 +2436,8 @@
           "ＨＰＶワクチン接種について",
           "子どもにやさしいまちづくり事業の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=884",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1511#one:35"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -2290,7 +2447,8 @@
           "教育環境の充実について",
           "奨学金返還支援事業補助金について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=859",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1495#one:208"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -2300,7 +2458,8 @@
           "給水スポットについて",
           "ハイリー・センシティブ・チャイルド（ＨＳＣ）について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=697",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1389#one:257"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -2310,7 +2469,8 @@
           "少子化対策について",
           "奨学金返還支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=672",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1375#one:5"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -2319,7 +2479,8 @@
           "ヤングケアラーへの支援について",
           "移住支援への取組について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=658",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1365#one:5"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -2328,7 +2489,7 @@
           "2050年カーボンニュートラル実現に向けた取組について",
           "教育機会確保法について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=630"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -2337,7 +2498,7 @@
           "重層的支援体制整備について",
           "マイナンバー制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=615"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -2346,7 +2507,7 @@
           "中高年のひきこもり対策について",
           "不登校対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=570"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -2355,7 +2516,7 @@
           "ごみ減量に向けた取組について",
           "新型コロナウイルス感染症に係る緊急経済対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=516"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -2364,7 +2525,7 @@
           "選挙事務と投票率向上に向けた取り組みについて",
           "動物愛護管理法改正について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=486"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -2373,7 +2534,7 @@
           "小児がん対策について",
           "持続可能な開発目標（ＳＤＧｓ）について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=422"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -2383,7 +2544,7 @@
           "名取市地域防災計画について",
           "学校給食摂取基準について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=401"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -2393,7 +2554,7 @@
           "女性活躍推進に係る取り組みについて",
           "学校の暑さ対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=387"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -2402,7 +2563,7 @@
           "学校における危機管理について",
           "不登校対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=370"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -2412,7 +2573,7 @@
           "ヘルプマークについて",
           "情報発信について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=345"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -2422,7 +2583,7 @@
           "生ごみ堆肥化容器購入費補助制度について",
           "リサイクルの推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=331"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -2431,7 +2592,7 @@
           "子育て支援について",
           "財源の確保について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=314"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -2439,7 +2600,7 @@
         "topics": [
           "がん対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=294"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -2449,7 +2610,7 @@
           "個人番号カードの普及について",
           "交通事故を防止する取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=273"
       },
       {
         "assembly": "平成28年第7回定例会",
@@ -2458,7 +2619,7 @@
           "子育て支援について",
           "高齢者の外出支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=258"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -2467,7 +2628,7 @@
           "市政運営について",
           "情報発信について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=228"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -2476,7 +2637,7 @@
           "障害者差別解消法について",
           "認知症高齢者等にやさしい地域づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=220"
       },
       {
         "assembly": "平成28年第2回定例会",
@@ -2486,7 +2647,7 @@
           "個人番号カードの普及について",
           "ドクターヘリの運航について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=104"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=203"
       }
     ],
     "onodera-miho": [
@@ -2497,7 +2658,7 @@
           "家庭教育支援の現状と課題について",
           "ヤングケアラー支援条例の制定について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1068"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -2507,7 +2668,8 @@
           "男性相談員による男性相談窓口について",
           "防災スポーツの導入について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1025",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2534#one:282"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -2516,7 +2678,8 @@
           "ＩＣＴと子供の脳について",
           "仙台空港の特定利用空港指定について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=997",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2504#one:147"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -2525,7 +2688,8 @@
           "職員の配置及び処遇の考え方について",
           "指定管理者等において、また庁内においても雇用形態にかかわらない公正な待遇の確保について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=970",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2488#one:363"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -2533,7 +2697,8 @@
         "topics": [
           "国の令和７年度予算における緊急防災・減災事業及び「防災・減災、国土強靭化のための５か年加速化対策」事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=946",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2462#one:133"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -2542,7 +2707,8 @@
           "障害者福祉について",
           "デジタル教育の再考について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=928",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2448#one:220"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -2552,7 +2718,8 @@
           "庁舎の時間外利用時の暑さ対策について",
           "医療・介護の負担軽減について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=894",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1519#one:92"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -2561,7 +2728,8 @@
           "アタッチメント理論について",
           "食料・農業・農村基本法改正について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=883",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1511#one:5"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -2570,7 +2738,8 @@
           "空家等対策の推進に関する特別措置法の改正について",
           "マイナンバーカードの健康保険証利用について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=853",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1493#one:4"
       },
       {
         "assembly": "令和5年第5回定例会",
@@ -2579,7 +2748,8 @@
           "会計年度任用職員制度について",
           "県立精神医療センターについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=843",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1485#one:60"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -2588,7 +2758,8 @@
           "自衛官募集事務について",
           "教員の負担軽減とデジタル教科書の方向性について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=827",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1473#one:77"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -2598,7 +2769,8 @@
           "部活動における外部講師の在り方について",
           "公民館の緊急事態対応策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=813",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1463#one:145"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -2607,7 +2779,8 @@
           "生活困窮者支援について",
           "部活動と暴力と地域移行について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=791",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1449#one:5"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -2616,7 +2789,8 @@
           "健康保険証とマイナンバーカードの一体化について",
           "ふるさと名取秋まつりにおける自衛隊の機動戦闘車の展示と、市長が銃を携行した写真をＳＮＳに投稿した件について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=771",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1435#one:160"
       },
       {
         "assembly": "令和4年第7回定例会",
@@ -2626,7 +2800,8 @@
           "特別障害者手当について",
           "「生理の貧困」問題への取組の継続性について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=747",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1421#one:59"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -2635,7 +2810,8 @@
           "高齢者等の運転免許証返納に関する施策について",
           "ウクライナ避難民受入れ支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=734",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1411#one:107"
       },
       {
         "assembly": "令和4年第3回定例会",
@@ -2644,7 +2820,8 @@
           "海のマイクロプラスチック問題について",
           "自治体のデジタル化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=709",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1397#one:323"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -2653,7 +2830,8 @@
           "冬季灯油代・暖房用燃料費助成について",
           "県立がんセンター・県立精神医療センターを含む４病院統合・連携について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=699",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1391#one:4"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -2662,7 +2840,8 @@
           "東京電力福島第一原子力発電所におけるＡＬＰＳ等処理水の海洋放出について",
           "新型コロナウイルス感染症の対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=673",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1375#one:70"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -2671,7 +2850,8 @@
           "生理の貧困について",
           "健康二次被害防止について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=651",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1361#one:72"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -2680,7 +2860,7 @@
           "アンガーマネジメントについて",
           "子供の近視について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=629"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -2689,7 +2869,7 @@
           "ごみの最終処分場について",
           "県立がんセンター、東北労災病院、仙台赤十字病院の連携・統合について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=614"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -2698,7 +2878,7 @@
           "仙台空港の運用時間の延長について",
           "学校施設の空調設備の整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=566"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -2707,7 +2887,7 @@
           "新区長制度について",
           "ごみの最終処分場について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=508"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -2716,7 +2896,7 @@
           "行政事務手続について",
           "生活再建支援の取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=490"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -2726,7 +2906,7 @@
           "国民健康保険及び介護保険制度について",
           "子供の貧困問題について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=424"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -2735,7 +2915,7 @@
           "名取市避難行動要支援者避難支援計画について",
           "学校をよりよい教育の場に"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=403"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -2743,7 +2923,7 @@
         "topics": [
           "仙台空港の運用時間の延長について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=384"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -2752,7 +2932,7 @@
           "名取市情報化基本計画について",
           "人権課題の取り組みの強化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=371"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -2761,7 +2941,7 @@
           "貧困問題について",
           "性的マイノリティーの方々が生きやすい環境づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=352"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -2770,7 +2950,7 @@
           "国民健康保険の都道府県単位化に伴う影響について",
           "性的マイノリティー（ＬＧＢＴ）の人たちの権利保障について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=334"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -2779,7 +2959,7 @@
           "選挙公約の実現に向けた取り組みについて",
           "閖上小中学校開校に向けた取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=312"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -2787,7 +2967,7 @@
         "topics": [
           "国民健康保険制度の都道府県単位化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=295"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -2795,7 +2975,7 @@
         "topics": [
           "不当要求・クレーム対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=280"
       },
       {
         "assembly": "平成28年第7回定例会",
@@ -2805,7 +2985,7 @@
           "仙台空港の運用時間の延長について",
           "学校の環境整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=261"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -2813,7 +2993,7 @@
         "topics": [
           "市長選挙公約等全般について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=243"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -2822,7 +3002,7 @@
           "地方創生政策について",
           "閖上のまちづくりの方向性について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=217"
       },
       {
         "assembly": "平成28年第2回定例会",
@@ -2830,7 +3010,7 @@
         "topics": [
           "マイナンバー制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=103"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=197"
       }
     ],
     "gonai-ryoji": [
@@ -2841,7 +3021,8 @@
           "本市のシティーセールスについて",
           "自然に親しむ名所の整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1035",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2544#one:149"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -2851,7 +3032,8 @@
           "用水路のごみ問題について",
           "不登校問題について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=950",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2464#one:266"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -2861,7 +3043,8 @@
           "農政問題について",
           "なとり夏まつりの在り方について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=893",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1519#one:5"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -2870,7 +3053,8 @@
           "農政問題について",
           "市道の整備安全対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=784",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1445#one:91"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -2880,7 +3064,8 @@
           "農政・農地利用について",
           "均衡ある市土について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=695",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1389#one:5"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -2889,7 +3074,7 @@
           "水害対策について",
           "内水排水について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=560"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -2897,7 +3082,7 @@
         "topics": [
           "閉鎖した名取クリーンセンター及び最終処分場の周辺環境整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=514"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -2907,7 +3092,7 @@
           "名取市の観光振興について",
           "公民館運営について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=105"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=385"
       }
     ],
     "yamada-ryutaro": [
@@ -2918,7 +3103,8 @@
           "郷土に誇りを持たせるための教材の掘り起こしについて",
           "市民墓地公園の樹木の管理について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=110"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=769",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1435#one:44"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -2928,7 +3114,8 @@
           "緑化行政について",
           "名取駅東地区にぎわい再生計画について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=110"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=689",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1385#one:141"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -2939,7 +3126,7 @@
           "学校教育の充実について",
           "中学生海外派遣事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=110"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=564"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -2949,7 +3136,7 @@
           "熊野信仰とその歴史遺産について",
           "農業農村整備事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=110"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=409"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -2959,7 +3146,7 @@
           "名取市の将来像について",
           "緑化行政について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=110"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=318"
       }
     ],
     "kumagai-katsuhiko": [
@@ -2972,7 +3159,7 @@
           "統合新病院に係る道路整備について",
           "統合新病院に係る運営支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1057"
       },
       {
         "assembly": "令和7年第6回定例会",
@@ -2980,7 +3167,8 @@
         "topics": [
           "県が名取スポーツパーク跡地に整備する新工業団地について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1024",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2534#one:238"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -2989,7 +3177,8 @@
           "館腰南地区及び下余田２期地区の圃場整備の推進について",
           "県道仙台名取線沿いの中心市街地の上下水道及び歩道拡幅整備について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=972",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2490#one:77"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -2998,7 +3187,8 @@
           "仙台空港インターチェンジ周辺の産業の創出等について",
           "新総合病院移転予定地周辺の市道の４車線化等について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=925",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2448#one:5"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -3006,7 +3196,8 @@
         "topics": [
           "中学生いじめ自殺未遂への対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=903",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1523#one:193"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -3016,7 +3207,8 @@
           "新総合病院の移転予定地周辺の道路整備について",
           "新総合病院に関連する病院・施設・事業所等について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=877",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1507#one:56"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -3025,7 +3217,8 @@
           "宮城県が主導する４病院の再編構想について",
           "仙台空港インターチェンジ周辺の産業の創出について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=810",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1461#one:176"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -3036,7 +3229,8 @@
           "外国企業の誘致について",
           "国際交流の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=768",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1435#one:5"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -3045,7 +3239,8 @@
           "宮城県が主導する県立がんセンターと仙台赤十字病院を統合する病院の診療科目等について",
           "国際交流活動の推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=730",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1409#one:134"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -3055,7 +3250,8 @@
           "土砂災害予防対策について",
           "新型コロナウイルス感染症対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=664",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1371#one:4"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -3065,7 +3261,7 @@
           "滞在型観光の振興について",
           "交流人口の拡大について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=634"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -3074,7 +3270,7 @@
           "宮城県立がんセンター、東北労災病院及び仙台赤十字病院の連携・統合について",
           "農林水産業の振興について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=619"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -3082,7 +3278,7 @@
         "topics": [
           "宮城県立がんセンター、東北労災病院及び仙台赤十字病院の連携・統合に係る総合病院の誘致について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=563"
       },
       {
         "assembly": "令和2年第4回定例会",
@@ -3090,7 +3286,7 @@
         "topics": [
           "網膜色素変性症の方への支援について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=119"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=507"
       }
     ],
     "okubo-chikara": [
@@ -3101,7 +3297,8 @@
           "観光の振興について",
           "共同親権制度について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1017",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2530#one:325"
       },
       {
         "assembly": "令和7年第4回定例会",
@@ -3110,7 +3307,8 @@
           "プラスチックごみ削減について",
           "野生鳥獣対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=993",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2502#one:166"
       },
       {
         "assembly": "令和7年第3回定例会",
@@ -3119,7 +3317,8 @@
           "なとりスーパーキッズ育成事業について",
           "監査制度の充実について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=976",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2492#one:45"
       },
       {
         "assembly": "令和7年第2回定例会",
@@ -3129,7 +3328,8 @@
           "地域コミュニティーの推進について",
           "休日夜間急患センターについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=947",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2462#one:196"
       },
       {
         "assembly": "令和6年第6回定例会",
@@ -3138,7 +3338,8 @@
           "ユニバーサルデザインの取組について",
           "災害対策本部の初動対応について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=926",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=2448#one:41"
       },
       {
         "assembly": "令和6年第4回定例会",
@@ -3146,7 +3347,8 @@
         "topics": [
           "市長の政治姿勢と市政運営について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=892",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1517#one:330"
       },
       {
         "assembly": "令和6年第3回定例会",
@@ -3155,7 +3357,8 @@
           "パークゴルフができる環境整備について",
           "増田西地区の土地区画整理事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=871",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1505#one:4"
       },
       {
         "assembly": "令和6年第2回定例会",
@@ -3166,7 +3369,8 @@
           "なとりスーパーキッズ育成事業について",
           "名取市障害者支援施設について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=851",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1491#one:102"
       },
       {
         "assembly": "令和5年第5回定例会",
@@ -3175,7 +3379,8 @@
           "防災対策について",
           "選挙の投票率向上について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=842",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1485#one:5"
       },
       {
         "assembly": "令和5年第4回定例会",
@@ -3185,7 +3390,8 @@
           "児童生徒の安全な登下校について",
           "水道事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=821",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1469#one:312"
       },
       {
         "assembly": "令和5年第3回定例会",
@@ -3196,7 +3402,8 @@
           "中小企業・小規模企業振興条例について",
           "不登校児童生徒に対する公的支援の充実について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=804",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1459#one:4"
       },
       {
         "assembly": "令和5年第1回定例会",
@@ -3205,7 +3412,8 @@
           "観光と地域公共交通の連携について",
           "ダムを生かした里山振興について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=786",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1445#one:263"
       },
       {
         "assembly": "令和4年第9回定例会",
@@ -3213,7 +3421,8 @@
         "topics": [
           "ＰＦＡＳフッ素化合物汚染について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=772",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1437#one:4"
       },
       {
         "assembly": "令和4年第7回定例会",
@@ -3222,7 +3431,8 @@
           "新型コロナと障がい児者の暮らしについて",
           "手話言語条例の施行について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=742",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1419#one:4"
       },
       {
         "assembly": "令和4年第6回定例会",
@@ -3230,7 +3440,8 @@
         "topics": [
           "食と環境を意識した農業政策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=731",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1409#one:165"
       },
       {
         "assembly": "令和4年第3回定例会",
@@ -3239,7 +3450,8 @@
           "生活保護について",
           "スポーツ振興について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=707",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1397#one:39"
       },
       {
         "assembly": "令和3年第8回定例会",
@@ -3249,7 +3461,8 @@
           "障害者福祉施策について",
           "子供の貧困対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=692",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1387#one:50"
       },
       {
         "assembly": "令和3年第5回定例会",
@@ -3258,7 +3471,8 @@
           "政策の見える化について",
           "森林政策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=669",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1373#one:53"
       },
       {
         "assembly": "令和3年第3回定例会",
@@ -3269,7 +3483,8 @@
           "公営住宅の管理運営について",
           "上下水道事業について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=654",
+        "minutesUrl": "https://www.city.natori.miyagi.dbsr.jp/index.php/100000?Template=document&Id=1363#one:4"
       },
       {
         "assembly": "令和3年第2回定例会",
@@ -3278,7 +3493,7 @@
           "中学校のジェンダー平等の取組について",
           "多様性を認める暮らしについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=637"
       },
       {
         "assembly": "令和2年第9回定例会",
@@ -3287,7 +3502,7 @@
           "自然とふれあえる場と機会の提供について",
           "鳥獣被害対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=621"
       },
       {
         "assembly": "令和2年第7回定例会",
@@ -3297,7 +3512,7 @@
           "女川原子力発電所再稼働について",
           "ＳＤＧｓにある「持続可能な消費と生産パターンの確保」について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=567"
       },
       {
         "assembly": "令和2年第2回定例会",
@@ -3307,7 +3522,7 @@
           "持続可能な自治体運営について",
           "子供、若年者、高齢者等に係る貧困対策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=491"
       },
       {
         "assembly": "平成31年第2回定例会",
@@ -3316,7 +3531,7 @@
           "行政情報の積極的な公開について",
           "行政情報のアーカイブ事業への取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=427"
       },
       {
         "assembly": "平成30年第5回定例会",
@@ -3326,7 +3541,7 @@
           "社会福祉協議会との連携について",
           "不登校児童生徒の居場所づくりについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=408"
       },
       {
         "assembly": "平成30年第4回定例会",
@@ -3336,7 +3551,7 @@
           "非正規職員の処遇改善について",
           "労働者の働きがいについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=383"
       },
       {
         "assembly": "平成30年第3回定例会",
@@ -3345,7 +3560,7 @@
           "交通安全対策について",
           "ゴミ減量、リサイクル推進について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=372"
       },
       {
         "assembly": "平成30年第2回定例会",
@@ -3355,7 +3570,7 @@
           "第六次長期総合計画の策定について",
           "日本版シュタットベルケについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=353"
       },
       {
         "assembly": "平成29年第6回定例会",
@@ -3365,7 +3580,7 @@
           "芝生化事業について",
           "生物多様性の取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=332"
       },
       {
         "assembly": "平成29年第5回定例会",
@@ -3374,7 +3589,7 @@
           "市長の政治姿勢について",
           "緊急時における対策本部の体制と情報収集、連絡網の確保について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=317"
       },
       {
         "assembly": "平成29年第3回定例会",
@@ -3385,7 +3600,7 @@
           "廃棄物処理について",
           "防災・危機管理体制の強化について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=303"
       },
       {
         "assembly": "平成29年第2回定例会",
@@ -3395,7 +3610,7 @@
           "地域エネルギー政策について",
           "公文書館の取り組みについて"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=274"
       },
       {
         "assembly": "平成28年第7回定例会",
@@ -3405,7 +3620,7 @@
           "地域防災計画の津波災害対策について",
           "職員の健康管理について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=256"
       },
       {
         "assembly": "平成28年第5回定例会",
@@ -3415,7 +3630,7 @@
           "選挙公約について、市民への説明責任を果たすべき",
           "子供の貧困施策について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=242"
       },
       {
         "assembly": "平成28年第3回定例会",
@@ -3425,9 +3640,15 @@
           "障がい者福祉施策について",
           "市長の政治姿勢について"
         ],
-        "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=113"
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=216"
       }
     ]
   },
-  "errors": []
+  "errors": [
+    {
+      "memberId": "terashima-masako",
+      "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98",
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))"
+    }
+  ]
 }

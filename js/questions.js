@@ -175,7 +175,10 @@ function renderMatrix() {
         const e = byAssembly[c.assembly];
         if (e) {
           const tip = `${e.date.replaceAll("-", "/")} ${e.topics.join(" / ") || "一般質問"}`;
-          return `<td class="q-yes"><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(tip)}" aria-label="${escapeHtml(m.name)} ${escapeHtml(c.assembly)} の質問映像">●</a></td>`;
+          const minutes = e.minutesUrl
+            ? `<a class="q-minutes" href="${escapeHtml(e.minutesUrl)}" target="_blank" rel="noopener noreferrer" title="議事録を読む(会議録検索システム)" aria-label="${escapeHtml(m.name)} ${escapeHtml(c.assembly)} の議事録">議</a>`
+            : "";
+          return `<td class="q-yes"><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(tip)}" aria-label="${escapeHtml(m.name)} ${escapeHtml(c.assembly)} の質問映像">●</a>${minutes}</td>`;
         }
         // 在職前(初当選より前)の定例会
         if (m.memberSince && c.date < m.memberSince) {
@@ -222,9 +225,12 @@ function renderTopics(termEntries) {
                 .map((x) => `<li data-topic="${escapeHtml(x.toLowerCase())}">${escapeHtml(x)}</li>`)
                 .join("")}</ul>`
             : "<ul><li>(テーマ情報なし)</li></ul>";
+          const minutes = e.minutesUrl
+            ? ` <a href="${escapeHtml(e.minutesUrl)}" target="_blank" rel="noopener noreferrer">議事録を読む</a>`
+            : "";
           return `<div class="q-entry">
             <p class="q-entry-head">${escapeHtml(e.assembly)}(${formatDateJa(e.date)})
-              <a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer">映像を見る</a></p>
+              <a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer">映像を見る</a>${minutes}</p>
             ${topics}
           </div>`;
         })
@@ -427,6 +433,7 @@ function buildCloud(items) {
           memberName: member.name,
           seatNo: member.seatNo,
           url: entry.url,
+          minutesUrl: entry.minutesUrl,
           assembly: entry.assembly,
           date: entry.date,
           topic: t,
@@ -527,7 +534,7 @@ function showWcPopup(word, ev) {
   for (const r of raw) {
     const k = `${r.memberName}|${r.url}`;
     if (!groups.has(k)) {
-      groups.set(k, { memberName: r.memberName, url: r.url, assembly: r.assembly, date: r.date, topics: new Set() });
+      groups.set(k, { memberName: r.memberName, url: r.url, minutesUrl: r.minutesUrl, assembly: r.assembly, date: r.date, topics: new Set() });
     }
     if (r.topic) groups.get(k).topics.add(r.topic);
   }
@@ -542,6 +549,9 @@ function showWcPopup(word, ev) {
           `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(
             r.memberName
           )} — ${escapeHtml(shortAssembly(r.assembly))}(${escapeHtml(formatDateJa(r.date))})</a>` +
+          (r.minutesUrl
+            ? `<a class="wc-pop-minutes" href="${escapeHtml(r.minutesUrl)}" target="_blank" rel="noopener noreferrer">議事録</a>`
+            : "") +
           [...r.topics]
             .map((tp) => `<span class="wc-pop-topic">${escapeHtml(tp)}</span>`)
             .join("") +

@@ -223,12 +223,29 @@ table.matrix {
 .q-matrix thead th[data-sort]:hover { background: #e2ebe7; }
 .q-matrix thead th[data-dir="asc"]::after { content: " ▲"; font-size: 0.7em; }
 .q-matrix thead th[data-dir="desc"]::after { content: " ▼"; font-size: 0.7em; }
+.q-yes {
+  white-space: nowrap;
+}
 .q-yes a {
   color: var(--primary);
   text-decoration: none;
   font-size: 1.05rem;
 }
 .q-yes a:hover { color: var(--primary-dark); }
+/* 議事録リンク(●の隣の「議」) */
+.q-yes a.q-minutes {
+  font-size: 0.68rem;
+  margin-left: 0.25rem;
+  padding: 0 0.15rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  vertical-align: 0.12em;
+}
+.q-yes a.q-minutes:hover {
+  color: var(--primary-dark);
+  border-color: var(--primary);
+}
 .q-none { background: #fafcfb; }
 .q-role {
   background: #f1f4f2;
@@ -346,6 +363,10 @@ table.matrix {
 #wc-popup ul { margin: 0; padding-left: 0; list-style: none; }
 #wc-popup li { margin-bottom: 0.4rem; }
 #wc-popup a { color: var(--primary); }
+#wc-popup .wc-pop-minutes {
+  font-size: 0.76rem;
+  margin-left: 0.5rem;
+}
 #wc-popup .wc-pop-topic {
   display: block;
   font-size: 0.76rem;
