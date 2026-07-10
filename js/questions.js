@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+/* 質問の要約ページ(サイト内)へのURL */
+function questionPageUrl(member, entry) {
+  return `question.html?m=${encodeURIComponent(member.id)}&d=${encodeURIComponent(entry.date)}`;
+}
+
 /* 定例会名の短縮表記(令和6年第2回定例会 → R6-2) */
 function shortAssembly(assembly) {
   const m = assembly.match(/令和(\d+)年第(\d+)回(定例会|臨時会)/);
@@ -174,11 +179,11 @@ function renderMatrix() {
         }
         const e = byAssembly[c.assembly];
         if (e) {
-          const tip = `${e.date.replaceAll("-", "/")} ${e.topics.join(" / ") || "一般質問"}`;
+          const tip = `${e.date.replaceAll("-", "/")} ${e.topics.join(" / ") || "一般質問"}(クリックで要約ページへ)`;
           const minutes = e.minutesUrl
             ? `<a class="q-minutes" href="${escapeHtml(e.minutesUrl)}" target="_blank" rel="noopener noreferrer" title="議事録を読む(会議録検索システム)" aria-label="${escapeHtml(m.name)} ${escapeHtml(c.assembly)} の議事録">議</a>`
             : "";
-          return `<td class="q-yes"><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(tip)}" aria-label="${escapeHtml(m.name)} ${escapeHtml(c.assembly)} の質問映像">●</a>${minutes}</td>`;
+          return `<td class="q-yes"><a href="${questionPageUrl(m, e)}" title="${escapeHtml(tip)}" aria-label="${escapeHtml(m.name)} ${escapeHtml(c.assembly)} の質問の要約ページ">●</a>${minutes}</td>`;
         }
         // 在職前(初当選より前)の定例会
         if (m.memberSince && c.date < m.memberSince) {
@@ -225,11 +230,12 @@ function renderTopics(termEntries) {
                 .join("")}</ul>`
             : "<ul><li>(テーマ情報なし)</li></ul>";
           const minutes = e.minutesUrl
-            ? ` <a href="${escapeHtml(e.minutesUrl)}" target="_blank" rel="noopener noreferrer">議事録を読む</a>`
+            ? ` <a href="${escapeHtml(e.minutesUrl)}" target="_blank" rel="noopener noreferrer">議事録</a>`
             : "";
           return `<div class="q-entry">
             <p class="q-entry-head">${escapeHtml(e.assembly)}(${formatDateJa(e.date)})
-              <a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer">映像を見る</a>${minutes}</p>
+              <a href="${questionPageUrl(t.member, e)}">要約を読む</a>
+              <a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer">映像</a>${minutes}</p>
             ${topics}
           </div>`;
         })
@@ -429,6 +435,7 @@ function buildCloud(items) {
       for (const w of inThisTopic) {
         if (!index.has(w)) index.set(w, []);
         index.get(w).push({
+          memberId: member.id,
           memberName: member.name,
           seatNo: member.seatNo,
           url: entry.url,
@@ -533,7 +540,7 @@ function showWcPopup(word, ev) {
   for (const r of raw) {
     const k = `${r.memberName}|${r.url}`;
     if (!groups.has(k)) {
-      groups.set(k, { memberName: r.memberName, url: r.url, minutesUrl: r.minutesUrl, assembly: r.assembly, date: r.date, topics: new Set() });
+      groups.set(k, { memberId: r.memberId, memberName: r.memberName, url: r.url, minutesUrl: r.minutesUrl, assembly: r.assembly, date: r.date, topics: new Set() });
     }
     if (r.topic) groups.get(k).topics.add(r.topic);
   }
@@ -545,9 +552,10 @@ function showWcPopup(word, ev) {
     `<ul>${rows
       .map(
         (r) =>
-          `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(
+          `<li><a href="${questionPageUrl({ id: r.memberId }, r)}" title="要約ページを開く">${escapeHtml(
             r.memberName
           )} — ${escapeHtml(shortAssembly(r.assembly))}(${escapeHtml(formatDateJa(r.date))})</a>` +
+          `<a class="wc-pop-minutes" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">映像</a>` +
           (r.minutesUrl
             ? `<a class="wc-pop-minutes" href="${escapeHtml(r.minutesUrl)}" target="_blank" rel="noopener noreferrer">議事録</a>`
             : "") +

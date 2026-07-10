@@ -386,6 +386,53 @@ table.matrix {
   padding-left: 0.8rem;
 }
 
+/* ---------- 質問要約ページ ---------- */
+.back-link { margin: 0 0 0.8rem; font-size: 0.85rem; }
+.back-link a { color: var(--primary); text-decoration: none; }
+.back-link a:hover { text-decoration: underline; }
+.qd-faction {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 0.4rem;
+}
+.qd-meeting { margin: 0.2rem 0 0.8rem; color: var(--muted); font-size: 0.9rem; }
+.qd-topics { margin: 0.2rem 0 0; padding-left: 1.3rem; }
+.qd-topics li { margin-bottom: 0.15rem; }
+.ai-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+  vertical-align: 0.15em;
+  margin-left: 0.3rem;
+}
+.qd-summary { line-height: 1.9; }
+.qd-gains-head { font-size: 0.95rem; margin: 1.1rem 0 0.4rem; }
+.qd-gains { margin: 0 0 0.4rem; padding-left: 1.3rem; }
+.qd-gains li { margin-bottom: 0.3rem; }
+.qd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.1rem 0 0.4rem;
+}
+.qd-btn {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary-dark);
+  background: #f2f8f6;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.qd-btn:hover { background: var(--primary); color: #fff; }
+
 /* テーマ一覧の検索一致ハイライト */
 #q-topics-wrap li.hl {
   background: #fff6d9;

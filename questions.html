@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>一般質問 | 名取市議会議員 見える化</title>
   <meta name="description" content="宮城県名取市の市議会議員の一般質問(本会議)の登壇状況と質問テーマの一覧です。">
-  <link rel="stylesheet" href="css/style.css?v=20260710a">
+  <link rel="stylesheet" href="css/style.css?v=20260710b">
 </head>
 <body>
   <header class="site-header">
@@ -32,7 +32,7 @@
   <main>
     <section class="card">
       <h2>一般質問 登壇状況(直近5年)</h2>
-      <p class="lead">一般質問は、議員が市政全般について市長等に直接質問できる場です。●をクリックするとその質問の映像を直接視聴でき、「議」をクリックすると議事録の発言箇所を読めます(マウスを重ねると質問テーマを表示)。赤い列は市議会議員選挙(市議選)の時期で、それより右が今期(2024年2月〜)です。「議席」「議員」「期数」「今期」「5年計」「得票数」「得票率」の見出しをクリックすると並べ替えられます。</p>
+      <p class="lead">一般質問は、議員が市政全般について市長等に直接質問できる場です。●をクリックするとその質疑のAI要約ページが開き、そこから映像・議事録に飛べます。「議」をクリックすると議事録の発言箇所へ直接飛びます(マウスを重ねると質問テーマを表示)。赤い列は市議会議員選挙(市議選)の時期で、それより右が今期(2024年2月〜)です。「議席」「議員」「期数」「今期」「5年計」「得票数」「得票率」の見出しをクリックすると並べ替えられます。</p>
       <div id="q-matrix-wrap">読み込み中…</div>
       <p class="lead">※議長・副議長・監査委員(いずれも前職を含む)は、その職務の性質上、慣例として一般質問を行わない場合があります。在任期間中の定例会のセルには役職名を表示しています。<br>
       ※「—」は当時まだ議員に当選していない(在職前の)期間です。</p>
@@ -82,6 +82,7 @@
       <ul>
         <li>出典: <a href="https://natori-city.stream.jfit.co.jp/" target="_blank" rel="noopener noreferrer">名取市議会 映像配信サイト</a>の議員別検索結果を1日1回自動集計しています。</li>
         <li>「議」のリンク先は<a href="https://www.city.natori.miyagi.dbsr.jp/" target="_blank" rel="noopener noreferrer">名取市議会会議録検索システム</a>の当該発言箇所です。会議録の公開は開催から数か月かかるため、直近の定例会には議事録リンクがありません(公開され次第、自動で追加されます)。</li>
+        <li>各質問の要約ページの内容は、AI(Anthropic Claude)が会議録の当該質疑部分から自動生成したものです。全議員の質疑を同一の方法・同一の基準で機械的に処理しており、特定の議員を評価・推薦するものではありません。AIによる要約には誤りが含まれる可能性があるため、正確な内容は必ず映像・議事録でご確認ください。</li>
         <li>本会議の「一般質問」のみを対象とし、議案質疑・委員会での発言は含みません。</li>
         <li>掲載しているのは現職議員のみです。前期(2020年2月〜2024年1月)に在職した元議員の登壇は表に含まれません。</li>
         <li>役職(議長・副議長・監査委員)の在任期間は、名取市議会会議録(令和2年第1回・令和4年第2回・令和6年第1回・令和8年第2回の各臨時会)で確認しています。</li>
@@ -100,7 +101,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.3/src/wordcloud2.min.js"></script>
-  <script src="js/common.js?v=20260710a"></script>
-  <script src="js/questions.js?v=20260710a"></script>
+  <script src="js/common.js?v=20260710b"></script>
+  <script src="js/questions.js?v=20260710b"></script>
 </body>
 </html>
