@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T13:23:57+09:00",
+  "generatedAt": "2026-07-11T06:57:38+09:00",
   "source": "名取市議会映像配信 https://natori-city.stream.jfit.co.jp/ / 名取市議会会議録検索システム https://www.city.natori.miyagi.dbsr.jp/index.php/100000",
   "members": {
     "abe-masayoshi": [
@@ -3644,11 +3644,5 @@
       }
     ]
   },
-  "errors": [
-    {
-      "memberId": "terashima-masako",
-      "url": "https://natori-city.stream.jfit.co.jp/?tpl=speaker_result&speaker_id=98",
-      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '既存の接続はリモート ホストに強制的に切断されました。', None, 10054, None))"
-    }
-  ]
+  "errors": []
 }

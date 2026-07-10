@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T07:17:06+09:00",
+  "generatedAt": "2026-07-11T06:56:49+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-07-06",
+      "lastPostDate": "2026-07-10",
       "posts": [
+        {
+          "date": "2026-07-10",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/07/10/3565/"
+        },
         {
           "date": "2026-07-06",
           "platform": "website",
@@ -6103,8 +6109,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-06-26",
+      "lastPostDate": "2026-07-10",
       "posts": [
+        {
+          "date": "2026-07-10",
+          "platform": "website",
+          "title": "自衛隊協力会・家族会合同研修会",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/07/10/%e8%87%aa%e8%a1%9b%e9%9a%8a%e5%8d%94%e5%8a%9b%e4%bc%9a%e3%83%bb%e5%ae%b6%e6%97%8f%e4%bc%9a%e5%90%88%e5%90%8c%e7%a0%94%e4%bf%ae%e4%bc%9a-2/"
+        },
         {
           "date": "2026-06-26",
           "platform": "website",
@@ -10124,5 +10136,11 @@
       "posts": []
     }
   },
-  "errors": []
+  "errors": [
+    {
+      "memberId": "chiba-eiko",
+      "feedUrl": "https://hideyuki.info/feed/",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='hideyuki.info', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='hideyuki.info', port=443) at 0x7f53bb411160>, 'Connection to hideyuki.info timed out. (connect timeout=20)'))"
+    }
+  ]
 }
