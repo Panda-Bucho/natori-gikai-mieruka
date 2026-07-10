@@ -155,7 +155,7 @@ function renderMatrix() {
   }
 
   const dirAttr = (key) => (qSort.key === key ? ` data-dir="${qSort.asc ? "asc" : "desc"}"` : "");
-  const head = `<tr><th class="sticky-col" data-sort="name"${dirAttr("name")}>議員</th><th data-sort="terms"${dirAttr("terms")}>期数</th>${columns
+  const head = `<tr><th class="sticky-col seat-th" data-sort="seat"${dirAttr("seat")} title="議席番号">議席</th><th class="sticky-col" data-sort="name"${dirAttr("name")}>議員</th><th data-sort="terms"${dirAttr("terms")}>期数</th>${columns
     .map((c) =>
       c.type === "election"
         ? `<th class="election-col" title="${escapeHtml(c.title)}">${escapeHtml(c.label)}</th>`
@@ -194,8 +194,7 @@ function renderMatrix() {
       .join("");
     const votesTd = formatVotesHtml(t.votes);
     const shareTd = formatShareHtml(t.share);
-    const seat = `<span class="seat-no">${m.seatNo ?? "—"}</span>`;
-    return `<tr><th class="sticky-col row-name">${seat}${nameWithRole(m)}</th><td class="q-terms">${m.terms ?? "—"}</td>${cells}<td class="total">${t.termCount}</td><td class="total">${t.entries.length}</td><td class="total">${votesTd}</td><td class="total">${shareTd}</td></tr>`;
+    return `<tr><th class="sticky-col seat-th">${m.seatNo ?? "—"}</th><th class="sticky-col row-name">${nameWithRole(m)}</th><td class="q-terms">${m.terms ?? "—"}</td>${cells}<td class="total">${t.termCount}</td><td class="total">${t.entries.length}</td><td class="total">${votesTd}</td><td class="total">${shareTd}</td></tr>`;
   });
 
   wrap.innerHTML = `<table class="matrix q-matrix"><thead>${head}</thead><tbody>${rows.join("")}</tbody></table>`;
@@ -207,7 +206,7 @@ function renderMatrix() {
       if (qSort.key === key) {
         qSort.asc = !qSort.asc;
       } else {
-        qSort = { key, asc: key === "name" };
+        qSort = { key, asc: key === "name" || key === "seat" };
       }
       renderMatrix();
     });

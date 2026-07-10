@@ -226,6 +226,18 @@ table.matrix {
 .q-yes {
   white-space: nowrap;
 }
+/* 議席列(氏名列の左に固定表示、氏名列はその分だけ右へオフセット) */
+.q-matrix .seat-th {
+  left: 0;
+  width: 2.6rem;
+  min-width: 2.6rem;
+  max-width: 2.6rem;
+  text-align: center;
+}
+/* nth-child指定: thead/tbody共通で2番目のsticky列(氏名)を議席列の分だけ右にオフセット */
+.q-matrix tr > .sticky-col:nth-child(2) {
+  left: 2.6rem;
+}
 .q-yes a {
   color: var(--primary);
   text-decoration: none;
