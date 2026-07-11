@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T06:56:49+09:00",
+  "generatedAt": "2026-07-12T06:43:00+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-07-10",
+      "lastPostDate": "2026-07-11",
       "posts": [
+        {
+          "date": "2026-07-11",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/07/11/3568/"
+        },
         {
           "date": "2026-07-10",
           "platform": "website",
@@ -10136,11 +10142,5 @@
       "posts": []
     }
   },
-  "errors": [
-    {
-      "memberId": "chiba-eiko",
-      "feedUrl": "https://hideyuki.info/feed/",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='hideyuki.info', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='hideyuki.info', port=443) at 0x7f53bb411160>, 'Connection to hideyuki.info timed out. (connect timeout=20)'))"
-    }
-  ]
+  "errors": []
 }
