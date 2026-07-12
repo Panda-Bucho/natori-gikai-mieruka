@@ -614,6 +614,7 @@ function showWcPopup(word, ev) {
           `<li><a href="${questionPageUrl({ id: r.memberId }, r)}" title="要約ページを開く">${escapeHtml(
             r.memberName
           )} — ${escapeHtml(shortAssembly(r.assembly))}(${escapeHtml(formatDateJa(r.date))})</a>` +
+          `<a class="wc-pop-minutes" href="${questionPageUrl({ id: r.memberId }, r)}">要約</a>` +
           `<a class="wc-pop-minutes" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">映像</a>` +
           (r.minutesUrl
             ? `<a class="wc-pop-minutes" href="${escapeHtml(r.minutesUrl)}" target="_blank" rel="noopener noreferrer">議事録</a>`
