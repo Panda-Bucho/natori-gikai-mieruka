@@ -466,6 +466,13 @@ table.matrix {
   display: inline-block;
   flex-shrink: 0;
 }
+.lg-line {
+  width: 18px;
+  height: 0;
+  border-top: 2px dashed #d85a30;
+  display: inline-block;
+  flex-shrink: 0;
+}
 h3.chart-sub {
   font-size: 0.92rem;
   font-weight: 700;

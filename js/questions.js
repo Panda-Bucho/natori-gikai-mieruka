@@ -294,6 +294,27 @@ function hasRoleThisTerm(m) {
   return (m.roleHistory || []).some((h) => !h.to || h.to > TERM_START_DATE);
 }
 
+/* 最小二乗法の回帰直線(グラフ両端の2点を返す)。点が2つ未満やx分散ゼロなら空 */
+function regressionLine(pts, xMin, xMax) {
+  const n = pts.length;
+  if (n < 2) return [];
+  let sx = 0, sy = 0, sxx = 0, sxy = 0;
+  for (const [x, y] of pts) {
+    sx += x;
+    sy += y;
+    sxx += x * x;
+    sxy += x * y;
+  }
+  const denom = n * sxx - sx * sx;
+  if (!denom) return [];
+  const slope = (n * sxy - sx * sy) / denom;
+  const intercept = (sy - slope * sx) / n;
+  return [
+    { x: xMin, y: slope * xMin + intercept },
+    { x: xMax, y: slope * xMax + intercept },
+  ];
+}
+
 function renderCharts() {
   if (typeof Chart === "undefined") return;
   const ink = "#67766f";
@@ -308,7 +329,8 @@ function renderCharts() {
       const pts = [];
       chart.data.datasets.forEach((ds, di) => {
         chart.getDatasetMeta(di).data.forEach((pt, i) => {
-          pts.push({ x: pt.x, y: pt.y, name: ds.data[i].name });
+          const name = ds.data[i] && ds.data[i].name; // 近似線データセットには名前がない
+          if (name) pts.push({ x: pt.x, y: pt.y, name });
         });
       });
       pts.sort((a, b) => a.x - b.x || a.y - b.y);
@@ -332,11 +354,13 @@ function renderCharts() {
   const build = (canvasId, xKey, xTitle, xMin, xMax, jitterStep) => {
     const normal = [];
     const withRole = [];
+    const reg = []; // 近似線用の生の座標(ジッターなし。慣例で質問を控える役職経験者は除く)
     const seen = {};
     for (const t of matrixEntries) {
       const m = t.member;
-      let x = xKey === "share" ? t.share : xKey === "age" ? calcAge(m.birthDate) : m.terms;
-      if (x == null) continue;
+      const rawX = xKey === "share" ? t.share : xKey === "age" ? calcAge(m.birthDate) : m.terms;
+      if (rawX == null) continue;
+      let x = rawX;
       if (jitterStep) {
         // 同一座標の議員が重なって見えなくなるのを防ぐ
         const key = `${x}:${t.termCount}`;
@@ -344,7 +368,12 @@ function renderCharts() {
         if (seen[key] > 1) x += (seen[key] - 1) * jitterStep;
       }
       const p = { x, y: t.termCount, name: m.name.replace(/\s+/g, "") };
-      (hasRoleThisTerm(m) ? withRole : normal).push(p);
+      if (hasRoleThisTerm(m)) {
+        withRole.push(p);
+      } else {
+        normal.push(p);
+        reg.push([rawX, t.termCount]);
+      }
     }
     new Chart(document.getElementById(canvasId), {
       type: "scatter",
@@ -352,6 +381,16 @@ function renderCharts() {
         datasets: [
           { data: normal, backgroundColor: "#1a735b", pointRadius: 5, pointStyle: "circle" },
           { data: withRole, backgroundColor: "#9aa8a1", pointRadius: 5, pointStyle: "rect" },
+          {
+            type: "line",
+            data: regressionLine(reg, xMin, xMax),
+            borderColor: "rgba(216, 90, 48, 0.8)",
+            borderWidth: 1.5,
+            borderDash: [6, 4],
+            pointRadius: 0,
+            pointHitRadius: 0,
+            pointHoverRadius: 0,
+          },
         ],
       },
       options: {
