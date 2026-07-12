@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ETKFNLXT0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6ETKFNLXT0');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>議員定数 | 名取市議会議員 見える化</title>
+  <meta name="description" content="宮城県名取市の市議会議員定数を、人口1000人あたり議員数で全国の市区町村と比較できるページです。">
+  <link rel="stylesheet" href="css/style.css?v=20260712a">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <h1 class="site-title"><a href="index.html">名取市議会議員 見える化</a></h1>
+      <p class="site-subtitle">宮城県名取市 / 議員のWeb発信と議会での一般質問を有権者目線で可視化(非公式)</p>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">議員一覧</a>
+      <a href="stats.html">月別発信回数</a>
+      <a href="questions.html">一般質問</a>
+      <a href="council.html" class="active">議員定数</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>人口1000人あたりの議員数 — 名取市の議員定数を全国と比べる</h2>
+      <p class="lead">名取市議会の議員定数は21人です。人口に対して議員が多いのか少ないのかを判断する材料として、全国の市区町村の「人口1000人あたりの議員数」を同じ基準で並べ、名取市の位置を示します。比較する範囲(集計グループ)は切り替えられます。</p>
+      <div class="chart-controls">
+        <label for="cc-group">集計グループ:</label>
+        <select id="cc-group"></select>
+        <span id="cc-group-info"></span>
+      </div>
+      <div id="cc-stats" class="cc-stats">読み込み中…</div>
+      <div class="chart-legend">
+        <span><span class="lg-dot"></span>市区町村</span>
+        <span><span class="lg-dot lg-natori"></span>名取市</span>
+        <span><span class="lg-line"></span>近似線(べき乗回帰)</span>
+        <span><span class="lg-line lg-mean"></span>グループ平均</span>
+        <span><span class="lg-line lg-median"></span>グループ中央値</span>
+      </div>
+      <div class="chart-box chart-box-tall"><canvas id="cc-chart" aria-label="人口と人口1000人あたり議員数の散布図" role="img"></canvas></div>
+      <p class="lead chart-note">※両軸とも対数目盛です。人口が少ない自治体ほど1000人あたりの議員数は構造的に多くなる(その分、右下がりの並びになる)ため、平均値だけでなく、<strong>同じ人口規模での標準的な水準を示す近似線と比べる</strong>のが目安になります。点にマウスを重ねると自治体名・人口・定数を表示します。</p>
+    </section>
+
+    <section class="card notes">
+      <h2>このページについて</h2>
+      <ul>
+        <li>人口は<a href="https://www.stat.go.jp/data/kokusei/2025/index.html" target="_blank" rel="noopener noreferrer">令和7年国勢調査 人口速報集計</a>(2025年10月1日現在)の速報値によります。確定値の公表後に数値が変わる場合があります。</li>
+        <li>議員数は各議会が条例で定める<strong>議員定数</strong>を用いています(欠員を反映した現員数ではありません)。市・特別区は<a href="https://www.si-gichokai.jp/research/teisu/index.html" target="_blank" rel="noopener noreferrer">全国市議会議長会「市議会議員定数に関する調査結果」</a>(2025年12月31日現在)、町村は<a href="https://www.nactva.gr.jp/html/research/index.html" target="_blank" rel="noopener noreferrer">全国町村議会議長会「第71回町村議会実態調査」</a>(2025年7月1日現在)によります。人口と定数の基準日には最大6か月程度の差があります。</li>
+        <li>「平均値」「中央値」は、グループ内の各自治体の「人口1000人あたり議員数」の単純平均・中央値です(人口の大小で重み付けはしていません)。</li>
+        <li>近似線は最小二乗法によるべき乗回帰(両対数グラフ上の直線)です。R²(決定係数)は0〜1の値で、1に近いほど点が近似線に沿って分布していることを示します。</li>
+        <li>「全国の市のみ」に東京の特別区は含みません(特別区は「全国」「人口同規模」グループに含みます)。政令指定都市は市全体で1つの点です。</li>
+        <li>議員定数の妥当性には、人口のほかに面積・地域事情・財政・議会の役割など多くの観点があります。このページは人口比という一つの物差しを提供するものであり、定数の多少を評価・推奨するものではありません。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p id="generated-at"></p>
+      <p>出典: 令和7年国勢調査 人口速報集計(総務省統計局)・全国市議会議長会・全国町村議会議長会</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="js/common.js?v=20260712a"></script>
+  <script src="js/council.js?v=20260712a"></script>
+</body>
+</html>

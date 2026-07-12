@@ -500,6 +500,36 @@ h3.chart-sub {
   background: #fff;
 }
 .chart-box { position: relative; height: 340px; }
+.chart-box-tall { height: 460px; }
+
+/* ---------- 議員定数ページ ---------- */
+.lg-dot.lg-natori { background: #d85a30; }
+.lg-line.lg-mean { border-top: 2px dotted #3a6ea5; }
+.lg-line.lg-median { border-top: 2px dashed #7a549e; }
+.cc-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.5rem;
+  margin: 0.2rem 0 0.9rem;
+}
+.cc-stat {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+}
+.cc-stat-label { font-size: 0.78rem; color: var(--muted); }
+.cc-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.3;
+}
+.cc-stat-value small { font-size: 0.75rem; font-weight: 400; color: var(--muted); margin-left: 0.15rem; }
+.cc-stat-sub { font-size: 0.72rem; color: var(--muted); }
+#cc-group-info { font-size: 0.8rem; color: var(--muted); margin-left: 0.4rem; }
 
 /* ---------- フッター ---------- */
 .site-footer {

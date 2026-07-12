@@ -294,36 +294,6 @@ function hasRoleThisTerm(m) {
   return (m.roleHistory || []).some((h) => !h.to || h.to > TERM_START_DATE);
 }
 
-/* 最小二乗法の回帰直線。グラフ両端の2点と slope/intercept/R² を返す(計算不能なら null) */
-function regressionLine(pts, xMin, xMax) {
-  const n = pts.length;
-  if (n < 2) return null;
-  let sx = 0, sy = 0, sxx = 0, syy = 0, sxy = 0;
-  for (const [x, y] of pts) {
-    sx += x;
-    sy += y;
-    sxx += x * x;
-    syy += y * y;
-    sxy += x * y;
-  }
-  const denomX = n * sxx - sx * sx;
-  if (!denomX) return null;
-  const slope = (n * sxy - sx * sy) / denomX;
-  const intercept = (sy - slope * sx) / n;
-  const denomY = n * syy - sy * sy;
-  const cov = n * sxy - sx * sy;
-  const r2 = denomY ? (cov * cov) / (denomX * denomY) : 0;
-  return {
-    points: [
-      { x: xMin, y: slope * xMin + intercept },
-      { x: xMax, y: slope * xMax + intercept },
-    ],
-    slope,
-    intercept,
-    r2,
-  };
-}
-
 /* 近似線の脇に出す表示文字列(数式とR²の2行)。負号は「−」で表示 */
 function regLabelLines(fit) {
   const slope = fit.slope.toFixed(2).replace("-", "−");
