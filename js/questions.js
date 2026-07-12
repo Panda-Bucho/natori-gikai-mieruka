@@ -294,24 +294,43 @@ function hasRoleThisTerm(m) {
   return (m.roleHistory || []).some((h) => !h.to || h.to > TERM_START_DATE);
 }
 
-/* 最小二乗法の回帰直線(グラフ両端の2点を返す)。点が2つ未満やx分散ゼロなら空 */
+/* 最小二乗法の回帰直線。グラフ両端の2点と slope/intercept/R² を返す(計算不能なら null) */
 function regressionLine(pts, xMin, xMax) {
   const n = pts.length;
-  if (n < 2) return [];
-  let sx = 0, sy = 0, sxx = 0, sxy = 0;
+  if (n < 2) return null;
+  let sx = 0, sy = 0, sxx = 0, syy = 0, sxy = 0;
   for (const [x, y] of pts) {
     sx += x;
     sy += y;
     sxx += x * x;
+    syy += y * y;
     sxy += x * y;
   }
-  const denom = n * sxx - sx * sx;
-  if (!denom) return [];
-  const slope = (n * sxy - sx * sy) / denom;
+  const denomX = n * sxx - sx * sx;
+  if (!denomX) return null;
+  const slope = (n * sxy - sx * sy) / denomX;
   const intercept = (sy - slope * sx) / n;
+  const denomY = n * syy - sy * sy;
+  const cov = n * sxy - sx * sy;
+  const r2 = denomY ? (cov * cov) / (denomX * denomY) : 0;
+  return {
+    points: [
+      { x: xMin, y: slope * xMin + intercept },
+      { x: xMax, y: slope * xMax + intercept },
+    ],
+    slope,
+    intercept,
+    r2,
+  };
+}
+
+/* 近似線の脇に出す表示文字列(数式とR²の2行)。負号は「−」で表示 */
+function regLabelLines(fit) {
+  const slope = fit.slope.toFixed(2).replace("-", "−");
+  const sign = fit.intercept < 0 ? " − " : " + ";
   return [
-    { x: xMin, y: slope * xMin + intercept },
-    { x: xMax, y: slope * xMax + intercept },
+    `y = ${slope}x${sign}${Math.abs(fit.intercept).toFixed(1)}`,
+    `R² = ${fit.r2.toFixed(2)}`,
   ];
 }
 
@@ -351,6 +370,34 @@ function renderCharts() {
       }
     },
   };
+  // 近似線の脇に数式とR²を描くプラグイン(regLabel を持つデータセットが対象)
+  const regLabelPlugin = {
+    id: "regLabels",
+    afterDatasetsDraw(chart) {
+      const ctx = chart.ctx;
+      const area = chart.chartArea;
+      chart.data.datasets.forEach((ds, di) => {
+        if (!ds.regLabel || !ds.regLabel.length) return;
+        const meta = chart.getDatasetMeta(di).data;
+        if (meta.length < 2) return;
+        const p0 = meta[0];
+        const p1 = meta[meta.length - 1];
+        ctx.font = "11px 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif";
+        ctx.fillStyle = "#d85a30";
+        const lineH = 14;
+        const w = Math.max(...ds.regLabel.map((s) => ctx.measureText(s).width));
+        let x = p0.x + (p1.x - p0.x) * 0.72;
+        const yOnLine = p0.y + (p1.y - p0.y) * 0.72;
+        // 右下がり(傾き負)なら線の上側、右上がりなら下側の空きに置く
+        let y = p1.y > p0.y
+          ? yOnLine - 8 - lineH * (ds.regLabel.length - 1)
+          : yOnLine + lineH + 6;
+        x = Math.max(area.left + 4, Math.min(x, area.right - w - 4));
+        y = Math.max(area.top + 12, Math.min(y, area.bottom - lineH * (ds.regLabel.length - 1) - 4));
+        ds.regLabel.forEach((s, i) => ctx.fillText(s, x, y + i * lineH));
+      });
+    },
+  };
   const build = (canvasId, xKey, xTitle, xMin, xMax, jitterStep) => {
     const normal = [];
     const withRole = [];
@@ -375,6 +422,7 @@ function renderCharts() {
         reg.push([rawX, t.termCount]);
       }
     }
+    const fit = regressionLine(reg, xMin, xMax);
     new Chart(document.getElementById(canvasId), {
       type: "scatter",
       data: {
@@ -383,7 +431,8 @@ function renderCharts() {
           { data: withRole, backgroundColor: "#9aa8a1", pointRadius: 5, pointStyle: "rect" },
           {
             type: "line",
-            data: regressionLine(reg, xMin, xMax),
+            data: fit ? fit.points : [],
+            regLabel: fit ? regLabelLines(fit) : null,
             borderColor: "rgba(216, 90, 48, 0.8)",
             borderWidth: 1.5,
             borderDash: [6, 4],
@@ -421,7 +470,7 @@ function renderCharts() {
           },
         },
       },
-      plugins: [labelPlugin],
+      plugins: [labelPlugin, regLabelPlugin],
     });
   };
   build("corr-share", "share", "得票率(%、2024年1月市議選)", 2.4, 7.4, 0);
