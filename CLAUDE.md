@@ -12,12 +12,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 これは**静的HTML/CSS/JSサイト**(ビルド不要・フレームワークなし)で、名取市議会議員の活動と議会の姿を可視化します。RSSフィード・議会映像配信サイト・政府統計などの公開情報を集約し、インタラクティブな表・グラフとして表示します。
 
-**5ページ構成:**
+**6ページ構成:**
 - `index.html` — 議員一覧(得票結果、年齢、期数、委員会所属、媒体リンク)
 - `stats.html` — 月別発信回数(棒グラフ + データ表)
 - `questions.html` — 一般質問の登壇状況(マトリクス、散布図、ワードクラウド、テーマ一覧)
 - `question.html` — 個別の質問詳細・AI要約
 - `council.html` — 議員定数の妥当性(全国市区町村との人口1000人あたり議員数比較)
+- `salary.html` — 議員報酬の妥当性(全国市区町村との報酬月額比較、議員/副議長/議長切替)
 
 **データソース:** 議員メタデータ(手動JSON)、RSSフィード(ブログ・公式サイト)、議会映像配信サイトAPI、国勢調査、議長会調査。
 
@@ -30,7 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ├── .claude/launch.json              # 開発サーバー設定
 ├── README.md                        # ユーザー向けドキュメント
 │
-├── index.html, stats.html, questions.html, question.html, council.html
+├── index.html, stats.html, questions.html, question.html, council.html, salary.html
 ├── css/style.css                    # 単一スタイルシート(全ページ共通)
 ├── js/
 │   ├── common.js                    # 共通ユーティリティ: データ取得・日付処理・グラフ補助
@@ -38,17 +39,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── stats.js                     # 月別発信回数(グラフ・期間切替)
 │   ├── questions.js                 # 質問マトリクス・散布図・ワードクラウド
 │   ├── question.js                 # 質問詳細ページ
-│   └── council.js                   # 議員定数の散布図(対数軸+べき乗近似)
+│   ├── council.js                   # 議員定数の散布図(対数軸+べき乗近似)
+│   └── salary.js                    # 議員報酬の散布図(横軸対数+半対数近似)
 ├── data/
 │   ├── members.json                 # 手動管理: 議員メタデータ・媒体URL・RSSフィード
 │   ├── posts.json                   # 自動生成: RSS発信履歴(update_posts.py)
 │   ├── questions.json               # 自動生成: 議会映像スクレイプ(update_questions.py)
 │   ├── summaries.json               # 自動生成: AI要約(make_summaries.py)
-│   └── council.json                 # 自動生成: 市区町村の人口・議員定数データ(build_council_data.py)
+│   ├── council.json                 # 自動生成: 市区町村の人口・議員定数データ(build_council_data.py)
+│   └── salary.json                  # 自動生成: 市区町村の議員報酬データ(build_salary_data.py)
 ├── scripts/
 │   ├── update_posts.py              # RSS集計
 │   ├── update_questions.py          # 議会映像API + 会議録スクレイプ
 │   ├── build_council_data.py        # 国勢調査・議長会データのダウンロードと集計
+│   ├── build_salary_data.py         # 議長会報酬データのダウンロードと集計
 │   ├── backfill_posts.py            # 過去投稿の遡取(新規フィード追加時に1回実行)
 │   ├── fetch_qa_texts.py            # 会議録から質疑テキストを抽出(要約生成の下準備)
 │   └── make_summaries.py            # AI要約生成(手動実行)
@@ -75,6 +79,7 @@ scripts/update_questions.py   →  data/questions.json
 scripts/fetch_qa_texts.py     →  質問テキストキャッシュ
 scripts/make_summaries.py     →  data/summaries.json (Claude API)
 scripts/build_council_data.py →  data/council.json(国勢調査+議長会調査)
+scripts/build_salary_data.py  →  data/salary.json(議長会報酬調査、data/council.jsonのpopを再利用)
          ↓
 JSページ(main.js, stats.js, questions.js等)
          ↓
@@ -154,6 +159,19 @@ JSページ(main.js, stats.js, questions.js等)
 }
 ```
 
+**salary.json**(自動):
+```json
+{
+  "generatedAt": "2026-07-12T16:00:00Z",
+  "basisCity": "2025-12-31",
+  "basisTown": "2025-07-01",
+  "bracketLabels": { "A": "人口5万未満", "B": "人口5万〜10万未満", "...": "..." },
+  "municipalities": [
+    { "code": "04207", "name": "名取市", "pref": "宮城県", "type": "市", "pop": 79817, "gicho": 504000, "fuku": 420000, "giin": 395000, "bracket": "B" }
+  ]
+}
+```
+
 ## 開発ワークフロー
 
 ### ローカルセットアップ
@@ -199,15 +217,15 @@ python -m http.server 8000
 
 ### キャッシュバスティング
 
-**重要:** JSまたはCSSを変更した場合、**5つのHTMLファイルすべて**(`index.html`, `stats.html`, `questions.html`, `question.html`, `council.html`)の `?v=` パラメータを必ずバンプすること。
+**重要:** JSまたはCSSを変更した場合、**6つのHTMLファイルすべて**(`index.html`, `stats.html`, `questions.html`, `question.html`, `council.html`, `salary.html`)の `?v=` パラメータを必ずバンプすること。
 
 形式: `?v=YYYYMMDD<文字>`(例: `?v=20260712a`、同日に再更新するなら `20260712b`)
 
 理由: GitHub Pagesは600秒のmax-ageを持つ。バンプを忘れると、訪問者が新しいHTMLと古いキャッシュ済みJS/CSSの組み合わせを見てしまい、ページが壊れる。パラメータのバンプで強制的に再取得させる。
 
 **運用ルール:**
-- `css/style.css` の変更 → 5つのHTMLすべての `?v=` をバンプ
-- `.js` ファイルの変更 → 5つのHTMLすべての `?v=` をバンプ(すべてが対象ファイルを参照しているため)
+- `css/style.css` の変更 → 6つのHTMLすべての `?v=` をバンプ
+- `.js` ファイルの変更 → 6つのHTMLすべての `?v=` をバンプ(すべてが対象ファイルを参照しているため)
 - `data/*.json` の変更 → **バンプ不要**(common.js の `fetchJson` が `cache: no-cache` を使用)
 
 ### 共通ユーティリティ(js/common.js)
