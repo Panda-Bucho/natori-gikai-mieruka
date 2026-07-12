@@ -541,6 +541,8 @@ h3.chart-sub {
 }
 .site-footer .inner { max-width: 1080px; margin: 0 auto; }
 .site-footer p { margin: 0.2rem 0; }
+.site-footer a { color: var(--primary-dark); text-decoration: underline; }
+.footer-feedback { font-weight: 700; }
 #generated-at { font-weight: 700; }
 
 @media (max-width: 600px) {
