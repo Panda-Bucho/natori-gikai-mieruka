@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>議員報酬 | 名取市議会議員 見える化</title>
   <meta name="description" content="宮城県名取市の市議会議員報酬を、全国の市区町村と比較できるページです。">
-  <link rel="stylesheet" href="css/style.css?v=20260712d">
+  <link rel="stylesheet" href="css/style.css?v=20260713a">
 </head>
 <body>
   <header class="site-header">
@@ -46,7 +46,7 @@
       <div class="chart-legend">
         <span><span class="lg-dot"></span>市区町村</span>
         <span><span class="lg-dot lg-natori"></span>名取市</span>
-        <span><span class="lg-line"></span>近似線(半対数回帰)</span>
+        <span><span class="lg-line"></span>近似線(べき乗回帰)</span>
         <span><span class="lg-line lg-mean"></span>グループ平均</span>
         <span><span class="lg-line lg-median"></span>グループ中央値</span>
       </div>
@@ -58,9 +58,9 @@
       <h2>このページについて</h2>
       <ul>
         <li>報酬額は<a href="https://www.si-gichokai.jp/research/teisu/index.html" target="_blank" rel="noopener noreferrer">全国市議会議長会「市議会議員報酬に関する調査結果」</a>(2025年12月31日現在)、町村は<a href="https://www.nactva.gr.jp/html/research/index.html" target="_blank" rel="noopener noreferrer">全国町村議会議長会「第71回町村議会実態調査」</a>(2025年7月1日現在)による、条例で定める<strong>報酬月額</strong>です。期末手当(ボーナス)や政務活動費などは含みません。人口は<a href="https://www.stat.go.jp/data/kokusei/2025/index.html" target="_blank" rel="noopener noreferrer">令和7年国勢調査 人口速報集計</a>(2025年10月1日現在)によります。基準日には最大6か月程度の差があります。</li>
-        <li>「人口段階」は、全国市議会議長会がこの報酬調査の集計で実際に採用している区分です。全国の市・特別区を人口規模で8段階(A:5万未満〜G:50万以上、H:指定都市)に分け、段階ごとの水準を比較できるようにしたものです。名取市は人口約7.9万人のため「人口5万〜10万未満」の段階に属します。この切り口は市・特別区のみが対象で、町村は含みません。</li>
+        <li>「人口段階」は、全国市議会議長会が定数・報酬の調査で実際に採用している区分です。全国の市・特別区を人口規模で8段階(A:5万未満〜G:50万以上、H:指定都市)に分け、段階ごとの水準を比較できるようにしたものです。名取市は人口約7.9万人のため「人口5万〜10万未満」の段階に属します。本ページの「人口段階が同じ市」グループは市のみを対象とし、特別区・町村は含みません。</li>
         <li>「平均値」「中央値」は、グループ内の各自治体の報酬月額の単純平均・中央値です(人口の大小で重み付けはしていません)。</li>
-        <li>近似線は最小二乗法による半対数回帰(横軸=人口の対数、縦軸=報酬額)です。R²(決定係数)は0〜1の値で、1に近いほど点が近似線に沿って分布していることを示します。</li>
+        <li>近似線は最小二乗法によるべき乗回帰(横軸・縦軸とも対数を取ったうえでの直線近似)です。報酬額は人口に対して一定の「額」ではなく一定の「割合」で増える傾向があり(人口が10倍になると報酬はおよそ1.6倍)、実データで当てはめを比較したところ半対数回帰より当てはまりが良かった(全国のR²で0.88対0.80)ため採用しています。<a href="council.html">議員定数ページ</a>と回帰手法をそろえています。R²(決定係数)は両軸を対数変換した空間での値で、0〜1のうち1に近いほど点が近似線に沿って分布していることを示します。</li>
         <li>「全国の市のみ」に東京の特別区は含みません(特別区は「全国」グループに含みます)。政令指定都市は市全体で1つの点です。</li>
         <li>議員報酬の水準には、人口のほかに財政力・地域の物価水準・議会の役割など多くの観点があります。このページは人口規模との比較という一つの物差しを提供するものであり、報酬の多少を評価・推奨するものではありません。</li>
       </ul>
@@ -76,7 +76,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-  <script src="js/common.js?v=20260712d"></script>
-  <script src="js/salary.js?v=20260712d"></script>
+  <script src="js/common.js?v=20260713a"></script>
+  <script src="js/salary.js?v=20260713a"></script>
 </body>
 </html>

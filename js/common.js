@@ -205,6 +205,13 @@ function regressionLine(pts, xMin, xMax) {
   };
 }
 
+/* 有効数字3桁での表示(近似線の係数用) */
+function sig3(v) {
+  if (!isFinite(v) || v === 0) return String(v);
+  const d = Math.max(0, 2 - Math.floor(Math.log10(Math.abs(v))));
+  return v.toFixed(Math.min(d, 6));
+}
+
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",

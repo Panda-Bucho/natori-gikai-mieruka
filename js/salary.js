@@ -1,4 +1,4 @@
-/* 議員報酬ページ: 人口(対数)×報酬月額(線形)の散布図+半対数近似線+グループ・報酬種別切替 */
+/* 議員報酬ページ: 人口(対数)×報酬月額(線形)の散布図+べき乗近似線+グループ・報酬種別切替 */
 
 const NATORI_CODE = "04207";
 const TOHOKU_PREFS = new Set(["青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"]);
@@ -79,16 +79,17 @@ function renderGroup(groupId, typeId) {
   const med = median(values);
   const rank = rows.filter((m) => m[type.id] > natori[type.id]).length + 1; // 高い方から
 
-  // 半対数回帰: x=log10(人口), y=報酬額(regressionLine は common.js)
-  const logPts = rows.map((m) => [Math.log10(m.pop), m[type.id]]);
+  // べき乗回帰: log10空間で最小二乗(regressionLine は common.js)
+  const logPts = rows.map((m) => [Math.log10(m.pop), Math.log10(m[type.id])]);
   const pops = rows.map((m) => m.pop);
   const xMin = Math.min(...pops) * 0.8;
   const xMax = Math.max(...pops) * 1.3;
   const fit = regressionLine(logPts, Math.log10(xMin), Math.log10(xMax));
-  const expected = fit ? fit.intercept + fit.slope * Math.log10(natori.pop) : null;
+  const coefA = fit ? Math.pow(10, fit.intercept) : null;
+  const expected = fit ? coefA * Math.pow(natori.pop, fit.slope) : null;
 
   renderStats(group, type, rows, natori, mean, med, rank, expected, fit);
-  renderChart(rows, natori, type, mean, med, fit, xMin, xMax);
+  renderChart(rows, natori, type, mean, med, fit, xMin, xMax, coefA);
   const info = document.getElementById("sl-group-info");
   if (info) info.textContent = `${rows.length}団体`;
 }
@@ -107,7 +108,7 @@ function renderStats(group, type, rows, natori, mean, med, rank, expected, fit) 
       : "");
 }
 
-function renderChart(rows, natori, type, mean, med, fit, xMin, xMax) {
+function renderChart(rows, natori, type, mean, med, fit, xMin, xMax, coefA) {
   if (typeof Chart === "undefined") return;
   const ink = "#67766f";
   const gridColor = "#dde5e1";
@@ -119,18 +120,19 @@ function renderChart(rows, natori, type, mean, med, fit, xMin, xMax) {
   const yMin = Math.min(...vals) * 0.9;
   const yMax = Math.max(...vals) * 1.1;
 
+  // べき乗曲線(横軸対数×縦軸線形では直線にならない)を対数等間隔60点でサンプリング
   const lineData = fit
-    ? [
-        { x: xMin, y: fit.intercept + fit.slope * Math.log10(xMin) },
-        { x: xMax, y: fit.intercept + fit.slope * Math.log10(xMax) },
-      ]
+    ? Array.from({ length: 61 }, (_, i) => {
+        const x = Math.pow(10, Math.log10(xMin) + (i / 60) * (Math.log10(xMax) - Math.log10(xMin)));
+        return { x, y: coefA * Math.pow(x, fit.slope) };
+      })
     : [];
   const hline = (v) => [
     { x: xMin, y: v },
     { x: xMax, y: v },
   ];
 
-  // 近似線の脇に数式とR²
+  // 近似線の脇に数式とR²(対数空間での当てはまり)
   const regLabelPlugin = {
     id: "slRegLabel",
     afterDatasetsDraw(chart) {
@@ -139,10 +141,7 @@ function renderChart(rows, natori, type, mean, med, fit, xMin, xMax) {
       const area = chart.chartArea;
       ctx.font = "11px 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif";
       ctx.fillStyle = "#d85a30";
-      const lines = [
-        `y = ${Math.round(fit.intercept).toLocaleString("ja-JP")} + ${Math.round(fit.slope).toLocaleString("ja-JP")}·log₁₀(x)`,
-        `R² = ${fit.r2.toFixed(2)}`,
-      ];
+      const lines = [`y = ${sig3(coefA)}·x^${fit.slope.toFixed(2).replace("-", "−")}`, `R² = ${fit.r2.toFixed(2)}(対数空間)`];
       const w = Math.max(...lines.map((s) => ctx.measureText(s).width));
       const x = Math.min(area.right - w - 6, area.left + (area.right - area.left) * 0.58);
       lines.forEach((s, i) => ctx.fillText(s, x, area.top + 16 + i * 14));

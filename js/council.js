@@ -4,11 +4,11 @@ const NATORI_CODE = "04207";
 const TOHOKU_PREFS = new Set(["青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"]);
 
 const CC_GROUPS = [
-  { id: "miyagi", label: "宮城県", filter: (m) => m.pref === "宮城県" },
-  { id: "tohoku", label: "東北6県", filter: (m) => TOHOKU_PREFS.has(m.pref) },
+  { id: "miyagi", label: "宮城県(市町村)", filter: (m) => m.pref === "宮城県" },
+  { id: "tohoku", label: "東北6県(市町村)", filter: (m) => TOHOKU_PREFS.has(m.pref) },
   { id: "zenkoku", label: "全国", filter: () => true },
   { id: "cities", label: "全国の市のみ", filter: (m) => m.type === "市" },
-  { id: "similar", label: "人口同規模の市(5万〜15万人)", filter: (m) => m.type === "市" && m.pop >= 50000 && m.pop <= 150000 },
+  { id: "bracket", label: "人口段階が同じ市", filter: null }, // DOMContentLoaded内で確定
 ];
 
 let ccAll = [];
@@ -18,9 +18,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const data = await fetchJson("data/council.json");
     ccAll = data.municipalities.map((m) => ({ ...m, per1000: (m.seats / m.pop) * 1000 }));
+    const bracketLabels = data.bracketLabels || {};
+
+    const natori = ccAll.find((m) => m.code === NATORI_CODE);
+    const bracketGroup = CC_GROUPS.find((g) => g.id === "bracket");
+    bracketGroup.filter = (m) => m.type === "市" && m.bracket === natori.bracket;
+    bracketGroup.label = `人口段階が同じ市(${bracketLabels[natori.bracket] || natori.bracket})`;
+
     const sel = document.getElementById("cc-group");
     sel.innerHTML = CC_GROUPS.map((g) => `<option value="${g.id}">${escapeHtml(g.label)}</option>`).join("");
-    sel.value = "similar"; // 既定は最も比較妥当性の高い同規模グループ
+    sel.value = "bracket"; // 既定は最も比較妥当性の高い同規模グループ
     sel.addEventListener("change", () => renderGroup(sel.value));
     renderGroup(sel.value);
     const gen = document.getElementById("generated-at");
@@ -42,13 +49,6 @@ function fmtPop(v) {
   if (v >= 1e4) return `${v / 1e4}万`;
   if (v >= 1e3) return `${v / 1e3}千`;
   return String(v);
-}
-
-/* 有効数字3桁での表示(近似線の係数用) */
-function sig3(v) {
-  if (!isFinite(v) || v === 0) return String(v);
-  const d = Math.max(0, 2 - Math.floor(Math.log10(Math.abs(v))));
-  return v.toFixed(Math.min(d, 6));
 }
 
 function renderGroup(groupId) {

@@ -40,7 +40,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── questions.js                 # 質問マトリクス・散布図・ワードクラウド
 │   ├── question.js                 # 質問詳細ページ
 │   ├── council.js                   # 議員定数の散布図(対数軸+べき乗近似)
-│   └── salary.js                    # 議員報酬の散布図(横軸対数+半対数近似)
+│   └── salary.js                    # 議員報酬の散布図(横軸対数+べき乗近似)
 ├── data/
 │   ├── members.json                 # 手動管理: 議員メタデータ・媒体URL・RSSフィード
 │   ├── posts.json                   # 自動生成: RSS発信履歴(update_posts.py)
@@ -153,11 +153,13 @@ JSページ(main.js, stats.js, questions.js等)
   "generatedAt": "2026-07-12T16:00:00Z",
   "basisPopulation": "2025-10-01",
   "basisSeats": "2025-12-31",
+  "bracketLabels": { "A": "人口5万未満", "B": "人口5万〜10万未満", "...": "..." },
   "municipalities": [
-    { "code": "04201", "name": "名取市", "pref": "宮城県", "type": "市", "pop": 79000, "seats": 21 }
+    { "code": "04201", "name": "名取市", "pref": "宮城県", "type": "市", "pop": 79000, "seats": 21, "bracket": "B" }
   ]
 }
 ```
+`bracket` は市・特別区にのみ付与(全国市議会議長会の人口段階区分、salary.jsonと同じ8区分)。町村にはない。
 
 **salary.json**(自動):
 ```json

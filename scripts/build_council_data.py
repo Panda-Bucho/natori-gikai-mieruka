@@ -32,6 +32,17 @@ FILES = {
 
 TOHOKU = {"青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"}
 
+BRACKET_LABELS = {
+    "A": "人口5万未満",
+    "B": "人口5万〜10万未満",
+    "C": "人口10万〜20万未満",
+    "D": "人口20万〜30万未満",
+    "E": "人口30万〜40万未満",
+    "F": "人口40万〜50万未満",
+    "G": "人口50万以上(指定都市を除く)",
+    "H": "指定都市",
+}
+
 
 def fetch_sources():
     os.makedirs(SRC, exist_ok=True)
@@ -85,18 +96,24 @@ def load_census():
 
 
 def load_city_seats():
-    """(pref, 正規化名) -> 条例定数 (全国市議会議長会、815市区)"""
+    """(pref, 正規化名) -> {seats, bracket} (全国市議会議長会、815市区)
+
+    列構成: 0=(空) 1=都道府県名 2=市名 3=人口段階 4=人口 5=定数
+    """
     import openpyxl
     wb = openpyxl.load_workbook(os.path.join(SRC, "sigichokai_teisu.xlsx"), read_only=True)
     ws = wb.worksheets[0]
     out = {}
     for row in ws.iter_rows(min_row=5, max_col=6, values_only=True):
-        _, pref, city, _, _, seats = row
+        _, pref, city, bracket, _, seats = row
         if not pref or not city or seats is None:
             continue
         if not re.fullmatch(r"\d+", str(seats).strip().split(".")[0]):
             continue
-        out[(str(pref).strip(), norm(city))] = int(float(seats))
+        out[(str(pref).strip(), norm(city))] = {
+            "seats": int(float(seats)),
+            "bracket": str(bracket).strip() if bracket else None,
+        }
     wb.close()
     assert len(out) >= 810, f"city seats = {len(out)} (expected ~815)"
     return out
@@ -137,8 +154,11 @@ def main():
     for code in sorted(census):
         c = census[code]
         key = (c["pref"], norm(c["name"]))
+        bracket = None
         if c["type"] in ("市", "特別区"):
-            seats = city_seats.get(key)
+            entry = city_seats.get(key)
+            seats = entry["seats"] if entry else None
+            bracket = entry["bracket"] if entry else None
             if seats is not None:
                 used_city.add(key)
         else:
@@ -148,14 +168,17 @@ def main():
         if seats is None:
             unmatched.append(f"{c['pref']} {c['name']} ({c['type']})")
             continue
-        municipalities.append({
+        entry = {
             "code": code,
             "name": c["name"],
             "pref": c["pref"],
             "type": c["type"],
             "pop": c["pop"],
             "seats": seats,
-        })
+        }
+        if bracket:
+            entry["bracket"] = bracket
+        municipalities.append(entry)
 
     print(f"matched: {len(municipalities)} / {len(census)}")
     if unmatched:
@@ -172,6 +195,7 @@ def main():
     # 検証
     natori = next(m for m in municipalities if m["code"] == "04207")
     assert natori["name"] == "名取市" and natori["seats"] == 21, natori
+    assert natori.get("bracket") == "B", f"名取市の人口段階={natori.get('bracket')} (expected B)"
     miyagi = [m for m in municipalities if m["pref"] == "宮城県"]
     assert len(miyagi) == 35, f"宮城県 {len(miyagi)}団体 (expected 35)"
     cities = [m for m in municipalities if m["type"] == "市"]
@@ -185,6 +209,7 @@ def main():
         "basisPopulation": "令和7年国勢調査 人口速報集計(2025年10月1日現在の速報値)",
         "basisSeatsCity": "全国市議会議長会「市議会議員定数に関する調査結果」(2025年12月31日現在の条例定数)",
         "basisSeatsTown": "全国町村議会議長会「第71回町村議会実態調査」(2025年7月1日現在の条例定数)",
+        "bracketLabels": BRACKET_LABELS,
         "municipalities": municipalities,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
