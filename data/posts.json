@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T06:51:25+09:00",
+  "generatedAt": "2026-07-15T06:53:23+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-07-11",
+      "lastPostDate": "2026-07-14",
       "posts": [
+        {
+          "date": "2026-07-14",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/07/14/3571/"
+        },
         {
           "date": "2026-07-11",
           "platform": "website",
@@ -6115,8 +6121,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-07-10",
+      "lastPostDate": "2026-07-14",
       "posts": [
+        {
+          "date": "2026-07-14",
+          "platform": "website",
+          "title": "名取市サイクルスポーツセンター",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/07/14/%e5%90%8d%e5%8f%96%e5%b8%82%e3%82%b5%e3%82%a4%e3%82%af%e3%83%ab%e3%82%b9%e3%83%9d%e3%83%bc%e3%83%84%e3%82%bb%e3%83%b3%e3%82%bf%e3%83%bc/"
+        },
         {
           "date": "2026-07-10",
           "platform": "website",
