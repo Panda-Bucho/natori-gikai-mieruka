@@ -86,10 +86,10 @@ STATION_BY_CODE = {
 }
 
 # daily_s1.php(気象台) / daily_a1.php(アメダス) の列インデックス(0始まり)
-# pandas.read_html で列を確認済み: 日, 降水量-合計, 気温-平均, 気温-最高
+# pandas.read_html で列を確認済み: 日, 降水量-合計, 気温-平均
 COLS = {
-    "s": {"day": 0, "precip": 3, "temp_avg": 6, "temp_max": 7},
-    "a": {"day": 0, "precip": 1, "temp_avg": 4, "temp_max": 5},
+    "s": {"day": 0, "precip": 3, "temp_avg": 6},
+    "a": {"day": 0, "precip": 1, "temp_avg": 4},
 }
 
 
@@ -124,7 +124,7 @@ def parse_num(v, zero_dash=False):
 
 
 def get_weather(station_key, date_str):
-    """station_key の date_str(YYYY-MM-DD) 当日の {precip, tempAvg, tempMax} を返す(欠測時は該当値がnull)"""
+    """station_key の date_str(YYYY-MM-DD) 当日の {precip, tempAvg} を返す(欠測時は該当値がnull)"""
     import pandas as pd
 
     st = STATIONS[station_key]
@@ -139,7 +139,6 @@ def get_weather(station_key, date_str):
         "station": st["name"],
         "precip": parse_num(row.iloc[cols["precip"]], zero_dash=True),
         "tempAvg": parse_num(row.iloc[cols["temp_avg"]]),
-        "tempMax": parse_num(row.iloc[cols["temp_max"]]),
     }
 
 
@@ -192,7 +191,7 @@ def main():
     data = {
         "generatedAt": datetime.now(jst).isoformat(timespec="seconds"),
         "note": turnout_src.get("note", ""),
-        "weatherSource": "気象庁「過去の気象データ検索」(www.data.jma.go.jp/stats/etrn/)。投票日当日の観測値。降水量は日合計(mm)、気温は日平均・日最高(℃)。天気(晴/雨)そのものは観測されないため代替指標として使用",
+        "weatherSource": "気象庁「過去の気象データ検索」(www.data.jma.go.jp/stats/etrn/)。投票日当日の観測値。降水量は日合計(mm)、気温は日平均(℃)。天気(晴/雨)そのものは観測されないため代替指標として使用",
         "municipalities": municipalities,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

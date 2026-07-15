@@ -203,7 +203,7 @@ JSページ(main.js, stats.js, questions.js等)
     { "code": "04207", "name": "名取市", "pref": "宮城県", "type": "市", "pop": 78737,
       "election": "名取市議会議員一般選挙", "date": "2024-01-21", "turnout": 35.55,
       "uncontested": false, "source": "https://...",
-      "weather": { "station": "名取", "precip": 61.5, "tempAvg": 6.9, "tempMax": 10.7 } }
+      "weather": { "station": "名取", "precip": 61.5, "tempAvg": 6.9 } }
   ]
 }
 ```

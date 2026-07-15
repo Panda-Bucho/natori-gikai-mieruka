@@ -10,7 +10,6 @@ const TN_GROUPS = [
 const TN_AXES = [
   { id: "precip", label: "当日降水量", unit: "mm", get: (m) => m.weather.precip },
   { id: "tempAvg", label: "当日平均気温", unit: "℃", get: (m) => m.weather.tempAvg },
-  { id: "tempMax", label: "当日最高気温", unit: "℃", get: (m) => m.weather.tempMax },
 ];
 
 let tnAll = [];
