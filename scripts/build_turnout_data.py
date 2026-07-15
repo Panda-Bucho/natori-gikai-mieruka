@@ -46,11 +46,31 @@ STATIONS = {
     "yoneyama":   {"prec": "34", "type": "a", "block": "1029",  "name": "米山"},
     "zaou":       {"prec": "34", "type": "a", "block": "1564",  "name": "蔵王"},
     "kashimadai": {"prec": "34", "type": "a", "block": "0249",  "name": "鹿島台"},
+
+    # 秋田県(prec_no=32)。気象庁「地点の選択」ページ(select/prefecture.php?prec_no=32)の
+    # 全地点からf_tem(気温観測フラグ)=1の地点のみ抽出して割当。
+    "akita_akita":      {"prec": "32", "type": "s", "block": "47582", "name": "秋田"},
+    "akita_noshiro":    {"prec": "32", "type": "a", "block": "0183",  "name": "能代"},
+    "akita_yokote":     {"prec": "32", "type": "a", "block": "0198",  "name": "横手"},
+    "akita_odate":      {"prec": "32", "type": "a", "block": "0912",  "name": "大館"},
+    "akita_oga":        {"prec": "32", "type": "a", "block": "1036",  "name": "男鹿"},
+    "akita_yuzawa":     {"prec": "32", "type": "a", "block": "0202",  "name": "湯沢"},
+    "akita_kazuno":     {"prec": "32", "type": "a", "block": "0185",  "name": "鹿角"},
+    "akita_honjo":      {"prec": "32", "type": "a", "block": "0196",  "name": "本荘"},
+    "akita_ogata":      {"prec": "32", "type": "a", "block": "1035",  "name": "大潟"},
+    "akita_omagari":    {"prec": "32", "type": "a", "block": "0195",  "name": "大曲"},
+    "akita_takanosu":   {"prec": "32", "type": "a", "block": "0184",  "name": "鷹巣"},
+    "akita_nikaho":     {"prec": "32", "type": "a", "block": "0199",  "name": "にかほ"},
+    "akita_kakunodate": {"prec": "32", "type": "a", "block": "0193",  "name": "角館"},
+    "akita_aniai":      {"prec": "32", "type": "a", "block": "1131",  "name": "阿仁合"},
+    "akita_hachimori":  {"prec": "32", "type": "a", "block": "1043",  "name": "八森"},
+    "akita_gojoume":    {"prec": "32", "type": "a", "block": "0188",  "name": "五城目"},
 }
 
 # 県ごとの登録済み市町村数(データを追加した県のみ検証対象にする)
 EXPECTED_BY_PREF = {
     "宮城県": 35,
+    "秋田県": 25,
 }
 
 # 市町村コード(council.json) -> STATIONS のキー。地理的に最も近い気温観測地点を割当
@@ -92,6 +112,35 @@ STATION_BY_CODE = {
     "04581": "onagawa",     # 女川町(女川は町内)
     "04606": "shizugawa",   # 南三陸町(志津川は町内)
 }
+
+# 秋田県分(地理的に最も近い気温観測地点を割当)
+STATION_BY_CODE.update({
+    "05201": "akita_akita",      # 秋田市
+    "05202": "akita_noshiro",    # 能代市
+    "05203": "akita_yokote",     # 横手市
+    "05204": "akita_odate",      # 大館市
+    "05206": "akita_oga",        # 男鹿市
+    "05207": "akita_yuzawa",     # 湯沢市
+    "05209": "akita_kazuno",     # 鹿角市
+    "05210": "akita_honjo",      # 由利本荘市(市役所=旧本荘市)
+    "05211": "akita_ogata",      # 潟上市
+    "05212": "akita_omagari",    # 大仙市(市役所=旧大曲市)
+    "05213": "akita_takanosu",   # 北秋田市(市役所=旧鷹巣町)
+    "05214": "akita_nikaho",     # にかほ市
+    "05215": "akita_kakunodate", # 仙北市(市役所=旧角館町)
+    "05303": "akita_kazuno",     # 小坂町(鹿角市に隣接)
+    "05327": "akita_aniai",      # 上小阿仁村(北秋田市阿仁合に隣接)
+    "05346": "akita_noshiro",    # 藤里町(自地点=藤里は気温非観測のため能代で代替)
+    "05348": "akita_noshiro",    # 三種町
+    "05349": "akita_hachimori",  # 八峰町
+    "05361": "akita_gojoume",    # 五城目町
+    "05363": "akita_ogata",      # 八郎潟町(旧八郎潟湖畔、大潟に近接)
+    "05366": "akita_ogata",      # 井川町(旧八郎潟湖畔、大潟に近接)
+    "05368": "akita_ogata",      # 大潟村
+    "05434": "akita_omagari",    # 美郷町(大仙市に隣接)
+    "05463": "akita_yuzawa",     # 羽後町(湯沢市に隣接)
+    "05464": "akita_yuzawa",     # 東成瀬村(自地点=東成瀬は気温非観測のため湯沢で代替)
+})
 
 # daily_s1.php(気象台) / daily_a1.php(アメダス) の列インデックス(0始まり)
 # pandas.read_html で列を確認済み: 日, 降水量-合計, 気温-平均
