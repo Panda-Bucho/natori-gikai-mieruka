@@ -113,6 +113,26 @@ STATIONS = {
     "yamagata_hijiori":    {"prec": "35", "type": "a", "block": "1125",  "name": "肘折"},
     "yamagata_oguni":      {"prec": "35", "type": "a", "block": "0277",  "name": "小国"},
     "yamagata_shonai":     {"prec": "35", "type": "a", "block": "0264",  "name": "狩川"},
+    "aomori_aomori":       {"prec": "31", "type": "s", "block": "47575", "name": "青森"},
+    "aomori_hirosaki":     {"prec": "31", "type": "a", "block": "0166",  "name": "弘前"},
+    "aomori_hachinohe":    {"prec": "31", "type": "s", "block": "47581", "name": "八戸"},
+    "aomori_kuroishi":     {"prec": "31", "type": "a", "block": "0167",  "name": "黒石"},
+    "aomori_goshogawara":  {"prec": "31", "type": "a", "block": "0164",  "name": "五所川原"},
+    "aomori_towada":       {"prec": "31", "type": "a", "block": "0172",  "name": "十和田"},
+    "aomori_misawa":       {"prec": "31", "type": "a", "block": "0169",  "name": "三沢"},
+    "aomori_mutsu":        {"prec": "31", "type": "s", "block": "47576", "name": "むつ"},
+    "aomori_kanita":       {"prec": "31", "type": "a", "block": "0160",  "name": "蟹田"},
+    "aomori_noheji":       {"prec": "31", "type": "a", "block": "0162",  "name": "野辺地"},
+    "aomori_ajigasawa":    {"prec": "31", "type": "a", "block": "0163",  "name": "鰺ケ沢"},
+    "aomori_fukaura":      {"prec": "31", "type": "s", "block": "47574", "name": "深浦"},
+    "aomori_ikarigaseki":  {"prec": "31", "type": "a", "block": "0175",  "name": "碇ケ関"},
+    "aomori_sannohe":      {"prec": "31", "type": "a", "block": "0179",  "name": "三戸"},
+    "aomori_imabetsu":     {"prec": "31", "type": "a", "block": "1026",  "name": "今別"},
+    "aomori_rokkasho":     {"prec": "31", "type": "a", "block": "1027",  "name": "六ケ所"},
+    "aomori_oma":          {"prec": "31", "type": "a", "block": "1041",  "name": "大間"},
+    "aomori_shiura":       {"prec": "31", "type": "a", "block": "1119",  "name": "市浦"},
+    "aomori_odanosawa":    {"prec": "31", "type": "a", "block": "1122",  "name": "小田野沢"},
+    "aomori_wakinosawa":   {"prec": "31", "type": "a", "block": "1124",  "name": "脇野沢"},
 }
 
 # 県ごとの登録済み市町村数(データを追加した県のみ検証対象にする)
@@ -121,6 +141,7 @@ EXPECTED_BY_PREF = {
     "秋田県": 25,
     "岩手県": 33,
     "山形県": 35,
+    "青森県": 40,
 }
 
 # 市町村コード(council.json) -> STATIONS のキー。地理的に最も近い気温観測地点を割当
@@ -266,6 +287,49 @@ STATION_BY_CODE.update({
     "06426": "yamagata_tsuruoka",   # 三川町(鶴岡市に隣接)
     "06428": "yamagata_shonai",     # 庄内町(旧狩川町域)
     "06461": "yamagata_sakata",     # 遊佐町(酒田市に隣接)
+})
+
+STATION_BY_CODE.update({
+    "02201": "aomori_aomori",      # 青森市
+    "02202": "aomori_hirosaki",    # 弘前市
+    "02203": "aomori_hachinohe",   # 八戸市
+    "02204": "aomori_kuroishi",    # 黒石市
+    "02205": "aomori_goshogawara", # 五所川原市
+    "02206": "aomori_towada",      # 十和田市
+    "02207": "aomori_misawa",      # 三沢市
+    "02208": "aomori_mutsu",       # むつ市
+    "02209": "aomori_goshogawara", # つがる市(五所川原市に隣接)
+    "02210": "aomori_hirosaki",    # 平川市(弘前市に隣接)
+    "02301": "aomori_noheji",      # 平内町(野辺地町に隣接)
+    "02303": "aomori_imabetsu",    # 今別町
+    "02304": "aomori_kanita",      # 蓬田村(外ヶ浜町蟹田地区に隣接)
+    "02307": "aomori_kanita",      # 外ヶ浜町(旧蟹田町域)
+    "02321": "aomori_ajigasawa",   # 鰺ヶ沢町
+    "02323": "aomori_fukaura",     # 深浦町
+    "02343": "aomori_hirosaki",    # 西目屋村(弘前市に隣接)
+    "02361": "aomori_hirosaki",    # 藤崎町(弘前市に隣接)
+    "02362": "aomori_ikarigaseki", # 大鰐町(旧碇ヶ関村域)
+    "02367": "aomori_kuroishi",    # 田舎館村(黒石市に隣接)
+    "02381": "aomori_goshogawara", # 板柳町(五所川原市に隣接)
+    "02384": "aomori_goshogawara", # 鶴田町(五所川原市に隣接)
+    "02387": "aomori_shiura",      # 中泊町(旧市浦村域)
+    "02401": "aomori_noheji",      # 野辺地町
+    "02402": "aomori_towada",      # 七戸町(自地点は気温非観測のため十和田で代替)
+    "02405": "aomori_misawa",      # 六戸町(三沢市に隣接)
+    "02406": "aomori_noheji",      # 横浜町(野辺地町に隣接)
+    "02408": "aomori_towada",      # 東北町(十和田市に隣接)
+    "02411": "aomori_rokkasho",    # 六ヶ所村
+    "02412": "aomori_misawa",      # おいらせ町(三沢市に隣接)
+    "02423": "aomori_oma",         # 大間町
+    "02424": "aomori_odanosawa",   # 東通村
+    "02425": "aomori_oma",         # 風間浦村(大間町に隣接)
+    "02426": "aomori_wakinosawa",  # 佐井村(むつ市脇野沢地区に隣接)
+    "02441": "aomori_sannohe",     # 三戸町
+    "02442": "aomori_sannohe",     # 五戸町(三戸町に隣接)
+    "02443": "aomori_sannohe",     # 田子町(三戸町に隣接)
+    "02445": "aomori_sannohe",     # 南部町(三戸町に隣接)
+    "02446": "aomori_hachinohe",   # 階上町(八戸市に隣接)
+    "02450": "aomori_sannohe",     # 新郷村(三戸町に隣接)
 })
 
 # daily_s1.php(気象台) / daily_a1.php(アメダス) の列インデックス(0始まり)
