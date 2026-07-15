@@ -65,12 +65,42 @@ STATIONS = {
     "akita_aniai":      {"prec": "32", "type": "a", "block": "1131",  "name": "阿仁合"},
     "akita_hachimori":  {"prec": "32", "type": "a", "block": "1043",  "name": "八森"},
     "akita_gojoume":    {"prec": "32", "type": "a", "block": "0188",  "name": "五城目"},
+
+    # 岩手県(prec_no=33)
+    "iwate_morioka":        {"prec": "33", "type": "s", "block": "47584", "name": "盛岡"},
+    "iwate_miyako":         {"prec": "33", "type": "s", "block": "47585", "name": "宮古"},
+    "iwate_ofunato":        {"prec": "33", "type": "s", "block": "47512", "name": "大船渡"},
+    "iwate_hanamaki":       {"prec": "33", "type": "a", "block": "0227",  "name": "花巻"},
+    "iwate_kitakami":       {"prec": "33", "type": "a", "block": "0230",  "name": "北上"},
+    "iwate_kuji":           {"prec": "33", "type": "a", "block": "0209",  "name": "久慈"},
+    "iwate_tono":           {"prec": "33", "type": "a", "block": "0231",  "name": "遠野"},
+    "iwate_ichinoseki":     {"prec": "33", "type": "a", "block": "0238",  "name": "一関"},
+    "iwate_rikuzentakata":  {"prec": "33", "type": "a", "block": "1629",  "name": "陸前高田"},
+    "iwate_kamaishi":       {"prec": "33", "type": "a", "block": "0233",  "name": "釜石"},
+    "iwate_ninohe":         {"prec": "33", "type": "a", "block": "0207",  "name": "二戸"},
+    "iwate_matsuo":         {"prec": "33", "type": "a", "block": "0214",  "name": "岩手松尾"},
+    "iwate_esashi":         {"prec": "33", "type": "a", "block": "0236",  "name": "江刺"},
+    "iwate_shizukuishi":    {"prec": "33", "type": "a", "block": "0221",  "name": "雫石"},
+    "iwate_kuzumaki":       {"prec": "33", "type": "a", "block": "0211",  "name": "葛巻"},
+    "iwate_koma":           {"prec": "33", "type": "a", "block": "1032",  "name": "好摩"},
+    "iwate_shiwa":          {"prec": "33", "type": "a", "block": "1128",  "name": "紫波"},
+    "iwate_yuda":           {"prec": "33", "type": "a", "block": "0229",  "name": "湯田"},
+    "iwate_sumita":         {"prec": "33", "type": "a", "block": "1206",  "name": "住田"},
+    "iwate_shinmachi":      {"prec": "33", "type": "a", "block": "1628",  "name": "新町"},
+    "iwate_yamada":         {"prec": "33", "type": "a", "block": "1033",  "name": "山田"},
+    "iwate_iwaizumi":       {"prec": "33", "type": "a", "block": "0218",  "name": "岩泉"},
+    "iwate_omoto":          {"prec": "33", "type": "a", "block": "1212",  "name": "小本"},
+    "iwate_fudai":          {"prec": "33", "type": "a", "block": "1123",  "name": "普代"},
+    "iwate_karumai":        {"prec": "33", "type": "a", "block": "0206",  "name": "軽米"},
+    "iwate_taneichi":       {"prec": "33", "type": "a", "block": "0205",  "name": "種市"},
+    "iwate_okunakayama":    {"prec": "33", "type": "a", "block": "1215",  "name": "奥中山"},
 }
 
 # 県ごとの登録済み市町村数(データを追加した県のみ検証対象にする)
 EXPECTED_BY_PREF = {
     "宮城県": 35,
     "秋田県": 25,
+    "岩手県": 33,
 }
 
 # 市町村コード(council.json) -> STATIONS のキー。地理的に最も近い気温観測地点を割当
@@ -140,6 +170,43 @@ STATION_BY_CODE.update({
     "05434": "akita_omagari",    # 美郷町(大仙市に隣接)
     "05463": "akita_yuzawa",     # 羽後町(湯沢市に隣接)
     "05464": "akita_yuzawa",     # 東成瀬村(自地点=東成瀬は気温非観測のため湯沢で代替)
+})
+
+# 岩手県分(地理的に最も近い気温観測地点を割当)
+STATION_BY_CODE.update({
+    "03201": "iwate_morioka",       # 盛岡市
+    "03202": "iwate_miyako",        # 宮古市
+    "03203": "iwate_ofunato",       # 大船渡市
+    "03205": "iwate_hanamaki",      # 花巻市
+    "03206": "iwate_kitakami",      # 北上市
+    "03207": "iwate_kuji",          # 久慈市
+    "03208": "iwate_tono",          # 遠野市
+    "03209": "iwate_ichinoseki",    # 一関市
+    "03210": "iwate_rikuzentakata", # 陸前高田市
+    "03211": "iwate_kamaishi",      # 釜石市
+    "03213": "iwate_ninohe",        # 二戸市
+    "03214": "iwate_matsuo",        # 八幡平市(旧松尾村域)
+    "03215": "iwate_esashi",        # 奥州市(旧江刺市域)
+    "03216": "iwate_morioka",       # 滝沢市(自地点は気温非観測のため盛岡で代替、盛岡市に隣接)
+    "03301": "iwate_shizukuishi",   # 雫石町
+    "03302": "iwate_kuzumaki",      # 葛巻町
+    "03303": "iwate_koma",          # 岩手町(好摩に近接)
+    "03321": "iwate_shiwa",         # 紫波町
+    "03322": "iwate_morioka",       # 矢巾町(盛岡市に隣接)
+    "03366": "iwate_yuda",          # 西和賀町(旧湯田町域)
+    "03381": "iwate_kitakami",      # 金ケ崎町(自地点は気温非観測のため北上で代替)
+    "03402": "iwate_ichinoseki",    # 平泉町(一関市に隣接)
+    "03441": "iwate_sumita",        # 住田町
+    "03461": "iwate_shinmachi",     # 大槌町(自地点=大槌は気温非観測のため町内の新町で代替)
+    "03482": "iwate_yamada",        # 山田町
+    "03483": "iwate_iwaizumi",      # 岩泉町
+    "03484": "iwate_omoto",         # 田野畑村(岩泉町小本に近接)
+    "03485": "iwate_fudai",         # 普代村
+    "03501": "iwate_karumai",       # 軽米町
+    "03503": "iwate_kuji",          # 野田村(久慈市に隣接)
+    "03506": "iwate_karumai",       # 九戸村(軽米町に隣接)
+    "03507": "iwate_taneichi",      # 洋野町(旧種市町域)
+    "03524": "iwate_okunakayama",   # 一戸町(町内の奥中山)
 })
 
 # daily_s1.php(気象台) / daily_a1.php(アメダス) の列インデックス(0始まり)
