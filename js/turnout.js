@@ -3,8 +3,10 @@
 const NATORI_CODE = "04207";
 
 const TN_GROUPS = [
-  { id: "miyagi", label: "宮城県(市町村)", filter: () => true },
-  { id: "cities", label: "宮城県の市のみ", filter: (m) => m.type === "市" },
+  { id: "tohoku", label: "東北6県(市町村)", filter: () => true },
+  { id: "tohoku-cities", label: "東北6県の市のみ", filter: (m) => m.type === "市" },
+  { id: "miyagi", label: "宮城県(市町村)", filter: (m) => m.pref === "宮城県" },
+  { id: "cities", label: "宮城県の市のみ", filter: (m) => m.pref === "宮城県" && m.type === "市" },
 ];
 
 const TN_AXES = [
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const groupSel = document.getElementById("tn-group");
     groupSel.innerHTML = TN_GROUPS.map((g) => `<option value="${g.id}">${escapeHtml(g.label)}</option>`).join("");
-    groupSel.value = "miyagi";
+    groupSel.value = "tohoku";
     groupSel.addEventListener("change", () => renderGroup(groupSel.value));
     renderGroup(groupSel.value);
 

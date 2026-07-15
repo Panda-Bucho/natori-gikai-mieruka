@@ -23,26 +23,34 @@ TURNOUT_SRC = os.path.join(BASE, "data", "turnout_elections.json")
 COUNCIL_JSON = os.path.join(BASE, "data", "council.json")
 OUT = os.path.join(BASE, "data", "turnout.json")
 
-# 気温観測のある気象台・特別地域気象観測所・アメダス(宮城県 prec_no=34)
+# 気温観測のある気象台・特別地域気象観測所・アメダス
 # type: 's' = daily_s1.php(気象台・特別地域気象観測所), 'a' = daily_a1.php(アメダス)
+# prec: 気象庁の都道府県番号(青森31 / 秋田32 / 岩手33 / 宮城34 / 山形35 / 福島36)
+#       アメダスの block は県内でのみ一意のため、prec とセットで指定する
 STATIONS = {
-    "sendai":     {"type": "s", "block": "47590", "name": "仙台"},
-    "ishinomaki": {"type": "s", "block": "47592", "name": "石巻"},
-    "shiogama":   {"type": "a", "block": "1030",  "name": "塩釜"},
-    "kesennuma":  {"type": "a", "block": "0242",  "name": "気仙沼"},
-    "shiroishi":  {"type": "a", "block": "0256",  "name": "白石"},
-    "natori":     {"type": "a", "block": "1464",  "name": "名取"},
-    "marumori":   {"type": "a", "block": "1220",  "name": "丸森"},
-    "furukawa":   {"type": "a", "block": "0247",  "name": "古川"},
-    "shizugawa":  {"type": "a", "block": "0246",  "name": "志津川"},
-    "niikawa":    {"type": "a", "block": "0251",  "name": "新川"},
-    "oohira":     {"type": "a", "block": "0248",  "name": "大衡"},
-    "onagawa":    {"type": "a", "block": "1626",  "name": "女川"},
-    "watari":     {"type": "a", "block": "0257",  "name": "亘理"},
-    "tsukidate":  {"type": "a", "block": "0244",  "name": "築館"},
-    "yoneyama":   {"type": "a", "block": "1029",  "name": "米山"},
-    "zaou":       {"type": "a", "block": "1564",  "name": "蔵王"},
-    "kashimadai": {"type": "a", "block": "0249",  "name": "鹿島台"},
+    # 宮城県(prec_no=34)
+    "sendai":     {"prec": "34", "type": "s", "block": "47590", "name": "仙台"},
+    "ishinomaki": {"prec": "34", "type": "s", "block": "47592", "name": "石巻"},
+    "shiogama":   {"prec": "34", "type": "a", "block": "1030",  "name": "塩釜"},
+    "kesennuma":  {"prec": "34", "type": "a", "block": "0242",  "name": "気仙沼"},
+    "shiroishi":  {"prec": "34", "type": "a", "block": "0256",  "name": "白石"},
+    "natori":     {"prec": "34", "type": "a", "block": "1464",  "name": "名取"},
+    "marumori":   {"prec": "34", "type": "a", "block": "1220",  "name": "丸森"},
+    "furukawa":   {"prec": "34", "type": "a", "block": "0247",  "name": "古川"},
+    "shizugawa":  {"prec": "34", "type": "a", "block": "0246",  "name": "志津川"},
+    "niikawa":    {"prec": "34", "type": "a", "block": "0251",  "name": "新川"},
+    "oohira":     {"prec": "34", "type": "a", "block": "0248",  "name": "大衡"},
+    "onagawa":    {"prec": "34", "type": "a", "block": "1626",  "name": "女川"},
+    "watari":     {"prec": "34", "type": "a", "block": "0257",  "name": "亘理"},
+    "tsukidate":  {"prec": "34", "type": "a", "block": "0244",  "name": "築館"},
+    "yoneyama":   {"prec": "34", "type": "a", "block": "1029",  "name": "米山"},
+    "zaou":       {"prec": "34", "type": "a", "block": "1564",  "name": "蔵王"},
+    "kashimadai": {"prec": "34", "type": "a", "block": "0249",  "name": "鹿島台"},
+}
+
+# 県ごとの登録済み市町村数(データを追加した県のみ検証対象にする)
+EXPECTED_BY_PREF = {
+    "宮城県": 35,
 }
 
 # 市町村コード(council.json) -> STATIONS のキー。地理的に最も近い気温観測地点を割当
@@ -93,13 +101,13 @@ COLS = {
 }
 
 
-def fetch_month_html(stype, block, year, month):
+def fetch_month_html(prec, stype, block, year, month):
     os.makedirs(CACHE, exist_ok=True)
-    path = os.path.join(CACHE, f"{stype}_{block}_{year}{month:02d}.html")
+    path = os.path.join(CACHE, f"{prec}_{stype}_{block}_{year}{month:02d}.html")
     if os.path.exists(path):
         return path
     page = "daily_s1.php" if stype == "s" else "daily_a1.php"
-    url = f"https://www.data.jma.go.jp/stats/etrn/view/{page}?prec_no=34&block_no={block}&year={year}&month={month}&day=&view="
+    url = f"https://www.data.jma.go.jp/stats/etrn/view/{page}?prec_no={prec}&block_no={block}&year={year}&month={month}&day=&view="
     print(f"download weather: {stype} {block} {year}-{month:02d}")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; natori-gikai-mieruka data builder)"})
     with urllib.request.urlopen(req, timeout=30) as res:
@@ -129,7 +137,7 @@ def get_weather(station_key, date_str):
 
     st = STATIONS[station_key]
     y, m, d = (int(x) for x in date_str.split("-"))
-    path = fetch_month_html(st["type"], st["block"], y, m)
+    path = fetch_month_html(st["prec"], st["type"], st["block"], y, m)
     tables = pd.read_html(path, attrs={"id": "tablefix1"})
     df = tables[0]
     row = df.iloc[d - 1]
@@ -182,8 +190,9 @@ def main():
     assert natori["turnout"] == 35.55, natori
     assert natori["weather"]["precip"] == 61.5 and natori["weather"]["tempAvg"] == 6.9, natori["weather"]
     print(f"名取市: 投票率{natori['turnout']}% 気象(名取観測所)={natori['weather']}")
-    miyagi = [m for m in municipalities if m["pref"] == "宮城県"]
-    assert len(miyagi) == 35, f"宮城県 {len(miyagi)}団体 (expected 35)"
+    for pref, expected in EXPECTED_BY_PREF.items():
+        n = len([m for m in municipalities if m["pref"] == pref])
+        assert n == expected, f"{pref} {n}団体 (expected {expected})"
     with_weather = [m for m in municipalities if m["weather"]]
     print(f"気象データ取得: {len(with_weather)}件(無投票を除く)")
 
