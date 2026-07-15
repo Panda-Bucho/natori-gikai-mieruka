@@ -94,6 +94,25 @@ STATIONS = {
     "iwate_karumai":        {"prec": "33", "type": "a", "block": "0206",  "name": "軽米"},
     "iwate_taneichi":       {"prec": "33", "type": "a", "block": "0205",  "name": "種市"},
     "iwate_okunakayama":    {"prec": "33", "type": "a", "block": "1215",  "name": "奥中山"},
+
+    # 山形県(prec_no=35)
+    "yamagata_yamagata":   {"prec": "35", "type": "s", "block": "47588", "name": "山形"},
+    "yamagata_yonezawa":   {"prec": "35", "type": "a", "block": "0279",  "name": "米沢"},
+    "yamagata_tsuruoka":   {"prec": "35", "type": "a", "block": "0263",  "name": "鶴岡"},
+    "yamagata_sakata":     {"prec": "35", "type": "s", "block": "47587", "name": "酒田"},
+    "yamagata_shinjo":     {"prec": "35", "type": "s", "block": "47520", "name": "新庄"},
+    "yamagata_murayama":   {"prec": "35", "type": "a", "block": "0271",  "name": "楯岡"},
+    "yamagata_nagai":      {"prec": "35", "type": "a", "block": "0275",  "name": "長井"},
+    "yamagata_higashine":  {"prec": "35", "type": "a", "block": "1488",  "name": "東根"},
+    "yamagata_obanazawa":  {"prec": "35", "type": "a", "block": "1039",  "name": "尾花沢"},
+    "yamagata_takahata":   {"prec": "35", "type": "a", "block": "1132",  "name": "高畠"},
+    "yamagata_nishikawa":  {"prec": "35", "type": "a", "block": "1292",  "name": "大井沢"},
+    "yamagata_oe":         {"prec": "35", "type": "a", "block": "0272",  "name": "左沢"},
+    "yamagata_kaneyama":   {"prec": "35", "type": "a", "block": "0262",  "name": "金山"},
+    "yamagata_mukaimachi": {"prec": "35", "type": "a", "block": "0910",  "name": "向町"},
+    "yamagata_hijiori":    {"prec": "35", "type": "a", "block": "1125",  "name": "肘折"},
+    "yamagata_oguni":      {"prec": "35", "type": "a", "block": "0277",  "name": "小国"},
+    "yamagata_shonai":     {"prec": "35", "type": "a", "block": "0264",  "name": "狩川"},
 }
 
 # 県ごとの登録済み市町村数(データを追加した県のみ検証対象にする)
@@ -101,6 +120,7 @@ EXPECTED_BY_PREF = {
     "宮城県": 35,
     "秋田県": 25,
     "岩手県": 33,
+    "山形県": 35,
 }
 
 # 市町村コード(council.json) -> STATIONS のキー。地理的に最も近い気温観測地点を割当
@@ -207,6 +227,45 @@ STATION_BY_CODE.update({
     "03506": "iwate_karumai",       # 九戸村(軽米町に隣接)
     "03507": "iwate_taneichi",      # 洋野町(旧種市町域)
     "03524": "iwate_okunakayama",   # 一戸町(町内の奥中山)
+})
+
+# 山形県分(地理的に最も近い気温観測地点を割当)
+STATION_BY_CODE.update({
+    "06201": "yamagata_yamagata",   # 山形市
+    "06202": "yamagata_yonezawa",   # 米沢市
+    "06203": "yamagata_tsuruoka",   # 鶴岡市
+    "06204": "yamagata_sakata",     # 酒田市
+    "06205": "yamagata_shinjo",     # 新庄市
+    "06206": "yamagata_yamagata",   # 寒河江市(自地点なし、山形市に隣接)
+    "06207": "yamagata_yamagata",   # 上山市(自地点は気温非観測のため山形で代替)
+    "06208": "yamagata_murayama",   # 村山市(旧楯岡町域)
+    "06209": "yamagata_nagai",      # 長井市
+    "06210": "yamagata_higashine",  # 天童市(東根市に隣接)
+    "06211": "yamagata_higashine",  # 東根市
+    "06212": "yamagata_obanazawa",  # 尾花沢市
+    "06213": "yamagata_takahata",   # 南陽市(高畠町に隣接)
+    "06301": "yamagata_yamagata",   # 山辺町(山形市に隣接)
+    "06302": "yamagata_yamagata",   # 中山町(山形市に隣接)
+    "06321": "yamagata_yamagata",   # 河北町(山形市に隣接)
+    "06322": "yamagata_nishikawa",  # 西川町(町内の大井沢)
+    "06323": "yamagata_oe",         # 朝日町(大江町に隣接)
+    "06324": "yamagata_oe",         # 大江町(旧左沢町域)
+    "06341": "yamagata_obanazawa",  # 大石田町(尾花沢市に隣接)
+    "06361": "yamagata_kaneyama",   # 金山町
+    "06362": "yamagata_mukaimachi", # 最上町(真室川町の向町に近接)
+    "06363": "yamagata_shinjo",     # 舟形町(新庄市に隣接)
+    "06364": "yamagata_mukaimachi", # 真室川町(旧向町域)
+    "06365": "yamagata_hijiori",    # 大蔵村(旧肘折域)
+    "06366": "yamagata_shinjo",     # 鮭川村(新庄市に隣接)
+    "06367": "yamagata_shinjo",     # 戸沢村(新庄市に隣接)
+    "06381": "yamagata_takahata",   # 高畠町
+    "06382": "yamagata_yonezawa",   # 川西町(米沢市に隣接)
+    "06401": "yamagata_oguni",      # 小国町
+    "06402": "yamagata_nagai",      # 白鷹町(自地点=白鷹山は気温非観測のため長井で代替)
+    "06403": "yamagata_yonezawa",   # 飯豊町(米沢市に隣接)
+    "06426": "yamagata_tsuruoka",   # 三川町(鶴岡市に隣接)
+    "06428": "yamagata_shonai",     # 庄内町(旧狩川町域)
+    "06461": "yamagata_sakata",     # 遊佐町(酒田市に隣接)
 })
 
 # daily_s1.php(気象台) / daily_a1.php(アメダス) の列インデックス(0始まり)
