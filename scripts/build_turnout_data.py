@@ -133,6 +133,30 @@ STATIONS = {
     "aomori_shiura":       {"prec": "31", "type": "a", "block": "1119",  "name": "市浦"},
     "aomori_odanosawa":    {"prec": "31", "type": "a", "block": "1122",  "name": "小田野沢"},
     "aomori_wakinosawa":   {"prec": "31", "type": "a", "block": "1124",  "name": "脇野沢"},
+    "fukushima_fukushima":        {"prec": "36", "type": "s", "block": "47595", "name": "福島"},
+    "fukushima_wakamatsu":        {"prec": "36", "type": "s", "block": "47570", "name": "若松"},
+    "fukushima_koriyama":         {"prec": "36", "type": "a", "block": "0299",  "name": "郡山"},
+    "fukushima_onahama":          {"prec": "36", "type": "s", "block": "47598", "name": "小名浜"},
+    "fukushima_shirakawa":        {"prec": "36", "type": "s", "block": "47597", "name": "白河"},
+    "fukushima_kitakata":         {"prec": "36", "type": "a", "block": "0286",  "name": "喜多方"},
+    "fukushima_soma":             {"prec": "36", "type": "a", "block": "0285",  "name": "相馬"},
+    "fukushima_nihonmatsu":       {"prec": "36", "type": "a", "block": "0291",  "name": "二本松"},
+    "fukushima_funehiki":         {"prec": "36", "type": "a", "block": "0294",  "name": "船引"},
+    "fukushima_yanagawa":         {"prec": "36", "type": "a", "block": "0281",  "name": "梁川"},
+    "fukushima_tajima":           {"prec": "36", "type": "a", "block": "0303",  "name": "田島"},
+    "fukushima_hinoemata":        {"prec": "36", "type": "a", "block": "1295",  "name": "桧枝岐"},
+    "fukushima_tadami":           {"prec": "36", "type": "a", "block": "0297",  "name": "只見"},
+    "fukushima_hibara":           {"prec": "36", "type": "a", "block": "1282",  "name": "桧原"},
+    "fukushima_nishiaizu":        {"prec": "36", "type": "a", "block": "1031",  "name": "西会津"},
+    "fukushima_inawashiro":       {"prec": "36", "type": "a", "block": "0290",  "name": "猪苗代"},
+    "fukushima_kaneyama":         {"prec": "36", "type": "a", "block": "1044",  "name": "金山"},
+    "fukushima_higashishirakawa": {"prec": "36", "type": "a", "block": "0312",  "name": "東白川"},
+    "fukushima_ishikawa":         {"prec": "36", "type": "a", "block": "0307",  "name": "石川"},
+    "fukushima_ononiimachi":      {"prec": "36", "type": "a", "block": "0304",  "name": "小野新町"},
+    "fukushima_hirono":           {"prec": "36", "type": "a", "block": "1034",  "name": "広野"},
+    "fukushima_kawauchi":         {"prec": "36", "type": "a", "block": "1129",  "name": "川内"},
+    "fukushima_namie":            {"prec": "36", "type": "a", "block": "0295",  "name": "浪江"},
+    "fukushima_iitate":           {"prec": "36", "type": "a", "block": "1130",  "name": "飯舘"},
 }
 
 # 県ごとの登録済み市町村数(データを追加した県のみ検証対象にする)
@@ -142,6 +166,7 @@ EXPECTED_BY_PREF = {
     "岩手県": 33,
     "山形県": 35,
     "青森県": 40,
+    "福島県": 59,
 }
 
 # 市町村コード(council.json) -> STATIONS のキー。地理的に最も近い気温観測地点を割当
@@ -330,6 +355,68 @@ STATION_BY_CODE.update({
     "02445": "aomori_sannohe",     # 南部町(三戸町に隣接)
     "02446": "aomori_hachinohe",   # 階上町(八戸市に隣接)
     "02450": "aomori_sannohe",     # 新郷村(三戸町に隣接)
+})
+
+STATION_BY_CODE.update({
+    "07201": "fukushima_fukushima",        # 福島市
+    "07202": "fukushima_wakamatsu",        # 会津若松市
+    "07203": "fukushima_koriyama",         # 郡山市
+    "07204": "fukushima_onahama",          # いわき市
+    "07205": "fukushima_shirakawa",        # 白河市
+    "07207": "fukushima_koriyama",         # 須賀川市(郡山市に隣接)
+    "07208": "fukushima_kitakata",         # 喜多方市
+    "07209": "fukushima_soma",             # 相馬市
+    "07210": "fukushima_nihonmatsu",       # 二本松市
+    "07211": "fukushima_funehiki",         # 田村市(旧船引町域)
+    "07212": "fukushima_soma",             # 南相馬市(自地点=原町は気温非観測のため相馬で代替)
+    "07213": "fukushima_yanagawa",         # 伊達市(旧梁川町域)
+    "07214": "fukushima_nihonmatsu",       # 本宮市(二本松市に隣接)
+    "07301": "fukushima_yanagawa",         # 桑折町(伊達市梁川に隣接)
+    "07303": "fukushima_yanagawa",         # 国見町(伊達市梁川に隣接)
+    "07308": "fukushima_fukushima",        # 川俣町(福島市に隣接)
+    "07322": "fukushima_nihonmatsu",       # 大玉村(二本松市に隣接)
+    "07342": "fukushima_koriyama",         # 鏡石町(郡山市に近い)
+    "07344": "fukushima_shirakawa",        # 天栄村(白河市に隣接)
+    "07362": "fukushima_tajima",           # 下郷町(南会津町田島に隣接)
+    "07364": "fukushima_hinoemata",        # 檜枝岐村
+    "07367": "fukushima_tadami",           # 只見町
+    "07368": "fukushima_tajima",           # 南会津町(旧田島町域)
+    "07402": "fukushima_hibara",           # 北塩原村(桧原)
+    "07405": "fukushima_nishiaizu",        # 西会津町
+    "07407": "fukushima_inawashiro",       # 磐梯町(猪苗代町に隣接)
+    "07408": "fukushima_inawashiro",       # 猪苗代町
+    "07421": "fukushima_wakamatsu",        # 会津坂下町(会津若松市に隣接)
+    "07422": "fukushima_wakamatsu",        # 湯川村(会津若松市に隣接)
+    "07423": "fukushima_wakamatsu",        # 柳津町(会津若松市に近い)
+    "07444": "fukushima_kaneyama",         # 三島町(金山町に隣接)
+    "07445": "fukushima_kaneyama",         # 金山町
+    "07446": "fukushima_kaneyama",         # 昭和村(金山町に隣接)
+    "07447": "fukushima_wakamatsu",        # 会津美里町(会津若松市に隣接)
+    "07461": "fukushima_shirakawa",        # 西郷村(白河市に隣接)
+    "07464": "fukushima_shirakawa",        # 泉崎村(白河市に隣接)
+    "07465": "fukushima_shirakawa",        # 中島村(白河市に隣接)
+    "07466": "fukushima_shirakawa",        # 矢吹町(白河市に近い)
+    "07481": "fukushima_higashishirakawa", # 棚倉町(東白川郡)
+    "07482": "fukushima_higashishirakawa", # 矢祭町(東白川に隣接)
+    "07483": "fukushima_higashishirakawa", # 塙町(東白川に隣接)
+    "07484": "fukushima_higashishirakawa", # 鮫川村(東白川に隣接)
+    "07501": "fukushima_ishikawa",         # 石川町
+    "07502": "fukushima_ishikawa",         # 玉川村(自地点は気温非観測のため石川で代替)
+    "07503": "fukushima_ishikawa",         # 平田村(石川町に近い)
+    "07504": "fukushima_ishikawa",         # 浅川町(石川町に隣接)
+    "07505": "fukushima_ononiimachi",      # 古殿町(自地点は気温非観測のため小野新町で代替)
+    "07521": "fukushima_funehiki",         # 三春町(田村市船引に隣接)
+    "07522": "fukushima_ononiimachi",      # 小野町(旧小野新町)
+    "07541": "fukushima_hirono",           # 広野町
+    "07542": "fukushima_hirono",           # 楢葉町(広野町に隣接)
+    "07543": "fukushima_hirono",           # 富岡町(自地点は気温非観測のため広野で代替)
+    "07544": "fukushima_kawauchi",         # 川内村
+    "07545": "fukushima_hirono",           # 大熊町(広野に近い)
+    "07546": "fukushima_namie",            # 双葉町(浪江町に隣接)
+    "07547": "fukushima_namie",            # 浪江町
+    "07548": "fukushima_namie",            # 葛尾村(浪江町に近い)
+    "07561": "fukushima_soma",             # 新地町(自地点は気温非観測のため相馬で代替)
+    "07564": "fukushima_iitate",           # 飯舘村
 })
 
 # daily_s1.php(気象台) / daily_a1.php(アメダス) の列インデックス(0始まり)
