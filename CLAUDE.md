@@ -12,13 +12,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 これは**静的HTML/CSS/JSサイト**(ビルド不要・フレームワークなし)で、名取市議会議員の活動と議会の姿を可視化します。RSSフィード・議会映像配信サイト・政府統計などの公開情報を集約し、インタラクティブな表・グラフとして表示します。
 
-**6ページ構成:**
+**7ページ構成:**
 - `index.html` — 議員一覧(得票結果、年齢、期数、委員会所属、媒体リンク)
 - `stats.html` — 月別発信回数(棒グラフ + データ表)
 - `questions.html` — 一般質問の登壇状況(マトリクス、散布図、ワードクラウド、テーマ一覧)
 - `question.html` — 個別の質問詳細・AI要約
 - `council.html` — 議員定数の妥当性(全国市区町村との人口1000人あたり議員数比較)
 - `salary.html` — 議員報酬の妥当性(全国市区町村との報酬月額比較、議員/副議長/議長切替)
+- `turnout.html` — 議員選挙の投票率比較(宮城県内市町村、投票日の気象との関係、出典表)
 
 **データソース:** 議員メタデータ(手動JSON)、RSSフィード(ブログ・公式サイト)、議会映像配信サイトAPI、国勢調査、議長会調査。
 
@@ -31,7 +32,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ├── .claude/launch.json              # 開発サーバー設定
 ├── README.md                        # ユーザー向けドキュメント
 │
-├── index.html, stats.html, questions.html, question.html, council.html, salary.html
+├── index.html, stats.html, questions.html, question.html, council.html, salary.html, turnout.html
 ├── css/style.css                    # 単一スタイルシート(全ページ共通)
 ├── js/
 │   ├── common.js                    # 共通ユーティリティ: データ取得・日付処理・グラフ補助
@@ -40,24 +41,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── questions.js                 # 質問マトリクス・散布図・ワードクラウド
 │   ├── question.js                 # 質問詳細ページ
 │   ├── council.js                   # 議員定数の散布図(対数軸+べき乗近似)
-│   └── salary.js                    # 議員報酬の散布図(横軸対数+べき乗近似)
+│   ├── salary.js                    # 議員報酬の散布図(横軸対数+べき乗近似)
+│   └── turnout.js                   # 投票率の散布図(人口×投票率、気象×投票率)、出典表
 ├── data/
 │   ├── members.json                 # 手動管理: 議員メタデータ・媒体URL・RSSフィード
 │   ├── posts.json                   # 自動生成: RSS発信履歴(update_posts.py)
 │   ├── questions.json               # 自動生成: 議会映像スクレイプ(update_questions.py)
 │   ├── summaries.json               # 自動生成: AI要約(make_summaries.py)
 │   ├── council.json                 # 自動生成: 市区町村の人口・議員定数データ(build_council_data.py)
-│   └── salary.json                  # 自動生成: 市区町村の議員報酬データ(build_salary_data.py)
+│   ├── salary.json                  # 自動生成: 市区町村の議員報酬データ(build_salary_data.py)
+│   ├── turnout_elections.json       # 手動収集: 宮城県35市町村の直近議員選挙の投票率(選管公表資料・選挙ドットコム)
+│   └── turnout.json                 # 自動生成: 投票率+人口+投票日の気象データ(build_turnout_data.py)
 ├── scripts/
 │   ├── update_posts.py              # RSS集計
 │   ├── update_questions.py          # 議会映像API + 会議録スクレイプ
 │   ├── build_council_data.py        # 国勢調査・議長会データのダウンロードと集計
 │   ├── build_salary_data.py         # 議長会報酬データのダウンロードと集計
+│   ├── build_turnout_data.py        # turnout_elections.json + council.json + 気象庁データを結合
 │   ├── backfill_posts.py            # 過去投稿の遡取(新規フィード追加時に1回実行)
 │   ├── fetch_qa_texts.py            # 会議録から質疑テキストを抽出(要約生成の下準備)
 │   └── make_summaries.py            # AI要約生成(手動実行)
 └── work/
     ├── council_src/                 # 国勢調査・議長会Excelのダウンロードキャッシュ
+    ├── weather_cache/                # 気象庁 日別値ページのダウンロードキャッシュ
     └── minutes_cache/               # 会議録のキャッシュ
 ```
 
@@ -80,6 +86,7 @@ scripts/fetch_qa_texts.py     →  質問テキストキャッシュ
 scripts/make_summaries.py     →  data/summaries.json (Claude API)
 scripts/build_council_data.py →  data/council.json(国勢調査+議長会調査)
 scripts/build_salary_data.py  →  data/salary.json(議長会報酬調査、data/council.jsonのpopを再利用)
+scripts/build_turnout_data.py →  data/turnout.json(data/turnout_elections.json手動収集+council.jsonのpop+気象庁日別値)
          ↓
 JSページ(main.js, stats.js, questions.js等)
          ↓
@@ -174,6 +181,34 @@ JSページ(main.js, stats.js, questions.js等)
 }
 ```
 
+**turnout_elections.json**(手動収集。市町村選管公表資料・選挙ドットコムより):
+```json
+{
+  "note": "収集方法・無投票の扱い等の説明",
+  "elections": [
+    { "code": "04207", "name": "名取市", "election": "名取市議会議員一般選挙", "date": "2024-01-21",
+      "eligible": 64624, "voters": 22972, "turnout": 35.55, "uncontested": false,
+      "source": "https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" }
+  ]
+}
+```
+`eligible`/`voters` は判明したもののみ(多くは null)。`uncontested: true` の場合 `turnout` は null。
+
+**turnout.json**(自動。turnout_elections.json + council.jsonのpop + 気象庁データを結合):
+```json
+{
+  "generatedAt": "2026-07-15T10:00:00+09:00",
+  "note": "...", "weatherSource": "...",
+  "municipalities": [
+    { "code": "04207", "name": "名取市", "pref": "宮城県", "type": "市", "pop": 78737,
+      "election": "名取市議会議員一般選挙", "date": "2024-01-21", "turnout": 35.55,
+      "uncontested": false, "source": "https://...",
+      "weather": { "station": "名取", "precip": 61.5, "tempAvg": 6.9, "tempMax": 10.7 } }
+  ]
+}
+```
+`weather` は無投票自治体では null。観測所は市町村ごとに地理的に近い気温観測地点を `scripts/build_turnout_data.py` 内の `STATION_BY_CODE` で手動割当。
+
 ## 開発ワークフロー
 
 ### ローカルセットアップ
@@ -219,15 +254,15 @@ python -m http.server 8000
 
 ### キャッシュバスティング
 
-**重要:** JSまたはCSSを変更した場合、**6つのHTMLファイルすべて**(`index.html`, `stats.html`, `questions.html`, `question.html`, `council.html`, `salary.html`)の `?v=` パラメータを必ずバンプすること。
+**重要:** JSまたはCSSを変更した場合、**7つのHTMLファイルすべて**(`index.html`, `stats.html`, `questions.html`, `question.html`, `council.html`, `salary.html`, `turnout.html`)の `?v=` パラメータを必ずバンプすること。
 
 形式: `?v=YYYYMMDD<文字>`(例: `?v=20260712a`、同日に再更新するなら `20260712b`)
 
 理由: GitHub Pagesは600秒のmax-ageを持つ。バンプを忘れると、訪問者が新しいHTMLと古いキャッシュ済みJS/CSSの組み合わせを見てしまい、ページが壊れる。パラメータのバンプで強制的に再取得させる。
 
 **運用ルール:**
-- `css/style.css` の変更 → 6つのHTMLすべての `?v=` をバンプ
-- `.js` ファイルの変更 → 6つのHTMLすべての `?v=` をバンプ(すべてが対象ファイルを参照しているため)
+- `css/style.css` の変更 → 7つのHTMLすべての `?v=` をバンプ
+- `.js` ファイルの変更 → 7つのHTMLすべての `?v=` をバンプ(すべてが対象ファイルを参照しているため)
 - `data/*.json` の変更 → **バンプ不要**(common.js の `fetchJson` が `cache: no-cache` を使用)
 
 ### 共通ユーティリティ(js/common.js)
