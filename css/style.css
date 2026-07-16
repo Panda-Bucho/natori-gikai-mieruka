@@ -112,6 +112,12 @@ table.member-table {
 .member-table thead th[data-dir="asc"]::after { content: " ▲"; font-size: 0.7em; }
 .member-table thead th[data-dir="desc"]::after { content: " ▼"; font-size: 0.7em; }
 
+/* 投票率ページ 出典一覧: 227行の高密度表示(#tn-table 限定。共有 .member-table には影響させない) */
+#tn-table { font-size: 0.8rem; }
+#tn-table th, #tn-table td { padding: 0.34rem 0.5rem; }
+#tn-table tbody tr:nth-child(even) { background: #f5f8f7; }
+#tn-table .cell-pref { white-space: nowrap; color: var(--muted); }
+
 .cell-name .name { display: block; font-weight: 700; white-space: nowrap; }
 .name-link {
   color: inherit;

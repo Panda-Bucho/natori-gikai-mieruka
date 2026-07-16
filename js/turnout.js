@@ -305,7 +305,7 @@ function renderWeatherChart(axis, rows, natori, fit, xMin, xMax) {
 
 /* ---------- カード3: 出典表 ---------- */
 
-let tnSortState = { key: "name", asc: true };
+let tnSortState = { key: "pref", asc: true };
 
 function renderTable() {
   sortTableRows();
@@ -314,8 +314,8 @@ function renderTable() {
     .map((m) => {
       const w = m.weather;
       return `<tr>
+        <td class="cell-pref">${escapeHtml(m.pref)}</td>
         <td>${escapeHtml(m.name)}</td>
-        <td>${escapeHtml(m.election)}</td>
         <td>${escapeHtml(m.date)}</td>
         <td class="cell-num">${m.uncontested ? "無投票" : fmtPct(m.turnout)}</td>
         <td class="cell-num">${w ? `${w.precip}mm` : "—"}</td>
@@ -331,7 +331,7 @@ function renderTable() {
       if (tnSortState.key === key) {
         tnSortState.asc = !tnSortState.asc;
       } else {
-        tnSortState = { key, asc: ["name", "election", "date"].includes(key) };
+        tnSortState = { key, asc: ["pref", "name", "date"].includes(key) };
       }
       renderTable();
       document.querySelectorAll("#tn-table th[data-sort]").forEach((h) => h.removeAttribute("data-dir"));
@@ -347,6 +347,7 @@ function sortTableRows() {
     if (key === "precip") return m.weather ? m.weather.precip : -1;
     if (key === "tempAvg") return m.weather ? m.weather.tempAvg : -999;
     if (key === "turnout") return m.turnout ?? -1;
+    if (key === "pref") return m.code; // JISコード順で県ごとにグループ化
     if (key === "name") return m.name;
     return m[key];
   };
