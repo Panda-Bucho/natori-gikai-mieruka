@@ -13,8 +13,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>投票率 | 名取市議会議員 見える化</title>
-  <meta name="description" content="宮城県名取市の市議会議員選挙の投票率を、県内市町村や投票日の気象と比較できるページです。">
-  <link rel="stylesheet" href="css/style.css?v=20260715b">
+  <meta name="description" content="宮城県名取市の市議会議員選挙の投票率を、東北6県の市町村や投票日の気象と比較できるページです。">
+  <link rel="stylesheet" href="css/style.css?v=20260717a">
 </head>
 <body>
   <header class="site-header">
@@ -34,8 +34,8 @@
 
   <main>
     <section class="card">
-      <h2>人口と投票率 — 名取市議選の投票率を県内と比べる</h2>
-      <p class="lead">直近(2024年1月21日執行)の名取市議会議員選挙の投票率は35.55%でした。他自治体と比べて高いのか低いのかを判断する材料として、宮城県内市町村の直近の議員一般選挙の投票率を同じ基準で並べ、名取市の位置を示します。無投票(候補者数が定数以下で投票が実施されなかった)自治体は投票率が存在しないため散布図・統計から除いています。</p>
+      <h2>人口と投票率 — 名取市議選の投票率を東北6県と比べる</h2>
+      <p class="lead">直近(2024年1月21日執行)の名取市議会議員選挙の投票率は35.55%でした。他自治体と比べて高いのか低いのかを判断する材料として、東北6県の市町村の直近の議員一般選挙の投票率を同じ基準で並べ、名取市の位置を示します。無投票(候補者数が定数以下で投票が実施されなかった)自治体は投票率が存在しないため散布図・統計から除いています。</p>
       <div class="chart-controls">
         <label for="tn-group">集計グループ:</label>
         <select id="tn-group"></select>
@@ -50,7 +50,7 @@
         <span><span class="lg-line lg-median"></span>グループ中央値</span>
       </div>
       <div class="chart-box chart-box-tall"><canvas id="tn-chart" aria-label="人口と投票率の散布図" role="img"></canvas></div>
-      <p class="lead chart-note">※横軸は対数目盛(人口)です。各自治体の選挙執行日は2022年9月〜2026年5月と幅があり、同日に他の選挙(国政選挙・知事選等)が重なったかどうかで投票率が変動する点に注意してください。点にマウスを重ねると自治体名・選挙名・執行日・投票率を表示します。</p>
+      <p class="lead chart-note">※横軸は対数目盛(人口)です。各自治体の選挙執行日は2020年11月〜2026年6月と幅があり、同日に他の選挙(国政選挙・知事選等)が重なったかどうかで投票率が変動する点に注意してください。点にマウスを重ねると自治体名・選挙名・執行日・投票率を表示します。</p>
     </section>
 
     <section class="card">
@@ -67,11 +67,11 @@
         <span><span class="lg-line"></span>近似線(線形回帰)</span>
       </div>
       <div class="chart-box chart-box-tall"><canvas id="tn-weather-chart" aria-label="投票日の気象と投票率の散布図" role="img"></canvas></div>
-      <p class="lead chart-note">※28自治体(無投票を除く)が対象。執行日・観測地点が分散しているため季節の影響が大きく交絡します。相関係数は統計的な目安であり、因果関係を示すものではありません。</p>
+      <p class="lead chart-note">※無投票を除く全自治体が対象です。執行日・観測地点が分散しているため季節の影響が大きく交絡します。相関係数は統計的な目安であり、因果関係を示すものではありません。</p>
     </section>
 
     <section class="card">
-      <h2>出典一覧(宮城県35市町村)</h2>
+      <h2>出典一覧(東北6県227市町村)</h2>
       <p class="lead">各自治体の直近の議員一般選挙(補欠選挙・再選挙は除く)の執行日・投票率・投票日当日の気象と、出典元へのリンクです。列見出しクリックで並べ替えできます。</p>
       <div class="table-wrap">
         <table class="member-table" id="tn-table">
@@ -96,12 +96,12 @@
     <section class="card notes">
       <h2>このページについて</h2>
       <ul>
-        <li>投票率は各市町村選挙管理委員会の公表資料・<a href="https://go2senkyo.com/" target="_blank" rel="noopener noreferrer">選挙ドットコム</a>等から収集しました(AI下調べ+人間の抽出検査)。名取市は<a href="https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" target="_blank" rel="noopener noreferrer">名取市選挙管理委員会の公表資料</a>の数値で検証済みです。全国一括の公的統計が存在しないため、現時点では宮城県内35市町村のみを対象としています(今後、東北6県への拡大を予定)。</li>
-        <li>対象は各自治体の直近の「議員一般選挙」です。欠員補充のための補欠選挙・再選挙は対象外です。無投票(候補者数が定数以下)の自治体は投票率が存在しないため、投票率が関わる散布図・統計・気象カードから除いています(7自治体: 東松島市・富谷市・七ヶ宿町・村田町・亘理町・山元町・美里町)。</li>
+        <li>投票率は各市町村選挙管理委員会の公表資料・<a href="https://go2senkyo.com/" target="_blank" rel="noopener noreferrer">選挙ドットコム</a>等から収集しました(AI下調べ+人間の抽出検査)。名取市は<a href="https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" target="_blank" rel="noopener noreferrer">名取市選挙管理委員会の公表資料</a>の数値で検証済みです。全国一括の公的統計が存在しないため、東北6県の227市町村を対象として個別に収集しています。</li>
+        <li>対象は各自治体の直近の「議員一般選挙」です。欠員補充のための補欠選挙・再選挙は対象外です。無投票(候補者数が定数以下)の自治体は投票率が存在しないため、投票率が関わる散布図・統計・気象カードから除いています(東北6県で計48自治体)。</li>
         <li>気象データは<a href="https://www.data.jma.go.jp/stats/etrn/" target="_blank" rel="noopener noreferrer">気象庁「過去の気象データ検索」</a>による、選挙執行日当日の観測値です。各自治体には地理的に最も近い気温観測地点(気象台・特別地域気象観測所・アメダス)を割り当てています。「天気(晴/雨)」自体は観測されないため、降水量(日合計mm)・気温(日平均・日最高℃)を代替指標として使用しています。</li>
         <li>「平均値」「中央値」は、グループ内の各自治体の投票率の単純平均・中央値です(人口の大小で重み付けはしていません)。</li>
-        <li>近似線は最小二乗法によるべき乗回帰(人口の対数×投票率の対数)です。実データで半対数回帰と比較したところ、べき乗の方がわずかに当てはまりが良かった(R²で0.54対0.51)ため採用しています。ただしどちらの当てはまりも強くなく(R²は0.5前後)、投票率は人口だけでは説明しきれないことを示しています。<a href="council.html">議員定数ページ</a>・<a href="salary.html">議員報酬ページ</a>と回帰手法をそろえています。</li>
-        <li>各自治体の選挙執行日は2022年9月〜2026年5月に分散しており、季節・当日の他選挙(国政選挙・知事選挙等)との同日実施の有無が投票率に影響する可能性があります。この交絡は補正していません。</li>
+        <li>近似線は最小二乗法によるべき乗回帰(人口の対数×投票率の対数)で、<a href="council.html">議員定数ページ</a>・<a href="salary.html">議員報酬ページ</a>と回帰手法をそろえています。半対数回帰と比較しても当てはまりはほぼ同等(R²で0.45対0.47)で、どちらも強くなく、投票率は人口だけでは説明しきれないことを示しています。</li>
+        <li>各自治体の選挙執行日は2020年11月〜2026年6月に分散しており、季節・当日の他選挙(国政選挙・知事選挙等)との同日実施の有無が投票率に影響する可能性があります。この交絡は補正していません。</li>
         <li>投票率の水準には、人口や気象のほかに選挙の争点・候補者数・同日選挙の有無など多くの要因があります。このページはいくつかの切り口を提供するものであり、相関を因果と解釈したり、投票率の高低を評価・推奨するものではありません。</li>
       </ul>
     </section>
@@ -116,7 +116,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-  <script src="js/common.js?v=20260715b"></script>
-  <script src="js/turnout.js?v=20260715b"></script>
+  <script src="js/common.js?v=20260717a"></script>
+  <script src="js/turnout.js?v=20260717a"></script>
 </body>
 </html>

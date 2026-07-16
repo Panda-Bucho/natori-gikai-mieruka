@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const gen = document.getElementById("generated-at");
     if (gen) {
-      gen.textContent = "データ基準日: 各自治体の直近の議員一般選挙(2022年9月〜2026年5月執行)";
+      gen.textContent = "データ基準日: 各自治体の直近の議員一般選挙(2020年11月〜2026年6月執行)";
     }
   } catch (e) {
     document.getElementById("tn-stats").innerHTML = `<p>データの読み込みに失敗しました: ${escapeHtml(e.message)}</p>`;
