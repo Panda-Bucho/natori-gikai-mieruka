@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `question.html` — 個別の質問詳細・AI要約
 - `council.html` — 議員定数の妥当性(全国市区町村との人口1000人あたり議員数比較)
 - `salary.html` — 議員報酬の妥当性(全国市区町村との報酬月額比較、議員/副議長/議長切替)
-- `turnout.html` — 議員選挙の投票率比較(宮城県内市町村、投票日の気象との関係、出典表)
+- `turnout.html` — 議員選挙の投票率比較(東北6県227市町村、投票日の気象との関係、出典表)
 
 **データソース:** 議員メタデータ(手動JSON)、RSSフィード(ブログ・公式サイト)、議会映像配信サイトAPI、国勢調査、議長会調査。
 
@@ -50,7 +50,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── summaries.json               # 自動生成: AI要約(make_summaries.py)
 │   ├── council.json                 # 自動生成: 市区町村の人口・議員定数データ(build_council_data.py)
 │   ├── salary.json                  # 自動生成: 市区町村の議員報酬データ(build_salary_data.py)
-│   ├── turnout_elections.json       # 手動収集: 宮城県35市町村の直近議員選挙の投票率(選管公表資料・選挙ドットコム)
+│   ├── turnout_elections.json       # 手動収集: 東北6県227市町村の直近議員選挙の投票率(選管公表資料・選挙ドットコム)
 │   └── turnout.json                 # 自動生成: 投票率+人口+投票日の気象データ(build_turnout_data.py)
 ├── scripts/
 │   ├── update_posts.py              # RSS集計

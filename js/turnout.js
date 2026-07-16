@@ -3,8 +3,10 @@
 const NATORI_CODE = "04207";
 
 const TN_GROUPS = [
-  { id: "miyagi", label: "宮城県(市町村)", filter: () => true },
-  { id: "cities", label: "宮城県の市のみ", filter: (m) => m.type === "市" },
+  { id: "tohoku", label: "東北6県(市町村)", filter: () => true },
+  { id: "tohoku-cities", label: "東北6県の市のみ", filter: (m) => m.type === "市" },
+  { id: "miyagi", label: "宮城県(市町村)", filter: (m) => m.pref === "宮城県" },
+  { id: "cities", label: "宮城県の市のみ", filter: (m) => m.pref === "宮城県" && m.type === "市" },
 ];
 
 const TN_AXES = [
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const groupSel = document.getElementById("tn-group");
     groupSel.innerHTML = TN_GROUPS.map((g) => `<option value="${g.id}">${escapeHtml(g.label)}</option>`).join("");
-    groupSel.value = "miyagi";
+    groupSel.value = "tohoku";
     groupSel.addEventListener("change", () => renderGroup(groupSel.value));
     renderGroup(groupSel.value);
 
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const gen = document.getElementById("generated-at");
     if (gen) {
-      gen.textContent = "データ基準日: 各自治体の直近の議員一般選挙(2022年9月〜2026年5月執行)";
+      gen.textContent = "データ基準日: 各自治体の直近の議員一般選挙(2020年11月〜2026年6月執行)";
     }
   } catch (e) {
     document.getElementById("tn-stats").innerHTML = `<p>データの読み込みに失敗しました: ${escapeHtml(e.message)}</p>`;
