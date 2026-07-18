@@ -537,6 +537,7 @@
       "links": {
         "website": "https://ryo-yoshida.com/",
         "blog": null,
+        "note": "https://note.com/ryoyoshida1771",
         "x": "https://x.com/ryoyoshida1771",
         "youtube": null,
         "facebook": null,
@@ -546,6 +547,10 @@
         {
           "platform": "website",
           "url": "https://ryo-yoshida.com/feed/"
+        },
+        {
+          "platform": "note",
+          "url": "https://note.com/ryoyoshida1771/rss"
         }
       ],
       "manual": [

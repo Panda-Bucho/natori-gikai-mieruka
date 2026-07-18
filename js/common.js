@@ -9,6 +9,10 @@ const PLATFORMS = {
     label: "ブログ",
     icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>',
   },
+  note: {
+    label: "note",
+    icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm4 6v7h2.2v-4.1c0-.9.5-1.4 1.3-1.4s1.2.5 1.2 1.4V16H16v-4.6c0-1.8-1-2.9-2.6-2.9-.9 0-1.6.4-2 1V9H8z"/></svg>',
+  },
   x: {
     label: "X (旧Twitter)",
     icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
@@ -32,7 +36,7 @@ const PLATFORMS = {
 };
 
 /* 一覧のアイコン表示順 */
-const PLATFORM_ORDER = ["website", "blog", "x", "youtube", "facebook", "instagram", "tiktok"];
+const PLATFORM_ORDER = ["website", "blog", "note", "x", "youtube", "facebook", "instagram", "tiktok"];
 
 async function fetchJson(path) {
   const res = await fetch(path, { cache: "no-cache" });
