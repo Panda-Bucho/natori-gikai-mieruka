@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         '<section class="card"><p>指定された質問が見つかりませんでした。<a href="questions.html">一般質問の一覧</a>からお探しください。</p></section>';
       return;
     }
-    document.title = `${member.name}議員の一般質問(${formatDateJa(entry.date)})の要約 | 名取市議会議員 見える化`;
+    document.title = `${member.name}議員の一般質問(${formatDateJa(entry.date)})の要約 | 名取市議会 見える化`;
     const s = (summaries.entries || {})[`${mid}|${date}`];
     wrap.innerHTML = renderHeader(member, entry) + renderSummary(s, entry, summaries);
     const gen = document.getElementById("generated-at");
