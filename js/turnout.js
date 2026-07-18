@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     axisSel.addEventListener("change", () => renderWeather(axisSel.value));
     renderWeather(axisSel.value);
 
+    initTableSort();
     renderTable();
 
     const gen = document.getElementById("generated-at");
@@ -324,7 +325,10 @@ function renderTable() {
       </tr>`;
     })
     .join("");
+}
 
+/* 見出しクリックのリスナー登録は1回だけ(renderTable内で登録するとクリックごとに多重登録され、指数関数的に遅くなる) */
+function initTableSort() {
   document.querySelectorAll("#tn-table th[data-sort]").forEach((th) => {
     th.addEventListener("click", () => {
       const key = th.dataset.sort;
@@ -338,6 +342,9 @@ function renderTable() {
       th.setAttribute("data-dir", tnSortState.asc ? "asc" : "desc");
     });
   });
+  // 初期状態の既定ソート(県・昇順)をインジケーター表示
+  const prefTh = document.querySelector('#tn-table th[data-sort="pref"]');
+  if (prefTh) prefTh.setAttribute("data-dir", "asc");
 }
 
 function sortTableRows() {
