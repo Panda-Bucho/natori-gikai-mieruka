@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T07:00:35+09:00",
+  "generatedAt": "2026-07-23T07:00:58+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -10340,11 +10340,5 @@
       "posts": []
     }
   },
-  "errors": [
-    {
-      "memberId": "yoshida-ryo",
-      "feedUrl": "https://ryo-yoshida.com/feed/",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='ryo-yoshida.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='ryo-yoshida.com', port=443) at 0x7fa859635fd0>, 'Connection to ryo-yoshida.com timed out. (connect timeout=20)'))"
-    }
-  ]
+  "errors": []
 }
