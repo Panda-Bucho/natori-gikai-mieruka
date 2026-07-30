@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T06:55:13+09:00",
+  "generatedAt": "2026-07-31T07:07:57+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6313,8 +6313,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-07-29",
+      "lastPostDate": "2026-07-30",
       "posts": [
+        {
+          "date": "2026-07-30",
+          "platform": "website",
+          "title": "民生教育常任委員会管外行政研修2日目",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/07/30/%e6%b0%91%e7%94%9f%e6%95%99%e8%82%b2%e5%b8%b8%e4%bb%bb%e5%a7%94%e5%93%a1%e4%bc%9a%e7%ae%a1%e5%a4%96%e8%a1%8c%e6%94%bf%e7%a0%94%e4%bf%ae2%e6%97%a5%e7%9b%ae/"
+        },
         {
           "date": "2026-07-29",
           "platform": "website",
@@ -10358,5 +10364,11 @@
       "posts": []
     }
   },
-  "errors": []
+  "errors": [
+    {
+      "memberId": "yoshida-ryo",
+      "feedUrl": "https://ryo-yoshida.com/feed/",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='ryo-yoshida.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='ryo-yoshida.com', port=443) at 0x7f7c23fe39e0>, 'Connection to ryo-yoshida.com timed out. (connect timeout=20)'))"
+    }
+  ]
 }
