@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T06:49:32+09:00",
+  "generatedAt": "2026-08-03T06:50:22+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-07-24",
+      "lastPostDate": "2026-08-02",
       "posts": [
+        {
+          "date": "2026-08-02",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/08/02/3591/"
+        },
         {
           "date": "2026-07-24",
           "platform": "website",
@@ -5970,8 +5976,14 @@
       ]
     },
     "yoshida-ryo": {
-      "lastPostDate": "2026-07-26",
+      "lastPostDate": "2026-08-02",
       "posts": [
+        {
+          "date": "2026-08-02",
+          "platform": "note",
+          "title": "「ナスパ訴訟」全記録 #08 住民監査請求への布石",
+          "url": "https://note.com/ryoyoshida1771/n/nfd0a40a61b5e"
+        },
         {
           "date": "2026-07-26",
           "platform": "note",
@@ -6313,8 +6325,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-07-31",
+      "lastPostDate": "2026-08-02",
       "posts": [
+        {
+          "date": "2026-08-02",
+          "platform": "website",
+          "title": "第67回菊地しのぶ議会報告会",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/08/02/%e7%ac%ac67%e5%9b%9e%e8%8f%8a%e5%9c%b0%e3%81%97%e3%81%ae%e3%81%b6%e8%ad%b0%e4%bc%9a%e5%a0%b1%e5%91%8a%e4%bc%9a/"
+        },
         {
           "date": "2026-07-31",
           "platform": "website",
