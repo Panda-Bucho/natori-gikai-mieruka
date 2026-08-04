@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T07:02:56+09:00",
+  "generatedAt": "2026-08-05T07:06:55+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-08-02",
+      "lastPostDate": "2026-08-04",
       "posts": [
+        {
+          "date": "2026-08-04",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/08/04/3594/"
+        },
         {
           "date": "2026-08-02",
           "platform": "website",
