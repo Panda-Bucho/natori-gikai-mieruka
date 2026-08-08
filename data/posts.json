@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T06:33:38+09:00",
+  "generatedAt": "2026-08-09T06:24:08+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6331,8 +6331,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-08-02",
+      "lastPostDate": "2026-08-08",
       "posts": [
+        {
+          "date": "2026-08-08",
+          "platform": "website",
+          "title": "第41回なとり夏まつり",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/08/08/%e7%ac%ac41%e5%9b%9e%e3%81%aa%e3%81%a8%e3%82%8a%e5%a4%8f%e3%81%be%e3%81%a4%e3%82%8a/"
+        },
         {
           "date": "2026-08-02",
           "platform": "website",
@@ -10394,11 +10400,5 @@
       "posts": []
     }
   },
-  "errors": [
-    {
-      "memberId": "yoshida-ryo",
-      "feedUrl": "https://ryo-yoshida.com/feed/",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='ryo-yoshida.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='ryo-yoshida.com', port=443) at 0x7f85e118a210>, 'Connection to ryo-yoshida.com timed out. (connect timeout=20)'))"
-    }
-  ]
+  "errors": []
 }
