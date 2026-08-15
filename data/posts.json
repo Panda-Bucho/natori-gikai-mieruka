@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T06:19:32+09:00",
+  "generatedAt": "2026-08-16T06:15:06+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-08-13",
+      "lastPostDate": "2026-08-15",
       "posts": [
+        {
+          "date": "2026-08-15",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/08/15/3600/"
+        },
         {
           "date": "2026-08-13",
           "platform": "website",
@@ -6343,8 +6349,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-08-12",
+      "lastPostDate": "2026-08-15",
       "posts": [
+        {
+          "date": "2026-08-15",
+          "platform": "website",
+          "title": "終戦記念日街頭演説",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/08/15/%e7%b5%82%e6%88%a6%e8%a8%98%e5%bf%b5%e6%97%a5%e8%a1%97%e9%a0%ad%e6%bc%94%e8%aa%ac-3/"
+        },
         {
           "date": "2026-08-12",
           "platform": "website",
