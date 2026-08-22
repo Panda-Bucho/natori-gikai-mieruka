@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T06:18:00+09:00",
+  "generatedAt": "2026-08-23T06:15:56+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6361,8 +6361,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-08-15",
+      "lastPostDate": "2026-08-22",
       "posts": [
+        {
+          "date": "2026-08-22",
+          "platform": "website",
+          "title": "第31回那智が丘夏まつり",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/08/22/%e7%ac%ac31%e5%9b%9e%e9%82%a3%e6%99%ba%e3%81%8c%e4%b8%98%e5%a4%8f%e3%81%be%e3%81%a4%e3%82%8a/"
+        },
         {
           "date": "2026-08-15",
           "platform": "website",
