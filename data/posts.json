@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T06:15:56+09:00",
+  "generatedAt": "2026-08-24T06:15:31+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-08-21",
+      "lastPostDate": "2026-08-23",
       "posts": [
+        {
+          "date": "2026-08-23",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/08/23/3606/"
+        },
         {
           "date": "2026-08-21",
           "platform": "website",
@@ -6000,8 +6006,14 @@
       ]
     },
     "yoshida-ryo": {
-      "lastPostDate": "2026-08-16",
+      "lastPostDate": "2026-08-23",
       "posts": [
+        {
+          "date": "2026-08-23",
+          "platform": "note",
+          "title": "「ナスパ訴訟」全記録 #11 ナスパ活動報告書の内容",
+          "url": "https://note.com/ryoyoshida1771/n/n7c9de034d5ba"
+        },
         {
           "date": "2026-08-16",
           "platform": "note",
@@ -6361,8 +6373,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-08-22",
+      "lastPostDate": "2026-08-23",
       "posts": [
+        {
+          "date": "2026-08-23",
+          "platform": "website",
+          "title": "令和8年熊本地震被災者救援募金",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/08/23/%e4%bb%a4%e5%92%8c8%e5%b9%b4%e7%86%8a%e6%9c%ac%e5%9c%b0%e9%9c%87%e8%a2%ab%e7%81%bd%e8%80%85%e6%95%91%e6%8f%b4%e5%8b%9f%e9%87%91/"
+        },
         {
           "date": "2026-08-22",
           "platform": "website",
