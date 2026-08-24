@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `question.html` — 個別の質問詳細・AI要約
 - `council.html` — 議員定数の妥当性(全国市区町村との人口1000人あたり議員数比較)
 - `salary.html` — 議員報酬の妥当性(全国市区町村との報酬月額比較、議員/副議長/議長切替)
-- `turnout.html` — 議員選挙の投票率比較(東北6県227市町村、投票日の気象との関係、出典表)
+- `turnout.html` — 投票率(名取市議選の推移2008年〜、市内12投票区別、東北6県227市町村との比較、投票日の気象との関係、出典表)
 
 **データソース:** 議員メタデータ(手動JSON)、RSSフィード(ブログ・公式サイト)、議会映像配信サイトAPI、国勢調査、議長会調査。
 
@@ -42,7 +42,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── question.js                 # 質問詳細ページ
 │   ├── council.js                   # 議員定数の散布図(対数軸+べき乗近似)
 │   ├── salary.js                    # 議員報酬の散布図(横軸対数+べき乗近似)
-│   └── turnout.js                   # 投票率の散布図(人口×投票率、気象×投票率)、出典表
+│   └── turnout.js                   # 投票率の推移(市議選×市長選×候補者数)、投票区別、散布図(人口×投票率、気象×投票率)、出典表
 ├── data/
 │   ├── members.json                 # 手動管理: 議員メタデータ・媒体URL・RSSフィード
 │   ├── posts.json                   # 自動生成: RSS発信履歴(update_posts.py)
@@ -51,7 +51,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── council.json                 # 自動生成: 市区町村の人口・議員定数データ(build_council_data.py)
 │   ├── salary.json                  # 自動生成: 市区町村の議員報酬データ(build_salary_data.py)
 │   ├── turnout_elections.json       # 手動収集: 東北6県227市町村の直近議員選挙の投票率(選管公表資料・選挙ドットコム)
-│   └── turnout.json                 # 自動生成: 投票率+人口+投票日の気象データ(build_turnout_data.py)
+│   ├── turnout.json                 # 自動生成: 投票率+人口+投票日の気象データ(build_turnout_data.py)
+│   ├── natori_elections.json        # 手動収集: 名取市の市議選・市長選の投票率推移(2008年〜。選管資料・選挙ドットコム)
+│   └── natori_polling_stations.json # 手動収集: 2024年市議選の投票区別投票率(名取市選管PDFから抽出)
 ├── scripts/
 │   ├── update_posts.py              # RSS集計
 │   ├── update_questions.py          # 議会映像API + 会議録スクレイプ
@@ -193,6 +195,34 @@ JSページ(main.js, stats.js, questions.js等)
 }
 ```
 `eligible`/`voters` は判明したもののみ(多くは null)。`uncontested: true` の場合 `turnout` は null。
+
+**natori_elections.json**(手動収集。名取市の投票率推移):
+```json
+{
+  "note": "...", "sourceList": "https://go2senkyo.com/local/jichitai/412",
+  "elections": [
+    { "type": "council", "name": "名取市議会議員一般選挙", "date": "2024-01-21",
+      "eligible": 64624, "voters": 22972, "turnout": 35.55,
+      "seats": 21, "candidates": 26, "uncontested": false,
+      "source": "https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" }
+  ]
+}
+```
+`type` は `"council"`(市議選)/`"mayor"`(市長選)。2008年〜2024年の各5回。`eligible`/`voters` は2024年市議選のみ判明(他は null)。無投票の回は `uncontested: true` かつ `turnout: null`。定数は2008年が24、2012年以降は21。各回の投票率は次回選挙ページの「前回投票率」と相互に一致することを確認済み。
+
+**natori_polling_stations.json**(手動収集。名取市選管PDFから抽出):
+```json
+{
+  "note": "...", "election": { "name": "...", "date": "2024-01-21" },
+  "previous": { "date": "2020-01-26" }, "source": "https://...",
+  "total": { "eligible": 64624, "voters": 22972, "turnout": 35.55, "prevTurnout": 39.29, "diff": -3.74 },
+  "districts": [
+    { "name": "増田", "stations": 4, "eligible": 13047, "voters": 4601,
+      "turnout": 35.26, "prevTurnout": 39.01, "diff": -3.75 }
+  ]
+}
+```
+市内31投票所を12投票区(地区)にまとめた合計値。`diff` は前回(2020年)からの増減ポイント。**検算必須:** `eligible` 合計=64,624、`voters` 合計=22,972、`stations` 合計=31。抽出は `pdftotext -enc UTF-8 -layout` で表構造を保ったまま行う。
 
 **turnout.json**(自動。turnout_elections.json + council.jsonのpop + 気象庁データを結合):
 ```json

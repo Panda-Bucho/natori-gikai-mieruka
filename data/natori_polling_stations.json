@@ -1,0 +1,21 @@
+{
+  "note": "2024年1月21日執行 名取市議会議員一般選挙の投票区別投票率。名取市選挙管理委員会「投票者数・投票率」公表資料(PDF)から抽出。市内31投票所は12の投票区(地区)にまとめられており、ここでは各投票区の合計値を掲載している。prevTurnout は前回(2020年1月26日執行)の同投票区の投票率、diff はその差(ポイント)。全投票区の eligible 合計=64,624、voters 合計=22,972、stations 合計=31 で公表資料の総計と一致することを確認済み。",
+  "election": { "name": "名取市議会議員一般選挙", "date": "2024-01-21" },
+  "previous": { "date": "2020-01-26" },
+  "source": "https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf",
+  "total": { "eligible": 64624, "voters": 22972, "turnout": 35.55, "prevTurnout": 39.29, "diff": -3.74 },
+  "districts": [
+    { "name": "増田", "stations": 4, "eligible": 13047, "voters": 4601, "turnout": 35.26, "prevTurnout": 39.01, "diff": -3.75 },
+    { "name": "増田西", "stations": 4, "eligible": 10049, "voters": 3467, "turnout": 34.50, "prevTurnout": 37.97, "diff": -3.47 },
+    { "name": "名取が丘", "stations": 1, "eligible": 3514, "voters": 1446, "turnout": 41.15, "prevTurnout": 49.83, "diff": -8.68 },
+    { "name": "閖上", "stations": 2, "eligible": 2616, "voters": 974, "turnout": 37.23, "prevTurnout": 50.08, "diff": -12.85 },
+    { "name": "下増田", "stations": 1, "eligible": 6133, "voters": 2245, "turnout": 36.61, "prevTurnout": 31.87, "diff": 4.74 },
+    { "name": "館腰", "stations": 4, "eligible": 6573, "voters": 2343, "turnout": 35.65, "prevTurnout": 44.74, "diff": -9.09 },
+    { "name": "愛島", "stations": 4, "eligible": 5176, "voters": 1864, "turnout": 36.01, "prevTurnout": 39.00, "diff": -2.99 },
+    { "name": "愛島台", "stations": 1, "eligible": 2079, "voters": 507, "turnout": 24.39, "prevTurnout": 27.25, "diff": -2.86 },
+    { "name": "高舘", "stations": 6, "eligible": 3539, "voters": 1686, "turnout": 47.64, "prevTurnout": 53.69, "diff": -6.05 },
+    { "name": "ゆりが丘", "stations": 2, "eligible": 5497, "voters": 1757, "turnout": 31.96, "prevTurnout": 33.00, "diff": -1.04 },
+    { "name": "相互台", "stations": 1, "eligible": 3355, "voters": 898, "turnout": 26.77, "prevTurnout": 28.35, "diff": -1.58 },
+    { "name": "那智が丘", "stations": 1, "eligible": 3046, "voters": 1184, "turnout": 38.87, "prevTurnout": 40.52, "diff": -1.65 }
+  ]
+}

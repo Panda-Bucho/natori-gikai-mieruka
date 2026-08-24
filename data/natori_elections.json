@@ -1,0 +1,126 @@
+{
+  "note": "名取市の市議会議員一般選挙・市長選挙の投票率の推移。名取市選挙管理委員会の公表資料および選挙ドットコム(go2senkyo.com)から収集。補欠選挙・再選挙は含まない。uncontested=無投票(投票が実施されないため turnout は null)。各回の投票率は、次回選挙ページに記載された「前回投票率」と相互に一致することを確認済み。2024年市議選は名取市選挙管理委員会の公表PDFの数値(投票率35.55%・当日有権者数64,624人・投票者数22,972人)と完全一致。公開資料で遡れたのは2008年執行分までで、2004年以前は未収録。",
+  "sourceList": "https://go2senkyo.com/local/jichitai/412",
+  "elections": [
+    {
+      "type": "council",
+      "name": "名取市議会議員一般選挙",
+      "date": "2008-01-27",
+      "eligible": null,
+      "voters": null,
+      "turnout": 54.32,
+      "seats": 24,
+      "candidates": 25,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/8083"
+    },
+    {
+      "type": "council",
+      "name": "名取市議会議員一般選挙",
+      "date": "2012-01-22",
+      "eligible": null,
+      "voters": null,
+      "turnout": 50.06,
+      "seats": 21,
+      "candidates": 29,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/8081"
+    },
+    {
+      "type": "council",
+      "name": "名取市議会議員一般選挙",
+      "date": "2016-01-24",
+      "eligible": null,
+      "voters": null,
+      "turnout": 42.45,
+      "seats": 21,
+      "candidates": 23,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/8080"
+    },
+    {
+      "type": "council",
+      "name": "名取市議会議員一般選挙",
+      "date": "2020-01-26",
+      "eligible": null,
+      "voters": null,
+      "turnout": 39.29,
+      "seats": 21,
+      "candidates": 22,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/19653"
+    },
+    {
+      "type": "council",
+      "name": "名取市議会議員一般選挙",
+      "date": "2024-01-21",
+      "eligible": 64624,
+      "voters": 22972,
+      "turnout": 35.55,
+      "seats": 21,
+      "candidates": 26,
+      "uncontested": false,
+      "source": "https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf"
+    },
+    {
+      "type": "mayor",
+      "name": "名取市長選挙",
+      "date": "2008-06-29",
+      "eligible": null,
+      "voters": null,
+      "turnout": 51.93,
+      "seats": 1,
+      "candidates": 2,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/3356"
+    },
+    {
+      "type": "mayor",
+      "name": "名取市長選挙",
+      "date": "2012-07-08",
+      "eligible": null,
+      "voters": null,
+      "turnout": 40.0,
+      "seats": 1,
+      "candidates": 2,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/5163"
+    },
+    {
+      "type": "mayor",
+      "name": "名取市長選挙",
+      "date": "2016-07-10",
+      "eligible": null,
+      "voters": null,
+      "turnout": 58.31,
+      "seats": 1,
+      "candidates": 2,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/15041"
+    },
+    {
+      "type": "mayor",
+      "name": "名取市長選挙",
+      "date": "2020-07-12",
+      "eligible": null,
+      "voters": null,
+      "turnout": 35.67,
+      "seats": 1,
+      "candidates": 2,
+      "uncontested": false,
+      "source": "https://go2senkyo.com/local/senkyo/19810"
+    },
+    {
+      "type": "mayor",
+      "name": "名取市長選挙",
+      "date": "2024-07-07",
+      "eligible": null,
+      "voters": null,
+      "turnout": null,
+      "seats": 1,
+      "candidates": 1,
+      "uncontested": true,
+      "source": "https://go2senkyo.com/local/senkyo/25094"
+    }
+  ]
+}

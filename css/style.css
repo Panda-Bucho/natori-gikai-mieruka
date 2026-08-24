@@ -112,6 +112,13 @@ table.member-table {
 .member-table thead th[data-dir="asc"]::after { content: " ▲"; font-size: 0.7em; }
 .member-table thead th[data-dir="desc"]::after { content: " ▼"; font-size: 0.7em; }
 
+/* 投票率ページ 投票区別の表: 末尾の市全体行はソート対象外の集計行として区別する */
+#tn-station-table .row-total td {
+  font-weight: 700;
+  background: #eef3f1;
+  border-top: 2px solid var(--border);
+}
+
 /* 投票率ページ 出典一覧: 227行の高密度表示(#tn-table 限定。共有 .member-table には影響させない) */
 #tn-table { font-size: 0.8rem; }
 #tn-table th, #tn-table td { padding: 0.34rem 0.5rem; }
@@ -507,6 +514,8 @@ h3.chart-sub {
 }
 .chart-box { position: relative; height: 340px; }
 .chart-box-tall { height: 460px; }
+/* 横棒グラフ(投票区別)は項目数に応じた高さが要る。散布図と違い潰すと読めなくなる */
+.chart-box-bars { height: 420px; }
 
 /* ---------- 議員定数ページ ---------- */
 .lg-dot.lg-natori { background: #d85a30; }
@@ -557,4 +566,5 @@ h3.chart-sub {
   .member-table th, .member-table td { padding: 0.45rem 0.4rem; }
   .media-icon { width: 26px; height: 26px; margin-right: 0.2rem; }
   .chart-box { height: 260px; }
+  .chart-box-bars { height: 380px; }
 }

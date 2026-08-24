@@ -13,11 +13,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>投票率 | 名取市議会 見える化</title>
-  <meta name="description" content="宮城県名取市の市議会議員選挙の投票率を、東北6県の市町村や投票日の気象と比較できるページです。">
+  <meta name="description" content="宮城県名取市の市議会議員選挙の投票率を、2008年からの推移・市内12投票区の内訳・東北6県の市町村との比較・投票日の気象から見えるようにしたページです。">
   <link rel="canonical" href="https://panda-bucho.github.io/natori-gikai-mieruka/turnout.html">
   <meta property="og:site_name" content="名取市議会 見える化">
   <meta property="og:title" content="投票率 | 名取市議会 見える化">
-  <meta property="og:description" content="宮城県名取市の市議会議員選挙の投票率を、東北6県の市町村や投票日の気象と比較できるページです。">
+  <meta property="og:description" content="宮城県名取市の市議会議員選挙の投票率を、2008年からの推移・市内12投票区の内訳・東北6県の市町村との比較・投票日の気象から見えるようにしたページです。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://panda-bucho.github.io/natori-gikai-mieruka/turnout.html">
   <meta property="og:image" content="https://panda-bucho.github.io/natori-gikai-mieruka/assets/ogp.png">
@@ -26,7 +26,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=20260718c">
+  <link rel="stylesheet" href="css/style.css?v=20260825a">
 </head>
 <body>
   <header class="site-header">
@@ -46,8 +46,20 @@
 
   <main>
     <section class="card">
+      <h2>名取市議選の投票率の推移 — 16年で18.77ポイントの低下</h2>
+      <p class="lead">名取市議会議員選挙の投票率は、2008年の54.32%から2024年の35.55%まで<strong>5回連続で低下</strong>しています。同じ期間の市長選挙は35.67%〜58.31%と回ごとに大きく上下しており、2024年は無投票でした。市議選だけが一貫して下がり続けている点が対照的です。候補者数は22〜29人の間で増減しており、2024年は前回より4人多い26人でしたが、投票率は5回のうち最も低くなりました。</p>
+      <div class="chart-controls">
+        <label for="tn-hist-mode">表示:</label>
+        <select id="tn-hist-mode"></select>
+      </div>
+      <div id="tn-hist-stats" class="cc-stats">読み込み中…</div>
+      <div class="chart-box"><canvas id="tn-hist-chart" aria-label="名取市議会議員選挙と市長選挙の投票率の推移(2008年から2024年)。市議選は54.32%、50.06%、42.45%、39.29%、35.55%と5回連続で低下している" role="img"></canvas></div>
+      <p class="lead chart-note">※市議選は1月、市長選は6〜7月の執行です。同じ年に執行された両選挙を並べています。議員定数は2008年が24、2012年以降は21です。投票率の水準には候補者の顔ぶれ・争点・同日実施の他選挙の有無など多くの要因が関わります。このグラフは推移を示すものであり、低下の原因を特定するものではありません。</p>
+    </section>
+
+    <section class="card">
       <h2>人口と投票率 — 名取市議選の投票率を東北6県と比べる</h2>
-      <p class="lead">直近(2024年1月21日執行)の名取市議会議員選挙の投票率は35.55%でした。他自治体と比べて高いのか低いのかを判断する材料として、東北6県の市町村の直近の議員一般選挙の投票率を同じ基準で並べ、名取市の位置を示します。無投票(候補者数が定数以下で投票が実施されなかった)自治体は投票率が存在しないため散布図・統計から除いています。</p>
+      <p class="lead">上の推移が名取市固有のものなのか、それとも規模の近い自治体に共通するものなのかを見るために、東北6県の市町村の直近の議員一般選挙の投票率を同じ基準で並べ、名取市(2024年1月21日執行・35.55%)の位置を示します。無投票(候補者数が定数以下で投票が実施されなかった)自治体は投票率が存在しないため散布図・統計から除いています。</p>
       <div class="chart-controls">
         <label for="tn-group">集計グループ:</label>
         <select id="tn-group"></select>
@@ -83,6 +95,37 @@
     </section>
 
     <section class="card">
+      <h2>投票区別の投票率(2024年市議選)</h2>
+      <p class="lead">市全体の35.55%は、市内12の投票区(31投票所)の平均です。地区ごとに見ると<strong>24.39%(愛島台)から47.64%(高舘)まで23ポイントの開き</strong>があります。前回(2020年)より上がったのは下増田のみで、閖上は12.85ポイント下がりました。自分の住む地区の投票率を確かめる材料としてご覧ください。</p>
+      <div id="tn-station-stats" class="cc-stats">読み込み中…</div>
+      <div class="chart-legend">
+        <span><span class="lg-dot"></span>前回より上がった投票区</span>
+        <span><span class="lg-dot lg-natori"></span>前回より下がった投票区</span>
+        <span><span class="lg-line lg-median"></span>市全体の投票率(35.55%)</span>
+      </div>
+      <div class="chart-box chart-box-bars"><canvas id="tn-station-chart" aria-label="2024年名取市議選の投票区別投票率の横棒グラフ。最高は高舘47.64%、最低は愛島台24.39%" role="img"></canvas></div>
+      <div class="table-wrap">
+        <table class="member-table" id="tn-station-table">
+          <thead>
+            <tr>
+              <th data-sort="name">投票区</th>
+              <th data-sort="stations">投票所数</th>
+              <th data-sort="eligible">当日有権者数</th>
+              <th data-sort="voters">投票者数</th>
+              <th data-sort="turnout">投票率</th>
+              <th data-sort="prevTurnout">前回投票率</th>
+              <th data-sort="diff">増減</th>
+            </tr>
+          </thead>
+          <tbody id="tn-station-body">
+            <tr><td colspan="7">読み込み中…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lead chart-note">※出典は<a href="https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" target="_blank" rel="noopener noreferrer">名取市選挙管理委員会「投票者数・投票率」</a>です。市内31投票所は12の投票区にまとめられており、各投票区の合計値を掲載しています。「前回投票率」は2020年1月26日執行の同じ投票区の値です。有権者数の合計(64,624人)・投票者数の合計(22,972人)は公表資料の総計と一致します。</p>
+    </section>
+
+    <section class="card">
       <h2>出典一覧(東北6県227市町村)</h2>
       <p class="lead">各自治体の直近の議員一般選挙(補欠選挙・再選挙は除く)の執行日・投票率・投票日当日の気象と、出典元へのリンクです。列見出しクリックで並べ替えできます。</p>
       <div class="table-wrap">
@@ -108,6 +151,8 @@
     <section class="card notes">
       <h2>このページについて</h2>
       <ul>
+        <li>名取市の投票率の推移(2008年〜2024年)は、<a href="https://go2senkyo.com/local/jichitai/412" target="_blank" rel="noopener noreferrer">選挙ドットコムの名取市選挙一覧</a>と各選挙の詳細ページから収集し、各回の投票率が次回選挙ページの「前回投票率」と一致することを相互に確認しています。2024年の市議選は<a href="https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" target="_blank" rel="noopener noreferrer">名取市選挙管理委員会の公表資料</a>の数値と完全に一致します。公開資料で遡れたのは2008年執行分までで、2004年以前は収録していません。補欠選挙・再選挙は対象外です。</li>
+        <li>投票区別の投票率は、名取市選挙管理委員会の公表資料(2024年市議選)から抽出したものです。前回比較は同資料に記載された2020年1月26日執行分の値です。投票区の区割りや投票所の統廃合が回によって変わる場合、単純比較にならない可能性があります。</li>
         <li>投票率は各市町村選挙管理委員会の公表資料・<a href="https://go2senkyo.com/" target="_blank" rel="noopener noreferrer">選挙ドットコム</a>等から収集しました(AI下調べ+人間の抽出検査)。名取市は<a href="https://www.city.natori.miyagi.jp/uploaded/attachment/15481.pdf" target="_blank" rel="noopener noreferrer">名取市選挙管理委員会の公表資料</a>の数値で検証済みです。全国一括の公的統計が存在しないため、東北6県の227市町村を対象として個別に収集しています。</li>
         <li>対象は各自治体の直近の「議員一般選挙」です。欠員補充のための補欠選挙・再選挙は対象外です。無投票(候補者数が定数以下)の自治体は投票率が存在しないため、投票率が関わる散布図・統計・気象カードから除いています(東北6県で計48自治体)。</li>
         <li>気象データは<a href="https://www.data.jma.go.jp/stats/etrn/" target="_blank" rel="noopener noreferrer">気象庁「過去の気象データ検索」</a>による、選挙執行日当日の観測値です。各自治体には地理的に最も近い気温観測地点(気象台・特別地域気象観測所・アメダス)を割り当てています。「天気(晴/雨)」自体は観測されないため、降水量(日合計mm)・気温(日平均・日最高℃)を代替指標として使用しています。</li>
@@ -128,7 +173,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-  <script src="js/common.js?v=20260718c"></script>
-  <script src="js/turnout.js?v=20260718c"></script>
+  <script src="js/common.js?v=20260825a"></script>
+  <script src="js/turnout.js?v=20260825a"></script>
 </body>
 </html>
