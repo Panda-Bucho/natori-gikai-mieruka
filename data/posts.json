@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T09:23:18+09:00",
+  "generatedAt": "2026-08-28T14:03:53+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6385,8 +6385,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-08-23",
+      "lastPostDate": "2026-08-27",
       "posts": [
+        {
+          "date": "2026-08-27",
+          "platform": "website",
+          "title": "9月定例会一般質問通告",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/08/27/9%e6%9c%88%e5%ae%9a%e4%be%8b%e4%bc%9a%e4%b8%80%e8%88%ac%e8%b3%aa%e5%95%8f%e9%80%9a%e5%91%8a/"
+        },
         {
           "date": "2026-08-23",
           "platform": "website",
@@ -10478,5 +10484,21 @@
       "posts": []
     }
   },
-  "errors": []
+  "errors": [
+    {
+      "memberId": "chiba-eiko",
+      "feedUrl": "https://hideyuki.info/feed/",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='hideyuki.info', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='hideyuki.info', port=443) at 0x7f46f4511dc0>, 'Connection to hideyuki.info timed out. (connect timeout=20)'))"
+    },
+    {
+      "memberId": "yoshida-ryo",
+      "feedUrl": "https://ryo-yoshida.com/feed/",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='ryo-yoshida.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='ryo-yoshida.com', port=443) at 0x7f46f3e5afc0>, 'Connection to ryo-yoshida.com timed out. (connect timeout=20)'))"
+    },
+    {
+      "memberId": "yoshida-ryo",
+      "feedUrl": "https://note.com/ryoyoshida1771/rss",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://note.com/ryoyoshida1771/rss"
+    }
+  ]
 }
