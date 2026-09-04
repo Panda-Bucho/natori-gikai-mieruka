@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T07:55:57+09:00",
+  "generatedAt": "2026-09-05T07:43:47+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6403,8 +6403,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-09-01",
+      "lastPostDate": "2026-09-04",
       "posts": [
+        {
+          "date": "2026-09-04",
+          "platform": "website",
+          "title": "常任委員会の現地調査",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/09/04/%e5%b8%b8%e4%bb%bb%e5%a7%94%e5%93%a1%e4%bc%9a%e3%81%ae%e7%8f%be%e5%9c%b0%e8%aa%bf%e6%9f%bb-7/"
+        },
         {
           "date": "2026-09-01",
           "platform": "website",
