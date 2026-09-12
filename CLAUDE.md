@@ -62,7 +62,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── build_turnout_data.py        # turnout_elections.json + council.json + 気象庁データを結合
 │   ├── backfill_posts.py            # 過去投稿の遡取(新規フィード追加時に1回実行)
 │   ├── fetch_qa_texts.py            # 会議録から質疑テキストを抽出(要約生成の下準備)
-│   └── make_summaries.py            # AI要約生成(手動実行)
+│   └── make_summaries.py            # batch_*.jsonの検証・統合(要約生成そのものはサブエージェントが実施)
 └── work/
     ├── council_src/                 # 国勢調査・議長会Excelのダウンロードキャッシュ
     ├── weather_cache/                # 気象庁 日別値ページのダウンロードキャッシュ
@@ -85,7 +85,7 @@ data/members.json                    # 手動編集
 scripts/update_posts.py       →  data/posts.json
 scripts/update_questions.py   →  data/questions.json
 scripts/fetch_qa_texts.py     →  質問テキストキャッシュ
-scripts/make_summaries.py     →  data/summaries.json (Claude API)
+scripts/make_summaries.py     →  data/summaries.json(work/summaries/batch_*.json を検証・統合)
 scripts/build_council_data.py →  data/council.json(国勢調査+議長会調査)
 scripts/build_salary_data.py  →  data/salary.json(議長会報酬調査、data/council.jsonのpopを再利用)
 scripts/build_turnout_data.py →  data/turnout.json(data/turnout_elections.json手動収集+council.jsonのpop+気象庁日別値)
@@ -277,7 +277,20 @@ python -m http.server 8000
 - 該当スクリプトを再実行
 
 **質問要約の更新:**
-- `scripts/make_summaries.py` を修正し `python scripts/make_summaries.py` で実行(Anthropic Claude APIキーが必要)
+
+会議録は開催から数か月遅れて公開される。`update_questions.py` が `minutesUrl` を付与したら、次の順で実行する。
+
+1. `python scripts/fetch_qa_texts.py` — 会議録から質疑テキストを取得(`work/qa_texts/`)
+2. **要約生成** — サブエージェントが `work/summaries/PROMPT.md` の共通プロンプトで生成し、`work/summaries/batch_*.json` に書き出す
+3. `python scripts/make_summaries.py` — batch_*.json を検証・統合して `data/summaries.json` を生成
+
+**要約生成のルール(厳守):**
+
+- **プロンプトは `work/summaries/PROMPT.md` を全議員共通で使い、変更しない。**
+- **生成モデルは Claude Sonnet 5 に固定する。** Opus 等の別モデルで生成しない。サブエージェントを使う場合は `model: sonnet` を明示的に指定すること。
+  - 理由: `data/summaries.json` の `model` 値は `question.html` の「AI要約」バッジのツールチップに表示される(`js/question.js`)。またサイトは「全議員の質疑を同一の方法・同一の基準で機械的に処理」と明記している。モデルが混在すると、この記載とツールチップの両方が実態と食い違う。
+  - モデルを変更する場合は、既存分も含めた**全件を同一モデルで作り直し**、`scripts/make_summaries.py` の `MODEL` 定数も更新する。
+- 生成後は仕様(summary 100字以上、gains 2〜5件・各80字以内)を満たすことを確認する。`make_summaries.py` が自動で検証し、仕様外のデータは除外して警告を出す。
 
 **過去投稿の遡取(新規RSSフィード追加時に1回):**
 - `python scripts/backfill_posts.py` をローカルで実行し `data/posts.json` をコミット
@@ -361,4 +374,5 @@ git push origin main
 - **`posts.json` / `questions.json` を手動編集:** 自動生成ファイルのため、手動編集は上書きされる。代わりに手動管理の `members.json` を編集すること
 - **RSSフィードURLの誤り:** フィードは有効なXMLを返す必要がある。事前にブラウザで確認すること
 - **スクリプトのキャッシュ破損:** `work/` ディレクトリは一時的なもの。コミットに含めないこと(`.gitignore` 対象済み)
+- **要約を Sonnet 5 以外のモデルで生成する:** `summaries.json` の `model` 表記・サイトの「同一の方法で処理」という記載と実態が食い違う。生成モデルは Sonnet 5 に固定
 - **ローカルテストの省略:** `python -m http.server 8000` を使うこと。file:// URLでは `fetch()` が動かない
