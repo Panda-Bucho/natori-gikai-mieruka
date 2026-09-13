@@ -19,8 +19,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
     document.title = `${member.name}議員の一般質問(${formatDateJa(entry.date)})の要約 | 名取市議会 見える化`;
-    const s = (summaries.entries || {})[`${mid}|${date}`];
-    wrap.innerHTML = renderHeader(member, entry) + renderSummary(s, entry, summaries);
+    const raw = (summaries.entries || {})[`${mid}|${date}`];
+    const s = raw && Array.isArray(raw.topics) && raw.topics.length ? raw : null;
+    wrap.innerHTML = renderHeader(member, entry, s) + renderSummary(s, entry, summaries);
+    // #qd-tN 付きURLで開いた場合、読み込み時点では要素がないため描画後にスクロールする
+    if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
     const gen = document.getElementById("generated-at");
     if (gen && summaries.generatedAt) {
       gen.textContent = `要約データ生成: ${formatDateJa(summaries.generatedAt.slice(0, 10))}`;
@@ -30,14 +33,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-function renderHeader(m, e) {
+function renderHeader(m, e, s) {
   const seat = `<span class="seat-no">${m.seatNo ?? "—"}</span>`;
   const name = m.officialPage
     ? `<a class="name-link" href="${escapeHtml(m.officialPage)}" target="_blank" rel="noopener noreferrer" title="名取市議会 公式プロフィールを開く">${escapeHtml(m.name)}</a>`
     : escapeHtml(m.name);
   const role = m.role ? ` <span class="role-badge">${escapeHtml(m.role)}</span>` : "";
-  const topics = (e.topics || []).length
-    ? `<ul class="qd-topics">${e.topics.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`
+  // 要約があるときはテーマ名を要約側から取り、各テーマの要約へのページ内リンク(目次)にする。
+  // 要約は会議録の大項目を優先して分けるため、映像配信サイトのテーマ数と異なる場合がある
+  const titles = s ? s.topics.map((t) => t.title) : e.topics || [];
+  const topics = titles.length
+    ? `<ol class="qd-topics">${titles
+        .map((t, i) => `<li>${s ? `<a href="#qd-t${i + 1}">${escapeHtml(t)}</a>` : escapeHtml(t)}</li>`)
+        .join("")}</ol>`
     : "<p>(テーマ情報なし)</p>";
   return `<section class="card">
     <h2>一般質問 ${seat}${name}${role} <span class="qd-faction">${escapeHtml(m.faction)}</span></h2>
@@ -65,14 +73,23 @@ function renderSummary(s, e, summaries) {
       ${actions}
     </section>`;
   }
-  const gains = (s.gains || [])
-    .map((g) => `<li>${escapeHtml(g)}</li>`)
+  const blocks = s.topics
+    .map((t, i) => {
+      // 質疑が行われなかったテーマは gains が空なので見出しごと出さない
+      const gains = t.gains.length
+        ? `<h4 class="qd-gains-head">質疑で得られたもの(答弁で示された約束・方針・現状)</h4>
+          <ul class="qd-gains">${t.gains.map((g) => `<li>${escapeHtml(g)}</li>`).join("")}</ul>`
+        : "";
+      return `<section class="qd-topic" id="qd-t${i + 1}">
+        <h3 class="qd-topic-head"><span class="qd-topic-no">${i + 1}</span>${escapeHtml(t.title)}</h3>
+        <p class="qd-summary">${escapeHtml(t.summary)}</p>
+        ${gains}
+      </section>`;
+    })
     .join("");
   return `<section class="card">
-    <h2>質疑の要約 <span class="ai-badge" title="${escapeHtml(summaries.model || "AI")}による自動生成">AI要約</span></h2>
-    <p class="qd-summary">${escapeHtml(s.summary)}</p>
-    <h3 class="qd-gains-head">質疑で得られたもの(答弁で示された約束・方針・現状)</h3>
-    <ul class="qd-gains">${gains}</ul>
+    <h2>通告テーマごとの質疑の要約 <span class="ai-badge" title="${escapeHtml(summaries.model || "AI")}による自動生成">AI要約</span></h2>
+    ${blocks}
     ${actions}
   </section>`;
 }

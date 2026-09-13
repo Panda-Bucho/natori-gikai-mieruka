@@ -31,6 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ├── .github/workflows/update.yml     # 日次データ取得(RSS + 議会スクレイプ)
 ├── .claude/launch.json              # 開発サーバー設定
 ├── README.md                        # ユーザー向けドキュメント
+├── prompts/summary-prompt.md        # AI要約の共通プロンプト(GitHub上で公開。透明性のためgitignore対象外)
 │
 ├── index.html, stats.html, questions.html, question.html, council.html, salary.html, turnout.html
 ├── css/style.css                    # 単一スタイルシート(全ページ共通)
@@ -85,7 +86,7 @@ data/members.json                    # 手動編集
 scripts/update_posts.py       →  data/posts.json
 scripts/update_questions.py   →  data/questions.json
 scripts/fetch_qa_texts.py     →  質問テキストキャッシュ
-scripts/make_summaries.py     →  data/summaries.json(work/summaries/batch_*.json を検証・統合)
+scripts/make_summaries.py     →  data/summaries.json(prompts/summary-prompt.md を使い生成した work/summaries/batch_*.json を検証・統合)
 scripts/build_council_data.py →  data/council.json(国勢調査+議長会調査)
 scripts/build_salary_data.py  →  data/salary.json(議長会報酬調査、data/council.jsonのpopを再利用)
 scripts/build_turnout_data.py →  data/turnout.json(data/turnout_elections.json手動収集+council.jsonのpop+気象庁日別値)
@@ -239,6 +240,23 @@ JSページ(main.js, stats.js, questions.js等)
 ```
 `weather` は無投票自治体では null。観測所は市町村ごとに地理的に近い気温観測地点を `scripts/build_turnout_data.py` 内の `STATION_BY_CODE` で手動割当。
 
+**summaries.json**(自動。`make_summaries.py` が `work/summaries/batch_*.json` を統合。`question.html` が読む):
+```json
+{
+  "generatedAt": "2026-09-13T12:00:00+09:00",
+  "model": "Claude Sonnet (Anthropic)", "promptVersion": 2, "note": "...",
+  "entries": {
+    "kumagai-katsuhiko|2026-06-11": {
+      "topics": [
+        { "title": "救急搬送の迅速化について", "summary": "議員は…。消防長は…と答えた。",
+          "gains": ["消防長は…と答えた。", "…"] }
+      ]
+    }
+  }
+}
+```
+キーは `"議員ID|日付"`。`topics` は通告テーマごと(会議録の大項目を優先して分けるため、`questions.json` の `topics` と数が異なる場合がある)。質疑が行われなかったテーマは `summary` が「会議録上、このテーマの質疑は確認できない。」で `gains` は空配列。
+
 ## 開発ワークフロー
 
 ### ローカルセットアップ
@@ -281,16 +299,20 @@ python -m http.server 8000
 会議録は開催から数か月遅れて公開される。`update_questions.py` が `minutesUrl` を付与したら、次の順で実行する。
 
 1. `python scripts/fetch_qa_texts.py` — 会議録から質疑テキストを取得(`work/qa_texts/`)
-2. **要約生成** — サブエージェントが `work/summaries/PROMPT.md` の共通プロンプトで生成し、`work/summaries/batch_*.json` に書き出す
+2. **要約生成** — サブエージェント(`model: sonnet`)が `prompts/summary-prompt.md` の共通プロンプトで通告テーマごとに生成し、`work/summaries/batch_*.json` に書き出す(各バッチの対象ファイルは `work/summaries/batch_lists/batch_NN.txt`)
 3. `python scripts/make_summaries.py` — batch_*.json を検証・統合して `data/summaries.json` を生成
 
 **要約生成のルール(厳守):**
 
-- **プロンプトは `work/summaries/PROMPT.md` を全議員共通で使い、変更しない。**
+- **プロンプトは `prompts/summary-prompt.md` を全議員共通で使い、生成の途中で変更しない。** このファイルは(`work/` と異なり)あえて `.gitignore` の対象外にし、GitHub上で誰でも閲覧できるようにしている(サイトの「同一の方法・同一の基準で機械的に処理」という説明の裏付けであり、公平性・透明性の担保)。`question.html`・`questions.html` の注記と `README.md` からリンクしている
+  - プロンプトを改訂する場合は、既存分も含めた**全件を新プロンプトで作り直し**、`scripts/make_summaries.py` の `PROMPT_VERSION` を上げる。新旧のプロンプトで作った要約を混在させて公開しない(全件そろってから1コミットで反映する)。
+  - 現行は v2(通告テーマごとに要約と「得られたもの」を作る)。v1 は質疑全体で1つの要約だったが、複数テーマの話が混ざって読みにくいため改訂した。
 - **生成モデルは Claude Sonnet 5 に固定する。** Opus 等の別モデルで生成しない。サブエージェントを使う場合は `model: sonnet` を明示的に指定すること。
-  - 理由: `data/summaries.json` の `model` 値は `question.html` の「AI要約」バッジのツールチップに表示される(`js/question.js`)。またサイトは「全議員の質疑を同一の方法・同一の基準で機械的に処理」と明記している。モデルが混在すると、この記載とツールチップの両方が実態と食い違う。
-  - モデルを変更する場合は、既存分も含めた**全件を同一モデルで作り直し**、`scripts/make_summaries.py` の `MODEL` 定数も更新する。
-- 生成後は仕様(summary 100字以上、gains 2〜5件・各80字以内)を満たすことを確認する。`make_summaries.py` が自動で検証し、仕様外のデータは除外して警告を出す。
+  - 理由: 全議員の質疑を同一モデルで処理しないと、サイトの「同一の方法・同一の基準で機械的に処理」という説明と実態が食い違う。
+  - モデルを変更する場合は、既存分も含めた**全件を同一モデルで作り直す**。
+  - **表示用の `model` 文字列とは別物。** `scripts/make_summaries.py` の `MODEL` 定数(`data/summaries.json` の `model` 値。`question.html` の「AI要約」バッジのツールチップに表示される、`js/question.js`)は `"Claude Sonnet (Anthropic)"` のように**バージョン番号を含めない**表記にすること。Anthropicのモデルが更新されてもサイトの表記が古いまま残らないようにするため。実際にどのバージョン(現在はSonnet 5)で生成したかはこの節とコミット履歴で追える。
+- 生成後は仕様(テーマごとに summary 150〜250字、gains 2〜4件・各80字以内)を満たすことを確認する。`make_summaries.py` が自動で検証し、summary 100字未満・gains 2〜4件以外は除外、gains の80字超と通告テーマ数の不一致は警告を出す。
+- 通告テーマ数の不一致警告は、会議録の「大項目」を優先して分けた正当なケースがある(例: `yoshida-ryo|2021-09-08` は映像配信サイトのテーマが1件だが会議録の大項目は2つ)。内容を目視で確認する。
 
 **過去投稿の遡取(新規RSSフィード追加時に1回):**
 - `python scripts/backfill_posts.py` をローカルで実行し `data/posts.json` をコミット
@@ -374,5 +396,7 @@ git push origin main
 - **`posts.json` / `questions.json` を手動編集:** 自動生成ファイルのため、手動編集は上書きされる。代わりに手動管理の `members.json` を編集すること
 - **RSSフィードURLの誤り:** フィードは有効なXMLを返す必要がある。事前にブラウザで確認すること
 - **スクリプトのキャッシュ破損:** `work/` ディレクトリは一時的なもの。コミットに含めないこと(`.gitignore` 対象済み)
-- **要約を Sonnet 5 以外のモデルで生成する:** `summaries.json` の `model` 表記・サイトの「同一の方法で処理」という記載と実態が食い違う。生成モデルは Sonnet 5 に固定
+- **要約を Sonnet 5 以外のモデルで生成する:** サイトの「同一の方法で処理」という記載と実態が食い違う。生成モデルは Sonnet 5 に固定
+- **`data/summaries.json` の `model` 値にバージョン番号を入れる:** サイト表示用の文字列なので `"Claude Sonnet (Anthropic)"` のようにバージョン非依存にする。バージョン番号入りだとモデル更新のたびに表記が古くなる
+- **`prompts/summary-prompt.md` を改訂して一部だけ作り直す:** 新旧プロンプトの要約が混在し、同じく「同一の方法で処理」と食い違う。改訂時は全件を作り直し `PROMPT_VERSION` を上げる
 - **ローカルテストの省略:** `python -m http.server 8000` を使うこと。file:// URLでは `fetch()` が動かない
