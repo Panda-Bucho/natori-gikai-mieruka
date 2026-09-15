@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-09-15T08:40:19+09:00",
+  "generatedAt": "2026-09-16T08:22:28+09:00",
   "source": "名取市議会映像配信 https://natori-city.stream.jfit.co.jp/ / 名取市議会会議録検索システム https://www.city.natori.miyagi.dbsr.jp/index.php/100000",
   "members": {
     "abe-masayoshi": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-08",
+        "topics": [
+          "地球温暖化対策について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1082"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-11",
@@ -105,6 +113,14 @@
       }
     ],
     "konno-shinsuke": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-07",
+        "topics": [
+          "安全な地域社会の実現のための環境整備について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1079"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-16",
@@ -281,6 +297,15 @@
     ],
     "suzuki-hidenobu": [
       {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-07",
+        "topics": [
+          "国指定仙台海浜鳥獣保護区広浦特別保護地区の環境等の拠点づくりについて",
+          "増田川・川内沢川下流域（寺野大橋から広浦）の自然環境保全について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1077"
+      },
+      {
         "assembly": "令和7年第6回定例会",
         "date": "2025-12-08",
         "topics": [
@@ -332,6 +357,15 @@
       }
     ],
     "terashima-masako": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-09",
+        "topics": [
+          "育児ヘルプサービスについて",
+          "旧若竹園の今後の活用について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1087"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-16",
@@ -422,6 +456,15 @@
       }
     ],
     "nikaido-mitsuru": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-07",
+        "topics": [
+          "サッポロビール園跡地の今後について",
+          "農業者に対する物価高騰対策について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1078"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-15",
@@ -518,6 +561,15 @@
       }
     ],
     "sasamori-nami": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-09",
+        "topics": [
+          "子ども110番の家について",
+          "ＩＣＴ教育について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1088"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-12",
@@ -775,6 +827,14 @@
     ],
     "chiba-eiko": [
       {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-08",
+        "topics": [
+          "スポーツ施設の整備充実等について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1083"
+      },
+      {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-15",
         "topics": [
@@ -911,6 +971,14 @@
       }
     ],
     "itabashi-miho": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-09",
+        "topics": [
+          "多様な移動支援に対する実効性のある行政支援について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1085"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-16",
@@ -1226,6 +1294,15 @@
       }
     ],
     "sugawara-kazuko": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-07",
+        "topics": [
+          "高次脳機能障害について",
+          "名取市食品ロス削減行動指針について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1080"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-16",
@@ -1592,6 +1669,15 @@
       }
     ],
     "yoshida-ryo": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-08",
+        "topics": [
+          "行政計画体系の構造的課題と改善方針について",
+          "なとり文化芸術祭の現状と今後について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1081"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-11",
@@ -1982,6 +2068,16 @@
     ],
     "otomo-yasunobu": [
       {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-09",
+        "topics": [
+          "成年後見制度について",
+          "薪ストーブの適切な使用に向けた啓発について",
+          "ＨＰＶワクチンの副反応について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1086"
+      },
+      {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-12",
         "topics": [
@@ -2366,6 +2462,15 @@
     ],
     "kikuchi-shinobu": [
       {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-07",
+        "topics": [
+          "令和８年熊本地震を踏まえた防災・減災対策について",
+          "高齢者肺炎球菌予防接種について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1076"
+      },
+      {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-11",
         "topics": [
@@ -2666,6 +2771,14 @@
       }
     ],
     "onodera-miho": [
+      {
+        "assembly": "令和8年第5回定例会",
+        "date": "2026-09-08",
+        "topics": [
+          "市役所における心の健康づくりと健康経営に向けた取組について"
+        ],
+        "url": "https://natori-city.stream.jfit.co.jp/?tpl=play_vod&inquiry_id=1084"
+      },
       {
         "assembly": "令和8年第4回定例会",
         "date": "2026-06-15",
