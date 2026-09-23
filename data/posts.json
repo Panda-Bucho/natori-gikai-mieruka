@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T08:25:40+09:00",
+  "generatedAt": "2026-09-24T08:23:54+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6445,8 +6445,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-09-07",
+      "lastPostDate": "2026-09-23",
       "posts": [
+        {
+          "date": "2026-09-23",
+          "platform": "website",
+          "title": "手話言語の国際デー",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/09/23/%e6%89%8b%e8%a9%b1%e8%a8%80%e8%aa%9e%e3%81%ae%e5%9b%bd%e9%9a%9b%e3%83%87%e3%83%bc/"
+        },
         {
           "date": "2026-09-07",
           "platform": "website",
