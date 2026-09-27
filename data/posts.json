@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T08:20:30+09:00",
+  "generatedAt": "2026-09-28T08:32:34+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,20 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-09-25",
+      "lastPostDate": "2026-09-27",
       "posts": [
+        {
+          "date": "2026-09-27",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/09/27/3647/"
+        },
+        {
+          "date": "2026-09-27",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/09/27/3644/"
+        },
         {
           "date": "2026-09-25",
           "platform": "website",
@@ -6072,8 +6084,14 @@
       ]
     },
     "yoshida-ryo": {
-      "lastPostDate": "2026-09-13",
+      "lastPostDate": "2026-09-27",
       "posts": [
+        {
+          "date": "2026-09-27",
+          "platform": "note",
+          "title": "「ナスパ訴訟」全記録 #15 非課税根拠の崩壊",
+          "url": "https://note.com/ryoyoshida1771/n/ncb7193ec9055"
+        },
         {
           "date": "2026-09-13",
           "platform": "note",
