@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T09:47:03+09:00",
+  "generatedAt": "2026-09-30T09:01:25+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -1363,8 +1363,14 @@
       "posts": []
     },
     "sugawara-kazuko": {
-      "lastPostDate": "2026-09-27",
+      "lastPostDate": "2026-09-29",
       "posts": [
+        {
+          "date": "2026-09-29",
+          "platform": "website",
+          "title": "(無題)",
+          "url": "https://www.komei.or.jp/km/natori-sugawara-kazuko/2026/09/29/3650/"
+        },
         {
           "date": "2026-09-27",
           "platform": "website",
@@ -10604,11 +10610,5 @@
       "posts": []
     }
   },
-  "errors": [
-    {
-      "memberId": "chiba-eiko",
-      "feedUrl": "https://hideyuki.info/feed/",
-      "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://hideyuki.info/feed"
-    }
-  ]
+  "errors": []
 }
