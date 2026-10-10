@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:55:33+09:00",
+  "generatedAt": "2026-10-10T09:26:33+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -6529,8 +6529,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-10-07",
+      "lastPostDate": "2026-10-09",
       "posts": [
+        {
+          "date": "2026-10-09",
+          "platform": "website",
+          "title": "名取市老人クラブ芸能大会",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/10/09/%e5%90%8d%e5%8f%96%e5%b8%82%e8%80%81%e4%ba%ba%e3%82%af%e3%83%a9%e3%83%96%e8%8a%b8%e8%83%bd%e5%a4%a7%e4%bc%9a-3/"
+        },
         {
           "date": "2026-10-07",
           "platform": "website",
