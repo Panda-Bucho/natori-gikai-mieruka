@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:49:11+09:00",
+  "generatedAt": "2026-10-24T08:43:03+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-07-02",
@@ -10778,21 +10778,5 @@
       "posts": []
     }
   },
-  "errors": [
-    {
-      "memberId": "abe-masayoshi",
-      "feedUrl": "https://www.komei.or.jp/km/natori-abe-masayoshi/feed/",
-      "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://www.komei.or.jp/km/natori-abe-masayoshi/feed/"
-    },
-    {
-      "memberId": "sugawara-kazuko",
-      "feedUrl": "https://www.komei.or.jp/km/natori-sugawara-kazuko/feed/",
-      "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://www.komei.or.jp/km/natori-sugawara-kazuko/feed/"
-    },
-    {
-      "memberId": "kikuchi-shinobu",
-      "feedUrl": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/feed/",
-      "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://www.komei.or.jp/km/natori-kikuchi-shinobu/feed/"
-    }
-  ]
+  "errors": []
 }
