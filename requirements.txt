@@ -1,2 +1,10 @@
-feedparser>=6.0
-requests>=2.31
+# バージョンは完全固定(依存先も含む)。新しい版が乗っ取られた場合に、
+# GitHub Actions の自動更新で自動的に取り込まれるのを防ぐため。
+# 更新は Dependabot のプルリクエストで確認してから行う(.github/dependabot.yml)。
+feedparser==6.0.14
+sgmllib3k==1.0.0
+requests==2.34.2
+certifi==2026.7.22
+charset-normalizer==3.5.2
+idna==3.20
+urllib3==2.8.0

@@ -1,0 +1,17 @@
+# 依存パッケージと GitHub Actions の更新を週1回プルリクエストで提案する。
+# 自動マージはしない(内容を確認してからマージする)。
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+    # 公開直後の版は避け、2週間以上経ったものだけ提案する
+    cooldown:
+      default-days: 14
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 14

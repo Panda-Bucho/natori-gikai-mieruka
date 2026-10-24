@@ -28,7 +28,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## ディレクトリ構成
 
 ```
-├── .github/workflows/update.yml     # 日次データ取得(RSS + 議会スクレイプ)
+├── .github/workflows/update.yml     # 日次データ取得(RSS + 議会スクレイプ)。actions は SHA で固定
+├── .github/dependabot.yml           # pip・GitHub Actions の更新を週1回PRで提案(自動マージしない)
+├── requirements.txt                 # Python依存。依存先も含め == で完全固定
 ├── .claude/launch.json              # 開発サーバー設定
 ├── README.md                        # ユーザー向けドキュメント
 ├── prompts/summary-prompt.md        # AI要約の共通プロンプト(GitHub上で公開。透明性のためgitignore対象外)
@@ -356,7 +358,9 @@ python -m http.server 8000
 
 2. **クライアントサイドレンダリング:** 各ページが `fetch()` でデータを取得しDOMで描画(テンプレートエンジンなし)。トレードオフとして初期HTMLは小さくなるが、JS必須(グラフのalt属性・適切なARIAラベルでアクセシビリティを担保)。
 
-3. **Chart.js 4.4.3(CDN):** 唯一の外部JS依存。デュアル軸描画・散布図・ワードクラウドはページ固有の `.js` 内でプラグインやカスタム設定を使用。
+3. **Chart.js 4.4.3 + wordcloud2.js 1.2.3(jsDelivr CDN):** 外部JS依存はこの2つだけ(ほかにGoogleアナリティクス)。デュアル軸描画・散布図はページ固有の `.js` 内でプラグインやカスタム設定を使用。CDNの `<script>` には `integrity`(SRI、sha384)と `crossorigin="anonymous"` を付け、配信元でファイルが差し替えられてもブラウザが実行しないようにしている。
+
+8. **サプライチェーン対策:** GitHub Actions の自動更新は `contents: write` 権限でサイトのファイルを書き換えられるため、そこで動くものはすべて固定する。`requirements.txt` は依存先まで `==` で固定、`update.yml` の actions はコミットSHAで固定(タグはコメントに併記)。更新は Dependabot のPRで内容を確認してからマージする(公開から14日未満の版は提案しない設定)。
 
 4. **単一CSSファイル:** `css/style.css` を全ページで共有。デザインの一貫性・保守性は高いが、カスケードによる副作用に注意。
 
@@ -400,3 +404,5 @@ git push origin main
 - **`data/summaries.json` の `model` 値にバージョン番号を入れる:** サイト表示用の文字列なので `"Claude Sonnet (Anthropic)"` のようにバージョン非依存にする。バージョン番号入りだとモデル更新のたびに表記が古くなる
 - **`prompts/summary-prompt.md` を改訂して一部だけ作り直す:** 新旧プロンプトの要約が混在し、同じく「同一の方法で処理」と食い違う。改訂時は全件を作り直し `PROMPT_VERSION` を上げる
 - **ローカルテストの省略:** `python -m http.server 8000` を使うこと。file:// URLでは `fetch()` が動かない
+- **CDNライブラリのバージョンだけ変えて `integrity` を更新しない:** ハッシュが合わずブラウザがライブラリを読み込まなくなり、グラフが全部消える。新しいURLのファイルを取得して `openssl dgst -sha384 -binary <file> | openssl base64 -A` で計算し直し、そのライブラリを使う全HTMLを更新する
+- **`requirements.txt` を `>=` に戻す・新しい依存を固定せずに足す:** 自動更新が未確認の新しい版を毎日取り込む状態に戻ってしまう。依存先も含めて `==` で書く
