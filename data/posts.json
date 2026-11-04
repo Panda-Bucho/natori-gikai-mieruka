@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T11:44:15+09:00",
+  "generatedAt": "2026-11-04T09:59:49+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-10-29",
@@ -6595,8 +6595,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-11-01",
+      "lastPostDate": "2026-11-03",
       "posts": [
+        {
+          "date": "2026-11-03",
+          "platform": "website",
+          "title": "2026ふるさと名取秋まつり",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/11/03/2026%e3%81%b5%e3%82%8b%e3%81%95%e3%81%a8%e5%90%8d%e5%8f%96%e7%a7%8b%e3%81%be%e3%81%a4%e3%82%8a/"
+        },
         {
           "date": "2026-11-01",
           "platform": "website",
