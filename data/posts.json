@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T10:55:35+09:00",
+  "generatedAt": "2026-11-22T09:51:31+09:00",
   "members": {
     "abe-masayoshi": {
       "lastPostDate": "2026-11-17",
@@ -6198,8 +6198,14 @@
       ]
     },
     "yoshida-ryo": {
-      "lastPostDate": "2026-10-25",
+      "lastPostDate": "2026-11-22",
       "posts": [
+        {
+          "date": "2026-11-22",
+          "platform": "note",
+          "title": "「ナスパ訴訟」全記録 #18 第1回口頭弁論",
+          "url": "https://note.com/ryoyoshida1771/n/nb4dfb532d189"
+        },
         {
           "date": "2026-10-25",
           "platform": "note",
@@ -6607,8 +6613,14 @@
       "posts": []
     },
     "kikuchi-shinobu": {
-      "lastPostDate": "2026-11-20",
+      "lastPostDate": "2026-11-21",
       "posts": [
+        {
+          "date": "2026-11-21",
+          "platform": "website",
+          "title": "相互台公民館まつり",
+          "url": "https://www.komei.or.jp/km/natori-kikuchi-shinobu/2026/11/21/%e7%9b%b8%e4%ba%92%e5%8f%b0%e5%85%ac%e6%b0%91%e9%a4%a8%e3%81%be%e3%81%a4%e3%82%8a-2/"
+        },
         {
           "date": "2026-11-20",
           "platform": "website",
